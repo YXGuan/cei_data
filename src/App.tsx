@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import {
   Activity, ArrowUpRight, BookOpen, ChevronDown, Database, FileText,
   Fingerprint, Globe2, LayoutDashboard, Search, ShieldCheck, Sparkles, X,
@@ -56,6 +56,8 @@ function App() {
   const [fingerprintPoints, setFingerprintPoints] = useState<FingerprintPoint[]>([])
   const [analytics, setAnalytics] = useState<AnalyticsData | null>(null)
   const [dataSource, setDataSource] = useState('Loading source data')
+  const [searchOpen, setSearchOpen] = useState(false)
+  const searchInput = useRef<HTMLInputElement>(null)
   useEffect(() => {
     loadDashboard().then(({ data, source }) => {
       setDashboard(data)
@@ -80,6 +82,40 @@ function App() {
   const filtered = useMemo(() => statements.filter((item) =>
     `${item.title} ${item.organization} ${item.region}`.toLowerCase().includes(query.toLowerCase())
   ), [query, statements])
+  const searchResults = useMemo(() => {
+    const terms = query.trim().toLowerCase().split(/\s+/).filter(Boolean)
+    if (!terms.length) return []
+    return catalog.map(item => {
+      const title = item.title.toLowerCase()
+      const organization = item.organization.toLowerCase()
+      const haystack = `${item.id} ${item.title} ${item.organization} ${item.region} ${item.type} ${item.binding} ${item.cluster} ${item.organization_type || ''} ${item.abstract || ''} ${item.scores.map(score => score.label).join(' ')}`.toLowerCase()
+      return {
+        item,
+        matches: terms.every(term => haystack.includes(term)),
+        score: terms.reduce((total, term) => total + (title.includes(term) ? 4 : 0) + (organization.includes(term) ? 2 : 0) + (haystack.includes(term) ? 1 : 0), 0),
+      }
+    }).filter(result => result.matches).sort((a, b) => b.score - a.score || (b.item.year || 0) - (a.item.year || 0)).slice(0, 8)
+  }, [catalog, query])
+  useEffect(() => {
+    const handleShortcut = (event: KeyboardEvent) => {
+      if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'k') {
+        event.preventDefault()
+        searchInput.current?.focus()
+        setSearchOpen(true)
+      }
+      if (event.key === 'Escape') {
+        setSearchOpen(false)
+        searchInput.current?.blur()
+      }
+    }
+    window.addEventListener('keydown', handleShortcut)
+    return () => window.removeEventListener('keydown', handleShortcut)
+  }, [])
+  const submitSearch = () => {
+    if (!query.trim()) return
+    setActive('Statements')
+    setSearchOpen(false)
+  }
 
   return (
     <div className="shell">
@@ -92,7 +128,15 @@ function App() {
       <main>
         <header className="topbar">
           <div className="mobile-brand">CEI Atlas</div>
-          <div className="global-search"><Search size={17} /><input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search policies, organizations, concepts..." /><kbd>⌘ K</kbd></div>
+          <div className={`global-search ${searchOpen ? 'open' : ''}`}>
+            <Search size={17} />
+            <input ref={searchInput} value={query} onFocus={() => setSearchOpen(true)} onBlur={() => window.setTimeout(() => setSearchOpen(false), 150)} onChange={(event) => { setQuery(event.target.value); setSearchOpen(true) }} onKeyDown={event => { if (event.key === 'Enter') submitSearch() }} placeholder="Search policies, organizations, concepts..." />
+            {query ? <button className="search-clear" onMouseDown={event => event.preventDefault()} onClick={() => { setQuery(''); searchInput.current?.focus() }} aria-label="Clear search"><X size={14} /></button> : <kbd>Ctrl K</kbd>}
+            {searchOpen && query.trim() && <div className="search-results">
+              <div className="search-results-head"><span>{searchResults.length ? 'Top matches' : 'No matching statements'}</span><button onMouseDown={event => event.preventDefault()} onClick={submitSearch}>View all results</button></div>
+              {searchResults.map(({ item }) => <button className="search-result" key={item.id} onMouseDown={event => event.preventDefault()} onClick={() => { setSelected(item); setSearchOpen(false) }}><span><strong>{item.title}</strong><small>{item.organization}</small></span><span><small>{item.region} · {yearLabel(item.year)}</small><i>{item.cluster}</i></span></button>)}
+            </div>}
+          </div>
           <button className="source-button"><Database size={16} /> Data sources <ChevronDown size={14} /></button>
         </header>
 
@@ -175,12 +219,13 @@ function StatementsPage({ catalog, query, onSelect }: { catalog: Statement[]; qu
   const [sort, setSort] = useState('year')
   const [page, setPage] = useState(0)
   const values = (key: keyof Statement) => [...new Set(catalog.map(item => String(item[key] || '')).filter(Boolean))].sort()
-  const matches = catalog.filter(item => `${item.title} ${item.organization} ${item.abstract || ''}`.toLowerCase().includes(query.toLowerCase())
+  const matches = catalog.filter(item => `${item.id} ${item.title} ${item.organization} ${item.region} ${item.type} ${item.binding} ${item.cluster} ${item.organization_type || ''} ${item.abstract || ''} ${item.scores.map(score => score.label).join(' ')}`.toLowerCase().includes(query.toLowerCase())
     && (!filters.region || item.region === filters.region) && (!filters.type || item.type === filters.type)
     && (!filters.binding || item.binding === filters.binding) && (!filters.cluster || item.cluster === filters.cluster)
     && (!filters.org || item.organization_type === filters.org))
     .sort((a, b) => sort === 'year' ? (b.year || 0) - (a.year || 0) : String(a[sort as 'title' | 'organization']).localeCompare(String(b[sort as 'title' | 'organization'])))
   const pages = Math.max(1, Math.ceil(matches.length / 25))
+  const visiblePage = Math.min(page, pages - 1)
   const setFilter = (key: keyof typeof filters, value: string) => { setFilters(current => ({ ...current, [key]: value })); setPage(0) }
   return <><PageTitle eyebrow="Evidence registry" title="Governance statements" copy="Filter, sort, search, and inspect the complete reconciled statement registry." />
     <section className="filter-panel"><div className="facet-grid">
@@ -191,9 +236,9 @@ function StatementsPage({ catalog, query, onSelect }: { catalog: Statement[]; qu
       <Facet label="Policy family" value={filters.cluster} options={values('cluster')} onChange={value => setFilter('cluster', value)} />
       <Facet label="Sort by" value={sort} options={['year', 'title', 'organization']} allLabel="Choose" onChange={setSort} />
     </div>{Object.values(filters).some(Boolean) && <button className="clear-filters" onClick={() => setFilters({ region: '', type: '', binding: '', cluster: '', org: '' })}><X size={13} /> Clear filters</button>}</section>
-    <div className="registry-summary"><strong>{matches.length.toLocaleString()}</strong><span>matching records</span><i /><span>{catalog.filter(item => item.metadata_status === 'Pending').length} metadata pending</span><span className="page-status">Page {page + 1} of {pages}</span></div>
-    <section className="panel full-registry"><div className="catalog-head"><span>Statement</span><span>Region</span><span>Policy family</span><span>Year</span><span>Status</span><span /></div>{matches.slice(page * 25, page * 25 + 25).map(item => <button className="catalog-row" key={item.id} onClick={() => onSelect(item)}><span><strong>{item.title}</strong><small>{item.organization} · {item.organization_type}</small></span><span>{item.region}</span><span>{item.cluster}</span><span>{yearLabel(item.year)}</span><span className={`pill ${item.metadata_status === 'Pending' ? 'pending' : ''}`}>{item.metadata_status}</span><ArrowUpRight size={14} /></button>)}</section>
-    <div className="pagination"><button disabled={page === 0} onClick={() => setPage(page - 1)}>Previous</button><span>{page + 1} / {pages}</span><button disabled={page >= pages - 1} onClick={() => setPage(page + 1)}>Next</button></div></>
+    <div className="registry-summary"><strong>{matches.length.toLocaleString()}</strong><span>matching records</span><i /><span>{catalog.filter(item => item.metadata_status === 'Pending').length} metadata pending</span><span className="page-status">Page {visiblePage + 1} of {pages}</span></div>
+    <section className="panel full-registry"><div className="catalog-head"><span>Statement</span><span>Region</span><span>Policy family</span><span>Year</span><span>Status</span><span /></div>{matches.slice(visiblePage * 25, visiblePage * 25 + 25).map(item => <button className="catalog-row" key={item.id} onClick={() => onSelect(item)}><span><strong>{item.title}</strong><small>{item.organization} · {item.organization_type}</small></span><span>{item.region}</span><span>{item.cluster}</span><span>{yearLabel(item.year)}</span><span className={`pill ${item.metadata_status === 'Pending' ? 'pending' : ''}`}>{item.metadata_status}</span><ArrowUpRight size={14} /></button>)}</section>
+    <div className="pagination"><button disabled={visiblePage === 0} onClick={() => setPage(visiblePage - 1)}>Previous</button><span>{visiblePage + 1} / {pages}</span><button disabled={visiblePage >= pages - 1} onClick={() => setPage(visiblePage + 1)}>Next</button></div></>
 }
 
 function ExplorerTabs({ tabs, active, onChange }: { tabs: string[]; active: string; onChange: (tab: string) => void }) {
