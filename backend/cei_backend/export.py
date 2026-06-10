@@ -63,6 +63,7 @@ Portable export of the CEI Governance Atlas relational dataset.
 | `concept_relationships` | {counts['concept_relationships']:,} | Directed ontology relationships |
 | `statement_sources` | {counts['statement_sources']:,} | Source provenance and original source payloads |
 | `dataset_releases` | {counts['dataset_releases']:,} | Versioned source releases |
+| `dataset_artifacts` | {counts['dataset_artifacts']:,} | Complete original source-level analysis artifacts |
 
 Stable public identifiers are `statement_key` and `concept_key`. Internal database UUIDs are omitted
 from joined exports where a stable key is available.
@@ -86,6 +87,7 @@ def build_export(reader: SupabaseReader, output_dir: Path, parquet: bool = False
     data_dir.mkdir(parents=True)
 
     releases = reader.all("dataset_releases", params={"order": "slug"})
+    artifacts = reader.all("dataset_artifacts", params={"order": "artifact_key"})
     statements = reader.all("statement_explorer", params={"order": "statement_key"})
     concepts = reader.all("concepts", params={"order": "concept_key"})
     relationships = reader.all("concept_relationships")
@@ -142,6 +144,17 @@ def build_export(reader: SupabaseReader, output_dir: Path, parquet: bool = False
         }
         for row in sources
     ]
+    artifact_rows = [
+        {
+            "dataset_release": release_slugs[row["dataset_release_id"]],
+            "artifact_key": row["artifact_key"],
+            "media_type": row["media_type"],
+            "sha256": row["sha256"],
+            "byte_size": row["byte_size"],
+            "payload_json": json.dumps(row["payload"], ensure_ascii=False, separators=(",", ":")),
+        }
+        for row in artifacts
+    ]
 
     tables = {
         "statements": statement_rows,
@@ -151,6 +164,7 @@ def build_export(reader: SupabaseReader, output_dir: Path, parquet: bool = False
         "concept_relationships": relationship_rows,
         "statement_sources": source_rows,
         "dataset_releases": releases,
+        "dataset_artifacts": artifact_rows,
     }
     counts = {}
     for name, rows in tables.items():

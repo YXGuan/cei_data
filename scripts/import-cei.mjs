@@ -1,4 +1,6 @@
 import { createClient } from '@supabase/supabase-js'
+import { createHash } from 'node:crypto'
+import { existsSync } from 'node:fs'
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 
@@ -24,6 +26,22 @@ const titleCase = (value = '') => value.replaceAll('_', ' ').replace(/\b\w/g, (l
 const normalizedName = (value = '') => value.trim().toLowerCase().replace(/\s+/g, ' ')
 const validYear = (value) => Number.isInteger(value) && value >= 1900 && value <= 2100 ? value : null
 const batches = (items, size = 250) => Array.from({ length: Math.ceil(items.length / size) }, (_, i) => items.slice(i * size, (i + 1) * size))
+const requiredId = (ids, key, label) => {
+  const id = ids.get(key)
+  if (!id) throw new Error(`Missing ${label} ID for ${key}`)
+  return id
+}
+const artifact = (releaseSlug, artifactKey, payload) => {
+  const json = JSON.stringify(payload)
+  return {
+    release_slug: releaseSlug,
+    artifact_key: artifactKey,
+    media_type: 'application/json',
+    sha256: createHash('sha256').update(json).digest('hex'),
+    byte_size: Buffer.byteLength(json),
+    payload,
+  }
+}
 
 async function loadData(source) {
   const text = /^https?:/.test(source)
@@ -64,7 +82,7 @@ function prepare(statementsData, fingerprintsData, ontologyData, taxonomyData) {
       organization: raw.org || 'Unknown organization',
       organization_type: raw.ot || null,
       organization_subtype: raw.os || null,
-      source_payload: raw,
+      source_payload: { statement: raw, detail },
       ontology_scores: ontologyKeys.map((key, index) => ({ concept_key: `ontology:${key}`, score: raw.onc[index] || 0 })),
     }]
   }))
@@ -123,6 +141,17 @@ function prepare(statementsData, fingerprintsData, ontologyData, taxonomyData) {
 
   const statements = [...statementMap.values()]
   const pointByKey = new Map(fingerprintsData.umapV2.map((point, index) => [point.k, { ...point, index }]))
+  const fingerprintScores = fingerprintsData.heatmap.cells.map(([columnIndex, rowIndex, score]) => ({
+    statement_key: fingerprintsData.heatmap.rowMeta[rowIndex].k,
+    concept_key: `fingerprint:${fingerprintsData.heatmap.colFields[columnIndex]}`,
+    score,
+  }))
+  const fingerprintScoresByStatement = new Map()
+  fingerprintScores.forEach((score) => {
+    const scores = fingerprintScoresByStatement.get(score.statement_key) || []
+    scores.push({ concept_key: score.concept_key, score: score.score })
+    fingerprintScoresByStatement.set(score.statement_key, scores)
+  })
   const fingerprints = statements.flatMap((statement) => {
     const point = pointByKey.get(statement.statement_key)
     if (!point) return []
@@ -136,6 +165,7 @@ function prepare(statementsData, fingerprintsData, ontologyData, taxonomyData) {
         k5: point.k5,
         k8: point.k8,
         top_dimensions: fingerprintsData.stmtTopDims[point.index],
+        dimensions: fingerprintScoresByStatement.get(statement.statement_key) || [],
       },
     }]
   })
@@ -220,7 +250,13 @@ function prepare(statementsData, fingerprintsData, ontologyData, taxonomyData) {
   }
 
   return {
-    statements, fingerprints, unifiedSources, unifiedScores, conceptRelationships,
+    statements, fingerprints, fingerprintScores, unifiedSources, unifiedScores, conceptRelationships,
+    datasetArtifacts: [
+      artifact('statements-b3-2026-03-15', 'data.js', statementsData),
+      artifact('fingerprints-2026-03-15', 'data.js', fingerprintsData),
+      artifact('ontology-ont3', 'embedded-ontology-data.json', ontologyData),
+      artifact('unified-taxonomy-2026-03-15', 'data.js', taxonomyData),
+    ],
     concepts: [...ontologyConcepts, ...dimensions, ...taxonomyConcepts, ...ontologyExplorerConcepts],
     summary,
   }
@@ -235,8 +271,10 @@ async function writeArtifacts(data) {
     fingerprints: data.fingerprints.length,
     concepts: data.concepts.length,
     fingerprint_only_statements: data.summary.totals.fingerprint_only,
+    fingerprint_dimension_scores: data.fingerprintScores.length,
     unified_taxonomy_scores: data.unifiedScores.length,
     ontology_relationships: data.conceptRelationships.length,
+    dataset_artifacts: data.datasetArtifacts.map(({ payload, ...item }) => item),
   }, null, 2))
   await writeFile(path.resolve('public/data/dashboard.json'), JSON.stringify(data.summary))
   await writeFile(path.resolve('public/data/statements.json'), JSON.stringify(data.statements.map((item) => ({
@@ -249,6 +287,14 @@ async function writeArtifacts(data) {
     binding: titleCase(item.binding_nature || 'unknown'),
     cluster: data.fingerprints.find((fingerprint) => fingerprint.statement_key === item.statement_key)?.cluster_label || 'Not fingerprinted',
     metadata_status: item.lifecycle_status === 'metadata_pending' ? 'Pending' : 'Complete',
+    organization_type: titleCase(item.organization_type || 'unknown'),
+    organization_subtype: titleCase(item.organization_subtype || 'unknown'),
+    geographic_scope: titleCase(item.geographic_scope || 'unknown'),
+    country_code: item.country_code,
+    language_code: item.language_code,
+    source_url: item.source_url,
+    abstract: item.abstract,
+    word_count: item.word_count,
     scores: item.ontology_scores.filter((score) => score.score > 0).sort((a, b) => b.score - a.score).slice(0, 5)
       .map((score) => ({ label: titleCase(score.concept_key.split(':')[1]), value: score.score })),
   }))))
@@ -259,6 +305,21 @@ async function writeArtifacts(data) {
     x: item.umap_x,
     y: item.umap_y,
   }))))
+  const artifacts = Object.fromEntries(data.datasetArtifacts.map((item) => [item.release_slug, item.payload]))
+  const fp = artifacts['fingerprints-2026-03-15']
+  const ont = artifacts['ontology-ont3']
+  await writeFile(path.resolve('public/data/analytics.json'), JSON.stringify({
+    fingerprint: {
+      meta: fp.meta, silhouettes: fp.silhouettes, blendSweep: fp.blendSweep, layers: fp.layers,
+      layerCorr: fp.layerCorr, dimensions: fp.dimensions, clusters: fp.clusters, temporal: fp.temporal,
+      robustness: fp.robustness,
+    },
+    ontology: {
+      l2_labels: ont.l2_labels, heatmaps: ont.heatmaps, correlation: ont.correlation,
+      coactivation: ont.coactivation, temporal: ont.temporal, network: ont.network,
+      ontology: ont.ontology, leaf_stats: ont.leaf_stats, supplementary: ont.supplementary,
+    },
+  }))
 }
 
 async function allRows(queryFactory) {
@@ -286,6 +347,14 @@ async function push(data) {
   const releaseResult = await db.from('dataset_releases').upsert(releases, { onConflict: 'slug' }).select('id,slug')
   if (releaseResult.error) throw releaseResult.error
   const releaseIds = Object.fromEntries(releaseResult.data.map((row) => [row.slug, row.id]))
+  for (const item of data.datasetArtifacts) {
+    const { release_slug, ...artifactRow } = item
+    const { error } = await db.from('dataset_artifacts').upsert({
+      ...artifactRow,
+      dataset_release_id: releaseIds[release_slug],
+    }, { onConflict: 'dataset_release_id,artifact_key' })
+    if (error) throw error
+  }
 
   const organizations = [...new Map(data.statements.map((item) => [normalizedName(item.organization), {
     name: item.organization, normalized_name: normalizedName(item.organization), organization_type: item.organization_type,
@@ -376,6 +445,16 @@ async function push(data) {
     method: 'weighted sparse fingerprint + 10% latent blend + k-means', parameters: { optimal_k: 6 }, metrics: { silhouette: 0.62 },
   }, { onConflict: 'name,version' }).select('id').single()
   if (runResult.error) throw runResult.error
+  const fingerprintScores = data.fingerprintScores.map((item) => ({
+    statement_id: requiredId(statementIds, item.statement_key, 'statement'),
+    concept_id: requiredId(conceptIds, item.concept_key, 'concept'),
+    analysis_run_id: runResult.data.id,
+    score: item.score,
+  }))
+  for (const batch of batches(fingerprintScores, 500)) {
+    const { error } = await db.from('statement_scores').upsert(batch, { onConflict: 'statement_id,concept_id,analysis_run_id' })
+    if (error) throw error
+  }
   for (const batch of batches(data.fingerprints.map(({ statement_key, ...item }) => ({
     ...item, statement_id: statementIds.get(statement_key), analysis_run_id: runResult.data.id,
   })))) {
@@ -384,10 +463,10 @@ async function push(data) {
   }
 }
 
-const statementsSource = String(args.get('--statements') || SOURCES.statements)
-const fingerprintsSource = String(args.get('--fingerprints') || SOURCES.fingerprints)
+const statementsSource = String(args.get('--statements') || (existsSync('data.js') ? 'data.js' : SOURCES.statements))
+const fingerprintsSource = String(args.get('--fingerprints') || (existsSync('data (1).js') ? 'data (1).js' : SOURCES.fingerprints))
 const ontologySource = String(args.get('--ontology') || SOURCES.ontology)
-const taxonomySource = String(args.get('--taxonomy') || SOURCES.taxonomy)
+const taxonomySource = String(args.get('--taxonomy') || (existsSync('data (2).js') ? 'data (2).js' : SOURCES.taxonomy))
 console.log(`Loading statements from ${statementsSource}`)
 console.log(`Loading fingerprints from ${fingerprintsSource}`)
 console.log(`Loading ontology from ${ontologySource}`)
@@ -400,4 +479,11 @@ const data = prepare(
 )
 await writeArtifacts(data)
 if (shouldPush) await push(data)
-console.log(JSON.stringify({ statements: data.statements.length, fingerprints: data.fingerprints.length, concepts: data.concepts.length, pushed: shouldPush }, null, 2))
+console.log(JSON.stringify({
+  statements: data.statements.length,
+  fingerprints: data.fingerprints.length,
+  fingerprint_dimension_scores: data.fingerprintScores.length,
+  concepts: data.concepts.length,
+  dataset_artifacts: data.datasetArtifacts.length,
+  pushed: shouldPush,
+}, null, 2))

@@ -78,7 +78,15 @@ Build the reconciled frontend snapshot directly from all four source repositorie
 npm run data:prepare
 ```
 
-This fetches the source datasets, reconciles statement keys, and writes:
+When the following original files exist at the repository root, the importer uses them instead of
+fetching remote copies:
+
+- `data.js`: CEI Statements Dashboard B3
+- `data (1).js`: CEI Fingerprint Explorer
+- `data (2).js`: CEI Unified Taxonomy
+
+The importer reconciles statement keys, preserves complete source-level artifacts with checksums,
+normalizes the sparse fingerprint heatmap, and writes:
 
 - `public/data/dashboard.json`: lightweight frontend snapshot
 - `public/data/statements.json`: searchable statement registry snapshot
@@ -92,6 +100,12 @@ npm run data:validate
 ```
 
 The unified taxonomy expands the reconciled registry to 1,666 statements. Of those, 1,405 have fingerprint records. Dashboard B3 metadata is retained as the preferred source for overlapping records, while all source payloads remain available for provenance.
+
+The normalized score table currently contains:
+
+- 6,745 Dashboard B3 ontology scores
+- 34,957 unified-taxonomy scores
+- 28,188 recovered fingerprint-dimension scores
 
 To import the normalized records into Supabase:
 
@@ -144,7 +158,9 @@ The ignored `exports/huggingface/cei-governance-atlas` directory contains:
 - `statement_scores`: long-form scores suitable for analysis and model training
 - `concepts` and `concept_relationships`: ontology and taxonomy graph
 - `statement_sources`: original source payloads and provenance
+- `dataset_artifacts`: complete original source-level datasets and aggregate analyses
 - `dataset_releases`: source release metadata
+- `dataset_artifacts`: full original source-level datasets, checksums, and aggregate analyses
 
 For Parquet and direct upload support:
 
