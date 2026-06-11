@@ -9,7 +9,7 @@ import {
   ResponsiveContainer, Scatter, ScatterChart, Tooltip, XAxis, YAxis, ZAxis,
 } from 'recharts'
 import './App.css'
-import { loadAnalytics, loadCatalog, loadDashboard, loadFingerprintPoints, type AnalyticsData, type DashboardData, type FingerprintAnalytics, type FingerprintPoint, type OntologyAnalytics, type Statement } from './lib/data'
+import { loadAnalytics, loadCatalog, loadDashboard, loadFingerprintPoints, searchStatements, type AnalyticsData, type DashboardData, type FingerprintAnalytics, type FingerprintPoint, type OntologyAnalytics, type Statement, type StatementSearchResult } from './lib/data'
 
 const fallbackStatements: Statement[] = [
   { id: 'STMT-0419', title: 'EU AI Pact 2024', organization: 'European Commission / AI Office', year: 2024, region: 'Europe', type: 'Legislation', binding: 'Legally binding', cluster: 'Regulatory governance', scores: [{ label: 'Governance', value: 45, color: '#6d5dfc' }, { label: 'Procedural', value: 35, color: '#12b886' }, { label: 'Geopolitical', value: 24, color: '#f59f00' }] },
@@ -57,6 +57,8 @@ function App() {
   const [analytics, setAnalytics] = useState<AnalyticsData | null>(null)
   const [dataSource, setDataSource] = useState('Loading source data')
   const [searchOpen, setSearchOpen] = useState(false)
+  const [searchResult, setSearchResult] = useState<StatementSearchResult>({ items: [], total: 0, source: 'Local fallback' })
+  const [searchLoading, setSearchLoading] = useState(false)
   const searchInput = useRef<HTMLInputElement>(null)
   useEffect(() => {
     loadDashboard().then(({ data, source }) => {
@@ -82,19 +84,21 @@ function App() {
   const filtered = useMemo(() => statements.filter((item) =>
     `${item.title} ${item.organization} ${item.region}`.toLowerCase().includes(query.toLowerCase())
   ), [query, statements])
-  const searchResults = useMemo(() => {
-    const terms = query.trim().toLowerCase().split(/\s+/).filter(Boolean)
-    if (!terms.length) return []
-    return catalog.map(item => {
-      const title = item.title.toLowerCase()
-      const organization = item.organization.toLowerCase()
-      const haystack = `${item.id} ${item.title} ${item.organization} ${item.region} ${item.type} ${item.binding} ${item.cluster} ${item.organization_type || ''} ${item.abstract || ''} ${item.scores.map(score => score.label).join(' ')}`.toLowerCase()
-      return {
-        item,
-        matches: terms.every(term => haystack.includes(term)),
-        score: terms.reduce((total, term) => total + (title.includes(term) ? 4 : 0) + (organization.includes(term) ? 2 : 0) + (haystack.includes(term) ? 1 : 0), 0),
+  useEffect(() => {
+    let cancelled = false
+    const timer = window.setTimeout(async () => {
+      if (!query.trim()) {
+        if (!cancelled) setSearchResult({ items: [], total: 0, source: 'Local fallback' })
+        return
       }
-    }).filter(result => result.matches).sort((a, b) => b.score - a.score || (b.item.year || 0) - (a.item.year || 0)).slice(0, 8)
+      setSearchLoading(true)
+      const result = await searchStatements({ query, limit: 8, sort: 'relevance', fallbackCatalog: catalog })
+      if (!cancelled) {
+        setSearchResult(result)
+        setSearchLoading(false)
+      }
+    }, 250)
+    return () => { cancelled = true; window.clearTimeout(timer) }
   }, [catalog, query])
   useEffect(() => {
     const handleShortcut = (event: KeyboardEvent) => {
@@ -133,8 +137,8 @@ function App() {
             <input ref={searchInput} value={query} onFocus={() => setSearchOpen(true)} onBlur={() => window.setTimeout(() => setSearchOpen(false), 150)} onChange={(event) => { setQuery(event.target.value); setSearchOpen(true) }} onKeyDown={event => { if (event.key === 'Enter') submitSearch() }} placeholder="Search policies, organizations, concepts..." />
             {query ? <button className="search-clear" onMouseDown={event => event.preventDefault()} onClick={() => { setQuery(''); searchInput.current?.focus() }} aria-label="Clear search"><X size={14} /></button> : <kbd>Ctrl K</kbd>}
             {searchOpen && query.trim() && <div className="search-results">
-              <div className="search-results-head"><span>{searchResults.length ? 'Top matches' : 'No matching statements'}</span><button onMouseDown={event => event.preventDefault()} onClick={submitSearch}>View all results</button></div>
-              {searchResults.map(({ item }) => <button className="search-result" key={item.id} onMouseDown={event => event.preventDefault()} onClick={() => { setSelected(item); setSearchOpen(false) }}><span><strong>{item.title}</strong><small>{item.organization}</small></span><span><small>{item.region} · {yearLabel(item.year)}</small><i>{item.cluster}</i></span></button>)}
+              <div className="search-results-head"><span>{searchLoading ? 'Searching Supabase...' : searchResult.total ? `${searchResult.total.toLocaleString()} matches · ${searchResult.source}` : 'No matching statements'}</span><button onMouseDown={event => event.preventDefault()} onClick={submitSearch}>View all results</button></div>
+              {searchResult.items.map(item => <button className="search-result" key={item.id} onMouseDown={event => event.preventDefault()} onClick={() => { setSelected(item); setSearchOpen(false) }}><span><strong>{item.title}</strong><small>{item.organization}</small></span><span><small>{item.region} · {yearLabel(item.year)}</small><i>{item.cluster}</i></span></button>)}
             </div>}
           </div>
           <button className="source-button"><Database size={16} /> Data sources <ChevronDown size={14} /></button>
@@ -216,15 +220,32 @@ function Facet({ label, value, options, onChange, allLabel = 'All' }: { label: s
 
 function StatementsPage({ catalog, query, onSelect }: { catalog: Statement[]; query: string; onSelect: (statement: Statement) => void }) {
   const [filters, setFilters] = useState({ region: '', type: '', binding: '', cluster: '', org: '' })
-  const [sort, setSort] = useState('year')
+  const [sort, setSort] = useState<'relevance' | 'year' | 'title' | 'organization'>('relevance')
   const [page, setPage] = useState(0)
+  const [result, setResult] = useState<StatementSearchResult>({ items: [], total: 0, source: 'Local fallback' })
+  const [loading, setLoading] = useState(true)
   const values = (key: keyof Statement) => [...new Set(catalog.map(item => String(item[key] || '')).filter(Boolean))].sort()
-  const matches = catalog.filter(item => `${item.id} ${item.title} ${item.organization} ${item.region} ${item.type} ${item.binding} ${item.cluster} ${item.organization_type || ''} ${item.abstract || ''} ${item.scores.map(score => score.label).join(' ')}`.toLowerCase().includes(query.toLowerCase())
-    && (!filters.region || item.region === filters.region) && (!filters.type || item.type === filters.type)
-    && (!filters.binding || item.binding === filters.binding) && (!filters.cluster || item.cluster === filters.cluster)
-    && (!filters.org || item.organization_type === filters.org))
-    .sort((a, b) => sort === 'year' ? (b.year || 0) - (a.year || 0) : String(a[sort as 'title' | 'organization']).localeCompare(String(b[sort as 'title' | 'organization'])))
-  const pages = Math.max(1, Math.ceil(matches.length / 25))
+  useEffect(() => {
+    let cancelled = false
+    const timer = window.setTimeout(async () => {
+      setLoading(true)
+      const searchResult = await searchStatements({
+        query, region: filters.region, type: filters.type, binding: filters.binding,
+        cluster: filters.cluster, organizationType: filters.org, sort, limit: 25, offset: page * 25,
+        fallbackCatalog: catalog,
+      })
+      if (!cancelled) {
+        if (!searchResult.items.length && page > 0) {
+          setPage(0)
+          return
+        }
+        setResult(searchResult)
+        setLoading(false)
+      }
+    }, 150)
+    return () => { cancelled = true; window.clearTimeout(timer) }
+  }, [catalog, filters, page, query, sort])
+  const pages = Math.max(1, Math.ceil(result.total / 25))
   const visiblePage = Math.min(page, pages - 1)
   const setFilter = (key: keyof typeof filters, value: string) => { setFilters(current => ({ ...current, [key]: value })); setPage(0) }
   return <><PageTitle eyebrow="Evidence registry" title="Governance statements" copy="Filter, sort, search, and inspect the complete reconciled statement registry." />
@@ -234,10 +255,10 @@ function StatementsPage({ catalog, query, onSelect }: { catalog: Statement[]; qu
       <Facet label="Instrument" value={filters.type} options={values('type')} onChange={value => setFilter('type', value)} />
       <Facet label="Binding nature" value={filters.binding} options={values('binding')} onChange={value => setFilter('binding', value)} />
       <Facet label="Policy family" value={filters.cluster} options={values('cluster')} onChange={value => setFilter('cluster', value)} />
-      <Facet label="Sort by" value={sort} options={['year', 'title', 'organization']} allLabel="Choose" onChange={setSort} />
-    </div>{Object.values(filters).some(Boolean) && <button className="clear-filters" onClick={() => setFilters({ region: '', type: '', binding: '', cluster: '', org: '' })}><X size={13} /> Clear filters</button>}</section>
-    <div className="registry-summary"><strong>{matches.length.toLocaleString()}</strong><span>matching records</span><i /><span>{catalog.filter(item => item.metadata_status === 'Pending').length} metadata pending</span><span className="page-status">Page {visiblePage + 1} of {pages}</span></div>
-    <section className="panel full-registry"><div className="catalog-head"><span>Statement</span><span>Region</span><span>Policy family</span><span>Year</span><span>Status</span><span /></div>{matches.slice(visiblePage * 25, visiblePage * 25 + 25).map(item => <button className="catalog-row" key={item.id} onClick={() => onSelect(item)}><span><strong>{item.title}</strong><small>{item.organization} · {item.organization_type}</small></span><span>{item.region}</span><span>{item.cluster}</span><span>{yearLabel(item.year)}</span><span className={`pill ${item.metadata_status === 'Pending' ? 'pending' : ''}`}>{item.metadata_status}</span><ArrowUpRight size={14} /></button>)}</section>
+      <Facet label="Sort by" value={sort} options={['relevance', 'year', 'title', 'organization']} allLabel="Choose" onChange={value => { setSort(value as typeof sort); setPage(0) }} />
+    </div>{Object.values(filters).some(Boolean) && <button className="clear-filters" onClick={() => { setFilters({ region: '', type: '', binding: '', cluster: '', org: '' }); setPage(0) }}><X size={13} /> Clear filters</button>}</section>
+    <div className="registry-summary"><strong>{result.total.toLocaleString()}</strong><span>{loading ? 'searching records' : 'matching records'}</span><i /><span>{result.source}</span><span className="page-status">Page {visiblePage + 1} of {pages}</span></div>
+    <section className="panel full-registry"><div className="catalog-head"><span>Statement</span><span>Region</span><span>Policy family</span><span>Year</span><span>Status</span><span /></div>{result.items.map(item => <button className="catalog-row" key={item.id} onClick={() => onSelect(item)}><span><strong>{item.title}</strong><small>{item.organization} · {item.organization_type}</small></span><span>{item.region}</span><span>{item.cluster}</span><span>{yearLabel(item.year)}</span><span className={`pill ${item.metadata_status === 'Pending' ? 'pending' : ''}`}>{item.metadata_status}</span><ArrowUpRight size={14} /></button>)}</section>
     <div className="pagination"><button disabled={visiblePage === 0} onClick={() => setPage(visiblePage - 1)}>Previous</button><span>{visiblePage + 1} / {pages}</span><button disabled={visiblePage >= pages - 1} onClick={() => setPage(visiblePage + 1)}>Next</button></div></>
 }
 

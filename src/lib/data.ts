@@ -51,6 +51,19 @@ export type OntologyAnalytics = {
   supplementary?: Record<string, unknown>
 }
 export type AnalyticsData = { fingerprint: FingerprintAnalytics; ontology: OntologyAnalytics }
+export type StatementSearchOptions = {
+  query?: string
+  region?: string
+  type?: string
+  binding?: string
+  cluster?: string
+  organizationType?: string
+  sort?: 'relevance' | 'year' | 'title' | 'organization'
+  limit?: number
+  offset?: number
+  fallbackCatalog?: Statement[]
+}
+export type StatementSearchResult = { items: Statement[]; total: number; source: 'Supabase' | 'Local fallback' }
 export type DashboardData = {
   generated: string
   totals: {
@@ -73,6 +86,7 @@ export type DashboardData = {
 
 const colors = ['#6d5dfc', '#12b886', '#228be6', '#f59f00', '#d8d6e3', '#d6336c']
 const titleCase = (value?: string | null) => (value || 'Unknown').replaceAll('_', ' ').replace(/\b\w/g, (letter) => letter.toUpperCase())
+const databaseValue = (value?: string) => value && value !== 'Unknown' ? value.toLowerCase().replaceAll(' ', '_') : null
 // Supabase view rows are normalized into the strict Statement contract below.
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const mapStatement = (row: Record<string, any>): Statement => ({
@@ -151,6 +165,57 @@ export async function loadCatalog(): Promise<Statement[]> {
     if (data.length < 1000) break
   }
   return rows.map(mapStatement)
+}
+
+export async function searchStatements(options: StatementSearchOptions): Promise<StatementSearchResult> {
+  const limit = options.limit || 25
+  const offset = options.offset || 0
+  if (supabase) {
+    const { data, error } = await supabase.rpc('search_statements', {
+      p_query: options.query || '',
+      p_region: options.region || null,
+      p_statement_type: databaseValue(options.type),
+      p_binding_nature: databaseValue(options.binding),
+      p_cluster_label: options.cluster || null,
+      p_organization_type: databaseValue(options.organizationType),
+      p_sort: options.sort || (options.query ? 'relevance' : 'year'),
+      p_limit: limit,
+      p_offset: offset,
+    })
+    if (!error) {
+      return {
+        items: data.map(mapStatement),
+        total: Number(data[0]?.total_count || 0),
+        source: 'Supabase',
+      }
+    }
+    console.warn('Supabase statement search failed; using local catalog fallback.', error)
+  }
+
+  const query = (options.query || '').trim().toLowerCase()
+  const terms = query.split(/\s+/).filter(Boolean)
+  const ranked = (options.fallbackCatalog || []).map(item => {
+    const title = item.title.toLowerCase()
+    const organization = item.organization.toLowerCase()
+    const haystack = `${item.id} ${item.title} ${item.organization} ${item.region} ${item.type} ${item.binding} ${item.cluster} ${item.organization_type || ''} ${item.abstract || ''} ${item.scores.map(score => score.label).join(' ')}`.toLowerCase()
+    return {
+      item,
+      matches: terms.every(term => haystack.includes(term))
+        && (!options.region || item.region === options.region)
+        && (!options.type || item.type === options.type)
+        && (!options.binding || item.binding === options.binding)
+        && (!options.cluster || item.cluster === options.cluster)
+        && (!options.organizationType || item.organization_type === options.organizationType),
+      rank: terms.reduce((total, term) => total + (title.includes(term) ? 4 : 0) + (organization.includes(term) ? 2 : 0) + (haystack.includes(term) ? 1 : 0), 0),
+    }
+  }).filter(result => result.matches)
+  ranked.sort((a, b) => {
+    if (options.sort === 'title') return a.item.title.localeCompare(b.item.title)
+    if (options.sort === 'organization') return a.item.organization.localeCompare(b.item.organization)
+    if (options.sort === 'year' || !query) return (b.item.year || 0) - (a.item.year || 0)
+    return b.rank - a.rank || (b.item.year || 0) - (a.item.year || 0)
+  })
+  return { items: ranked.slice(offset, offset + limit).map(result => result.item), total: ranked.length, source: 'Local fallback' }
 }
 
 export async function loadAnalytics(): Promise<AnalyticsData> {
