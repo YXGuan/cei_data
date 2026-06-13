@@ -1,23 +1,26 @@
-# CEI Governance Atlas
+# CEI Governance Index
 
-An AI governance evidence explorer that unifies the CEI statements corpus, ontology, unified taxonomy, and statement fingerprints.
+A searchable AI governance evidence database that unifies the CEI statements corpus, ontology,
+unified taxonomy, and statement fingerprints. The product emphasizes retrieval, metadata,
+provenance, and a governed workflow for prioritizing new data sources.
 
 ## Product Direction
 
 The first release focuses on a coherent workflow:
 
-1. Understand corpus coverage and major governance signals.
-2. Search and filter the statement registry.
-3. Inspect a statement's metadata, provenance, taxonomy scores, and fingerprint.
-4. Compare statements, policy families, sectors, and regions.
+1. Search and filter the global statement registry.
+2. Inspect record metadata, provenance, and governance concepts.
+3. Let invited users propose and vote on candidate data sources.
+4. Let selected admins review source requests and control inclusion status.
 
 The existing source dashboards remain valuable analysis outputs, but they contain different corpus snapshots. This app stores them as versioned dataset releases and analysis runs rather than treating any generated file as the canonical database.
 
 ## Stack
 
-- React, TypeScript, Vite
-- Recharts for initial visualization
-- Supabase: Postgres, full-text search, `pgvector`, row-level security, and future document storage
+- Next.js 16 App Router and TypeScript
+- Supabase: Postgres, Auth, full-text search, `pgvector`, and row-level security
+- Vercel for the public Next.js application
+- Local Python package for enrichment, quality checks, and portable exports
 
 Supabase is a good starting point at this scale. Postgres is the system of record; derived aggregates can later move to materialized views or an analytics warehouse if query volume requires it.
 
@@ -55,6 +58,9 @@ Scores and ontology relationships are also available in long form:
 {"source_concept_key":"ontology-explorer:transparency","target_concept_key":"ontology-explorer:accountability","relationship_type":"enables"}
 ```
 
+See [`docs/DATA_PROVENANCE.md`](docs/DATA_PROVENANCE.md) for the exact upstream repositories,
+pinned commits, selected local import files, and provenance limitations.
+
 ## Run Locally
 
 ```bash
@@ -62,13 +68,59 @@ npm install
 npm run dev
 ```
 
-The interface runs with local representative data. To connect Supabase:
+The application runs at `http://localhost:3000` and uses prepared catalog snapshots when Supabase
+is not configured. To connect Supabase:
 
 ```bash
 copy .env.example .env.local
 ```
 
-Set `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY`.
+Set `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`.
+
+## Share The Local App With Cloudflare Tunnel
+
+Start the Next.js app and a temporary Cloudflare Quick Tunnel with one command:
+
+```bash
+npm run tunnel:start
+```
+
+The command prints a public `https://*.trycloudflare.com` URL. It downloads the official
+`cloudflared` Windows executable into the ignored `.tools` directory if it is not installed.
+
+Stop both the tunnel and the managed Next.js process with:
+
+```bash
+npm run tunnel:stop
+```
+
+Check the current managed tunnel without changing it:
+
+```bash
+npm run tunnel:status
+```
+
+Quick Tunnel URLs are temporary, change after each restart, and expose the local app publicly while
+running. They are appropriate for demos and testing, not production hosting.
+
+## Search And Governance Workflow
+
+- `GET /api/search` is the Next.js backend endpoint for catalog search and facets.
+- Supabase `search_statements` provides ranked full-text search when configured.
+- `source_requests` stores candidate sources and their review state.
+- `source_request_votes` stores one vote per invited user and candidate source.
+- `profiles.role = 'admin'` is checked by RLS before review statuses can change.
+- There is no public registration UI, and Supabase signup is disabled in `supabase/config.toml`.
+
+Create users through the Supabase dashboard or admin API. Promote selected users after inviting them:
+
+```sql
+update public.profiles
+set role = 'admin'
+where email = 'admin@example.org';
+```
+
+For a hosted Supabase project, also disable public signups in **Authentication > Providers > Email**.
 
 ## Prepare and Import Source Data
 
@@ -190,6 +242,20 @@ supabase db push
 ```
 
 The initial migration is at `supabase/migrations/202606050001_initial_schema.sql`.
+The source voting and admin migration is at
+`supabase/migrations/202606130001_source_requests_and_admins.sql`.
+
+## Deploy To Vercel
+
+1. Create and link a hosted Supabase project, then run `supabase db push`.
+2. Import this repository into Vercel as a Next.js project.
+3. Add `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` in Vercel.
+4. Set the Supabase Auth site URL to the Vercel production URL and add any preview URLs needed for
+   invited-user authentication.
+5. Deploy. Vercel uses `npm run build`; no service-role key is required by the public application.
+
+Keep `SUPABASE_SERVICE_ROLE_KEY` only in trusted import/processing environments. Never expose it
+through a `NEXT_PUBLIC_` variable.
 
 ## Data Model
 
@@ -201,6 +267,9 @@ The initial migration is at `supabase/migrations/202606050001_initial_schema.sql
 - `analysis_runs`: versioned scoring, clustering, and fingerprint methods
 - `statement_scores`: statement-to-concept scores
 - `statement_fingerprints`: clusters, UMAP coordinates, vectors, and sparse fingerprints
+- `profiles`: invited members and selected admins
+- `source_requests`: proposed external data sources and review state
+- `source_request_votes`: one vote per invited user and source request
 
 ## Source Repositories
 

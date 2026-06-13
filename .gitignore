@@ -10,6 +10,9 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+.next
+.tools
+.tunnel
 generated
 exports
 *.local

@@ -10,30 +10,30 @@
     "data:describe": "uv run cei-data describe",
     "data:export:hf": "uv run cei-data export-hf",
     "backend": "uv run uvicorn cei_backend.api:app --reload --port 8000",
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "dev": "next dev",
+    "tunnel:start": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/tunnel.ps1 start",
+    "tunnel:stop": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/tunnel.ps1 stop",
+    "tunnel:status": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/tunnel.ps1 status",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint app components lib"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.107.0",
     "lucide-react": "^1.17.0",
+    "next": "^16.2.9",
     "react": "^19.2.6",
-    "react-dom": "^19.2.6",
-    "recharts": "^3.8.1"
+    "react-dom": "^19.2.6"
   },
   "devDependencies": {
-    "@eslint/js": "^10.0.1",
     "@types/node": "^24.12.3",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^6.0.1",
-    "eslint": "^10.3.0",
-    "eslint-plugin-react-hooks": "^7.1.1",
-    "eslint-plugin-react-refresh": "^0.5.2",
-    "globals": "^17.6.0",
-    "typescript": "~6.0.2",
-    "typescript-eslint": "^8.59.2",
-    "vite": "^8.0.12"
+    "eslint": "^9.39.1",
+    "eslint-config-next": "^16.2.9",
+    "typescript": "~6.0.2"
+  },
+  "overrides": {
+    "postcss": "^8.5.15"
   }
 }
