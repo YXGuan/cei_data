@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
 const mono = IBM_Plex_Mono({ subsets: ['latin'], weight: ['400', '500', '600'], variable: '--font-mono' })
 
 export const metadata: Metadata = {
-  title: 'CEI Governance Index',
+  title: 'CEI AI Governance Database',
   description: 'Searchable evidence infrastructure for AI governance research.',
 }
 
@@ -18,7 +18,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <SiteHeader />
         {children}
         <footer className="site-footer">
-          <span>CEI Governance Index</span>
+          <span>CEI AI Governance Database</span>
           <span>Searchable, versioned, and provenance-aware.</span>
         </footer>
       </body>

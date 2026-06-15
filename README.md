@@ -1,4 +1,4 @@
-# CEI Governance Index
+# CEI AI Governance Database
 
 A searchable AI governance evidence database that unifies the CEI statements corpus, ontology,
 unified taxonomy, and statement fingerprints. The product emphasizes retrieval, metadata,

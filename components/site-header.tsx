@@ -6,7 +6,7 @@ export function SiteHeader() {
     <header className="site-header">
       <Link className="wordmark" href="/">
         <span className="wordmark-icon"><Database size={17} /></span>
-        <span><strong>CEI</strong> Governance Index</span>
+        <span><strong>CEI</strong> AI Governance Database</span>
       </Link>
       <nav aria-label="Primary navigation">
         <Link href="/">Catalog</Link>
