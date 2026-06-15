@@ -10,8 +10,10 @@ export function SiteHeader() {
       </Link>
       <nav aria-label="Primary navigation">
         <Link href="/">Catalog</Link>
+        {/*
         <Link href="/sources">Source priorities</Link>
         <Link href="/methodology">Methodology</Link>
+        */}
       </nav>
       <div className="header-actions">
         <a aria-label="CEI source repositories" href="https://github.com/cjimmylin" rel="noreferrer" target="_blank">
