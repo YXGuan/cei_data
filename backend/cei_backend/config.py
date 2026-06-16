@@ -15,15 +15,20 @@ class Settings:
     def from_env(cls) -> "Settings":
         load_dotenv(".env.local")
         load_dotenv()
-        url = os.getenv("SUPABASE_URL") or os.getenv("VITE_SUPABASE_URL")
+        url = (
+            os.getenv("SUPABASE_URL_CEI")
+            or os.getenv("SUPABASE_URL")
+            or os.getenv("VITE_SUPABASE_URL")
+        )
         key = (
-            os.getenv("SUPABASE_PUBLISHABLE_KEY")
+            os.getenv("SUPABASE_PUBLISHABLE_KEY_CEI")
+            or os.getenv("SUPABASE_PUBLISHABLE_KEY")
             or os.getenv("SUPABASE_ANON_KEY")
             or os.getenv("VITE_SUPABASE_ANON_KEY")
         )
         if not url or not key:
             raise RuntimeError(
-                "Set SUPABASE_URL and SUPABASE_PUBLISHABLE_KEY "
-                "(or the equivalent VITE_SUPABASE_* variables)."
+                "Set SUPABASE_URL_CEI and SUPABASE_PUBLISHABLE_KEY_CEI "
+                "(generic SUPABASE_* and VITE_SUPABASE_* variables are also supported)."
             )
         return cls(supabase_url=url.rstrip("/"), supabase_key=key)

@@ -161,13 +161,16 @@ The normalized score table currently contains:
 
 To import the normalized records into Supabase:
 
-```bash
-SUPABASE_URL=https://your-project.supabase.co
-SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
+```powershell
+$env:SUPABASE_URL_CEI="https://your-project.supabase.co"
+$env:SUPABASE_SERVICE_ROLE_KEY_CEI="your-service-role-key"
 npm run data:import
 ```
 
-The service-role key is only for the local/server-side importer. Never expose it through a `VITE_` environment variable.
+The service-role key is only for the local/server-side importer. Never expose it through a `VITE_`
+or `NEXT_PUBLIC_` environment variable. Generic `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY`
+are still supported as fallbacks, but the CEI-specific names avoid accidental imports into another
+Supabase project.
 
 ## Python Processing Backend
 
@@ -254,8 +257,8 @@ The source voting and admin migration is at
    invited-user authentication.
 5. Deploy. Vercel uses `npm run build`; no service-role key is required by the public application.
 
-Keep `SUPABASE_SERVICE_ROLE_KEY` only in trusted import/processing environments. Never expose it
-through a `NEXT_PUBLIC_` variable.
+Keep `SUPABASE_SERVICE_ROLE_KEY_CEI` only in trusted import/processing environments. Never expose
+it through a `NEXT_PUBLIC_` variable.
 
 ## Data Model
 

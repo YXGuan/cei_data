@@ -333,9 +333,14 @@ async function allRows(queryFactory) {
 }
 
 async function push(data) {
-  const url = process.env.SUPABASE_URL
-  const key = process.env.SUPABASE_SERVICE_ROLE_KEY
-  if (!url || !key) throw new Error('SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY are required for --push')
+  const url = process.env.SUPABASE_URL_CEI || process.env.SUPABASE_URL
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY_CEI || process.env.SUPABASE_SERVICE_ROLE_KEY
+  if (!url || !key) {
+    throw new Error(
+      'SUPABASE_URL_CEI and SUPABASE_SERVICE_ROLE_KEY_CEI are required for --push '
+      + '(generic SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY are also supported).',
+    )
+  }
   const db = createClient(url, key, { auth: { persistSession: false } })
 
   const releases = [
