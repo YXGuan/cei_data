@@ -4,7 +4,10 @@ import { useCallback, useEffect, useState } from 'react'
 import type { Session } from '@supabase/supabase-js'
 import { CheckCircle2, LockKeyhole, LogOut, ShieldAlert } from 'lucide-react'
 import { supabase } from '@/lib/supabase-browser'
-import type { SourceRequest } from '@/lib/types'
+import type { RecommendedAction, ReviewStatus, SourceRequest } from '@/lib/types'
+
+const reviewOptions: ReviewStatus[] = ['needs_review', 'in_progress', 'approved', 'blocked', 'not_applicable']
+const actionOptions: RecommendedAction[] = ['monitor_only', 'source_registry_only', 'index_metadata', 'index_records', 'index_full_text']
 
 export function AdminConsole() {
   const [session, setSession] = useState<Session | null>(null)
@@ -52,6 +55,17 @@ export function AdminConsole() {
     setMessage(error?.message || 'Review status updated.')
     if (!error) await load(session)
   }
+  const updateReview = async (id: string, patch: Partial<SourceRequest>) => {
+    const now = new Date().toISOString()
+    const { error } = await client.from('source_requests').update({
+      ...patch,
+      assigned_reviewer: session.user.id,
+      reviewed_at: now,
+      updated_at: now,
+    }).eq('id', id)
+    setMessage(error?.message || 'Review field updated.')
+    if (!error) await load(session)
+  }
 
   return (
     <section className="admin-console">
@@ -61,12 +75,11 @@ export function AdminConsole() {
       </div>
       {message ? <div className="notice">{message}<button onClick={() => setMessage('')}>Dismiss</button></div> : null}
       <div className="admin-table">
-        <div className="admin-row admin-head"><span>Candidate source</span><span>Votes</span><span>Current status</span><span>Review action</span></div>
+        <div className="admin-row admin-head"><span>Candidate source</span><span>Votes</span><span>Status</span><span>Recommended action</span><span>License</span><span>Dedupe</span><span>Notes</span></div>
         {requests.map((request) => (
           <div className="admin-row" key={request.id}>
             <span><strong>{request.title}</strong><small>{request.publisher}</small></span>
             <strong>{request.vote_count}</strong>
-            <span className={`request-status ${request.status}`}>{request.status.replace('_', ' ')}</span>
             <select aria-label={`Change status for ${request.title}`} onChange={(event) => updateStatus(request.id, event.target.value)} value={request.status}>
               <option value="proposed">Proposed</option>
               <option value="under_review">Under review</option>
@@ -74,6 +87,25 @@ export function AdminConsole() {
               <option value="included">Included</option>
               <option value="rejected">Rejected</option>
             </select>
+            <select aria-label={`Recommended action for ${request.title}`} onChange={(event) => updateReview(request.id, { recommended_action: event.target.value as RecommendedAction })} value={request.recommended_action || 'source_registry_only'}>
+              {actionOptions.map((action) => <option key={action} value={action}>{action.replaceAll('_', ' ')}</option>)}
+            </select>
+            <select aria-label={`License review for ${request.title}`} onChange={(event) => updateReview(request.id, { license_review_status: event.target.value as ReviewStatus })} value={request.license_review_status || 'needs_review'}>
+              {reviewOptions.map((status) => <option key={status} value={status}>{status.replaceAll('_', ' ')}</option>)}
+            </select>
+            <select aria-label={`Dedupe review for ${request.title}`} onChange={(event) => updateReview(request.id, { dedupe_review_status: event.target.value as ReviewStatus })} value={request.dedupe_review_status || 'needs_review'}>
+              {reviewOptions.map((status) => <option key={status} value={status}>{status.replaceAll('_', ' ')}</option>)}
+            </select>
+            <input
+              aria-label={`Admin notes for ${request.title}`}
+              defaultValue={request.admin_notes || ''}
+              onBlur={(event) => {
+                if (event.currentTarget.value !== (request.admin_notes || '')) {
+                  void updateReview(request.id, { admin_notes: event.currentTarget.value })
+                }
+              }}
+              placeholder="Review note"
+            />
           </div>
         ))}
       </div>

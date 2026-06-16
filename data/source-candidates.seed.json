@@ -230,5 +230,241 @@
         "Avoid mixing trend indicators with statement provenance"
       ]
     }
+  },
+  {
+    "id": "ai-incident-database",
+    "title": "AI Incident Database",
+    "publisher": "Responsible AI Collaborative",
+    "description": "Public database of real-world AI harms and near harms, including incident reports, classifications, and links to supporting evidence.",
+    "source_url": "https://incidentdatabase.ai/",
+    "coverage": "Global AI incidents",
+    "formats": ["HTML", "Database", "GitHub"],
+    "status": "proposed",
+    "created_at": "2026-06-16T00:00:00Z",
+    "vote_count": 26,
+    "user_voted": false,
+    "source_type": "Incident database",
+    "aliases": ["Artificial Intelligence Incident Database", "AIID", "Responsible AI Collaborative"],
+    "identifiers": [
+      {
+        "identifier_type": "github_repo",
+        "identifier_value": "responsible-ai-collaborative/aiid",
+        "url": "https://github.com/responsible-ai-collaborative/aiid"
+      }
+    ],
+    "metadata": {
+      "source_kind": "Incident database",
+      "update_cadence": "Continuously updated",
+      "license_status": "Public web source; database reuse terms require review",
+      "import_complexity": "high",
+      "priority": "medium",
+      "review_checks": [
+        "Canonical public database identified",
+        "GitHub repository linked for developer traction signals",
+        "Scope is adjacent to policy statements and should be modeled separately"
+      ],
+      "known_gaps": [
+        "Determine whether incidents belong in this product's statement registry",
+        "Confirm database reuse terms and API/export path"
+      ]
+    }
+  },
+  {
+    "id": "agora-ai-governance-regulatory-archive",
+    "title": "AGORA AI Governance and Regulatory Archive",
+    "publisher": "Emerging Technology Observatory",
+    "description": "Living collection of AI-relevant laws, regulations, standards, document text, metadata, summaries, and thematic tags.",
+    "source_url": "https://agora.eto.tech/",
+    "coverage": "United States and global AI governance documents",
+    "formats": ["HTML", "Bulk dataset", "Zenodo", "Document text"],
+    "status": "under_review",
+    "created_at": "2026-06-16T00:00:00Z",
+    "vote_count": 35,
+    "user_voted": false,
+    "source_type": "Governance document archive",
+    "aliases": ["AGORA", "AI GOvernance and Regulatory Archive", "AI Governance and Regulatory Archive"],
+    "identifiers": [
+      {
+        "identifier_type": "zenodo_record",
+        "identifier_value": "15964829",
+        "url": "https://zenodo.org/records/15964829"
+      },
+      {
+        "identifier_type": "doi",
+        "identifier_value": "10.5281/zenodo.15964829",
+        "url": "https://doi.org/10.5281/zenodo.15964829"
+      }
+    ],
+    "metadata": {
+      "source_kind": "Governance document archive",
+      "update_cadence": "Regularly updated",
+      "license_status": "Bulk dataset is public; license and attribution terms require review",
+      "import_complexity": "medium",
+      "priority": "high",
+      "review_checks": [
+        "Canonical archive and bulk dataset identified",
+        "Includes document text and structured metadata",
+        "Likely high value for record-level indexing"
+      ],
+      "known_gaps": [
+        "Map AGORA document IDs to existing STMT-* records",
+        "Confirm whether all text can be stored and redistributed"
+      ]
+    }
+  },
+  {
+    "id": "oecd-ai-index",
+    "title": "OECD.AI Index",
+    "publisher": "OECD.AI",
+    "description": "Composite measurement framework for national AI capabilities and implementation progress using indicators from the OECD.AI Policy Observatory.",
+    "source_url": "https://oecd.ai/en/site/ai-index",
+    "coverage": "OECD and partner country AI ecosystem indicators",
+    "formats": ["HTML", "Report", "Indicators"],
+    "status": "proposed",
+    "created_at": "2026-06-16T00:00:00Z",
+    "vote_count": 21,
+    "user_voted": false,
+    "source_type": "Comparative AI index",
+    "aliases": ["OECD AI Index", "OECD AI Observatory Index", "The OECD.AI Index"],
+    "metadata": {
+      "source_kind": "Comparative AI index",
+      "update_cadence": "Periodic index releases",
+      "license_status": "Public OECD source; reuse terms require review",
+      "import_complexity": "medium",
+      "priority": "medium",
+      "review_checks": [
+        "Canonical OECD.AI index page identified",
+        "Should be modeled as indicators, not policy statements",
+        "Related to OECD.AI Policy Navigator"
+      ],
+      "known_gaps": [
+        "Identify stable indicator export path",
+        "Keep index values separate from canonical statements"
+      ]
+    }
+  },
+  {
+    "id": "cei-statements-dashboard-b3",
+    "title": "CEI Statements Dashboard B3",
+    "publisher": "CEI / cjimmylin",
+    "description": "Upstream CEI statement registry release used for statement metadata, abstracts, source URLs, instrument fields, and ontology scores.",
+    "source_url": "https://github.com/cjimmylin/cei-statements-dashboard-b3",
+    "coverage": "Global AI governance statements",
+    "formats": ["JavaScript data artifact", "GitHub"],
+    "status": "included",
+    "created_at": "2026-06-16T00:00:00Z",
+    "vote_count": 0,
+    "user_voted": false,
+    "source_type": "CEI source release",
+    "aliases": ["statements-b3-2026-03-15", "CEI Statements Dashboard"],
+    "identifiers": [
+      {
+        "identifier_type": "github_repo",
+        "identifier_value": "cjimmylin/cei-statements-dashboard-b3",
+        "url": "https://github.com/cjimmylin/cei-statements-dashboard-b3"
+      }
+    ],
+    "metadata": {
+      "source_kind": "CEI source release",
+      "update_cadence": "Pinned release import",
+      "license_status": "Review upstream repository license before redistribution",
+      "import_complexity": "low",
+      "priority": "high",
+      "review_checks": ["Already imported as a dataset release"],
+      "known_gaps": ["Root data copy lacks independent commit provenance"]
+    }
+  },
+  {
+    "id": "cei-fingerprint-explorer",
+    "title": "CEI Fingerprint Explorer",
+    "publisher": "CEI / cjimmylin",
+    "description": "Upstream CEI fingerprint release used for UMAP points, policy-family clusters, dimensions, heatmap cells, and fingerprint scores.",
+    "source_url": "https://github.com/cjimmylin/cei-fingerprint-explorer",
+    "coverage": "Global AI governance statement fingerprints",
+    "formats": ["JavaScript data artifact", "GitHub"],
+    "status": "included",
+    "created_at": "2026-06-16T00:00:00Z",
+    "vote_count": 0,
+    "user_voted": false,
+    "source_type": "CEI source release",
+    "aliases": ["fingerprints-2026-03-15", "CEI Fingerprint Explorer"],
+    "identifiers": [
+      {
+        "identifier_type": "github_repo",
+        "identifier_value": "cjimmylin/cei-fingerprint-explorer",
+        "url": "https://github.com/cjimmylin/cei-fingerprint-explorer"
+      }
+    ],
+    "metadata": {
+      "source_kind": "CEI source release",
+      "update_cadence": "Pinned release import",
+      "license_status": "Review upstream repository license before redistribution",
+      "import_complexity": "low",
+      "priority": "high",
+      "review_checks": ["Already imported as a dataset release"],
+      "known_gaps": ["Root data copy lacks independent commit provenance"]
+    }
+  },
+  {
+    "id": "cei-ontology-explorer",
+    "title": "CEI Ontology Explorer",
+    "publisher": "CEI / cjimmylin",
+    "description": "Upstream CEI ontology release used for embedded concepts, typed relationships, crosswalks, and aggregate ontology analyses.",
+    "source_url": "https://github.com/cjimmylin/cei-ontology-explorer",
+    "coverage": "AI governance ontology concepts and relationships",
+    "formats": ["Embedded HTML data", "GitHub"],
+    "status": "included",
+    "created_at": "2026-06-16T00:00:00Z",
+    "vote_count": 0,
+    "user_voted": false,
+    "source_type": "CEI source release",
+    "aliases": ["ontology-ont3", "CEI Ontology Explorer"],
+    "identifiers": [
+      {
+        "identifier_type": "github_repo",
+        "identifier_value": "cjimmylin/cei-ontology-explorer",
+        "url": "https://github.com/cjimmylin/cei-ontology-explorer"
+      }
+    ],
+    "metadata": {
+      "source_kind": "CEI source release",
+      "update_cadence": "Pinned release import",
+      "license_status": "Review upstream repository license before redistribution",
+      "import_complexity": "low",
+      "priority": "high",
+      "review_checks": ["Already imported as a dataset release"],
+      "known_gaps": ["Ontology is parsed from embedded page data"]
+    }
+  },
+  {
+    "id": "cei-unified-taxonomy",
+    "title": "CEI Unified Taxonomy",
+    "publisher": "CEI / cjimmylin",
+    "description": "Upstream CEI taxonomy release used for the broadest statement registry, taxonomy categories, and unified taxonomy scores.",
+    "source_url": "https://github.com/cjimmylin/cei-unified-taxonomy",
+    "coverage": "Global AI governance taxonomy records",
+    "formats": ["JavaScript data artifact", "GitHub"],
+    "status": "included",
+    "created_at": "2026-06-16T00:00:00Z",
+    "vote_count": 0,
+    "user_voted": false,
+    "source_type": "CEI source release",
+    "aliases": ["unified-taxonomy-2026-03-15", "CEI Unified Taxonomy"],
+    "identifiers": [
+      {
+        "identifier_type": "github_repo",
+        "identifier_value": "cjimmylin/cei-unified-taxonomy",
+        "url": "https://github.com/cjimmylin/cei-unified-taxonomy"
+      }
+    ],
+    "metadata": {
+      "source_kind": "CEI source release",
+      "update_cadence": "Pinned release import",
+      "license_status": "Review upstream repository license before redistribution",
+      "import_complexity": "low",
+      "priority": "high",
+      "review_checks": ["Already imported as a dataset release"],
+      "known_gaps": ["Root data copy lacks independent commit provenance"]
+    }
   }
 ]

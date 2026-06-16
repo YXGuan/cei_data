@@ -43,23 +43,53 @@ The current prepared output contains:
 - 66 ontology relationships
 - 28,188 fingerprint-dimension scores
 - 34,957 unified-taxonomy scores
-- 8 checked third-party source candidates for the review queue
+- 15 source registry entries, including 4 included CEI source releases and 11 external review targets
+- 23 provider-attributed popularity signals for source prioritization
 
 `generated/import-summary.json` records artifact checksums and counts for the most recent import.
 `generated/source-candidates-summary.json` records the latest third-party source metadata check.
+`generated/source-signals.json` records raw provider popularity payloads for audit.
+`generated/source-registry-summary.json` records the latest joined source registry build.
 `statement_sources` and `dataset_artifacts` preserve original source payloads after a Supabase import.
 
 ## Third-Party Source Candidates
 
-`npm run data:sources` starts from `data/source-candidates.seed.json` and checks canonical public
-source pages for the governed expansion queue. The current candidates include official or
-well-known resources from the European Commission, OECD.AI, NIST, the Council of Europe, UNESCO,
-the Global Center on AI Governance, the Center for AI and Digital Policy, and Stanford HAI.
+`npm run data:sources` starts from `data/source-candidates.seed.json`, checks canonical public
+source pages for the governed expansion queue, collects external popularity signals, checks local
+indexing status, and builds `public/data/source-registry.json`. The current registry includes
+official or well-known resources from the European Commission, OECD.AI, NIST, the Council of Europe,
+UNESCO, the Global Center on AI Governance, the Center for AI and Digital Policy, Stanford HAI, the
+Responsible AI Collaborative, and the Emerging Technology Observatory.
 
 These candidates are not merged into the canonical statement registry by the metadata checker. They
 remain review targets until the project confirms license/reuse terms, stable record-level import
 paths, duplicate matching against existing `STMT-*` records, and the correct representation for
 indexes or trend datasets that are not primary policy statements.
+
+## Popularity Signals
+
+The source registry imports external popularity signals instead of creating a local popularity
+index from scratch. Provider-specific signals include GitHub stars and forks, Zenodo views and
+downloads, DataCite DOI metrics, and OpenAlex citation counts when a source exposes matching
+identifiers. Counts are stored with provider, metric, URL, and observation timestamp.
+
+These signals are evidence for prioritization only. They are not directly comparable across
+providers, and the product intentionally avoids collapsing them into a single popularity score.
+
+## Selective Ingestion
+
+`public/data/source-indexing-status.json` compares registry sources to the prepared `STMT-*`
+catalog. Sources can be `not_found`, `partially_indexed`, `indexed_as_records`, or
+`indexed_as_source_release`. AGORA and AI Incident Database currently remain `not_found` in the
+canonical statement registry, while the four CEI upstream repositories are marked as source
+releases.
+
+Recommended actions separate source monitoring from ingestion. The registry favors:
+
+- `index_metadata` when a source is high value but license or dedupe status still needs review
+- `index_records` when structured source records are reusable and matchable
+- `source_registry_only` for trend reports, benchmarks, indexes, and already imported releases
+- `monitor_only` for adjacent datasets that may not belong in the statement registry
 
 ## Important Limitation
 

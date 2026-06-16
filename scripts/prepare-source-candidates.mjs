@@ -1,6 +1,7 @@
 import { createHash } from 'node:crypto'
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
+import { extractIdentifiers } from './lib/source-identifiers.mjs'
 
 const args = new Map(process.argv.slice(2).map((arg, index, all) =>
   arg.startsWith('--') ? [arg, all[index + 1]?.startsWith('--') ? true : all[index + 1] ?? true] : [arg, true]
@@ -164,20 +165,29 @@ async function fetchLiveMetadata(url) {
 
 function normalizeSource(raw) {
   const status = validStatuses.has(raw.status) ? raw.status : 'proposed'
-  return {
+  const normalized = {
     id: normalizeText(raw.id),
     title: normalizeText(raw.title),
     publisher: raw.publisher ? normalizeText(raw.publisher) : null,
     description: normalizeText(raw.description),
     source_url: normalizeUrl(raw.source_url),
+    canonical_url: normalizeUrl(raw.canonical_url || raw.source_url),
     coverage: raw.coverage ? normalizeText(raw.coverage) : null,
     formats: normalizeFormats(raw.formats),
+    source_type: normalizeText(raw.source_type || raw.metadata?.source_kind || 'External source'),
+    aliases: (raw.aliases || []).map((alias) => normalizeText(alias)).filter(Boolean),
     status,
     created_at: raw.created_at || new Date().toISOString(),
     vote_count: Number(raw.vote_count || 0),
     user_voted: Boolean(raw.user_voted),
+    license_review_status: raw.license_review_status || 'needs_review',
+    dedupe_review_status: raw.dedupe_review_status || 'needs_review',
+    recommended_action: raw.recommended_action || null,
+    admin_notes: raw.admin_notes || null,
+    reviewed_at: raw.reviewed_at || null,
     metadata: raw.metadata || {},
   }
+  return { ...normalized, identifiers: extractIdentifiers({ ...normalized, identifiers: raw.identifiers || [] }) }
 }
 
 const seed = JSON.parse(await readFile(seedPath, 'utf8')).map(normalizeSource)

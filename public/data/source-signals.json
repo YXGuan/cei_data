@@ -1,0 +1,186 @@
+[
+  {
+    "source_id": "agora-ai-governance-regulatory-archive",
+    "provider": "datacite",
+    "metric": "citations",
+    "value": 0,
+    "observed_at": "2026-06-16T01:59:34.838Z",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.15964829"
+  },
+  {
+    "source_id": "agora-ai-governance-regulatory-archive",
+    "provider": "datacite",
+    "metric": "downloads",
+    "value": 0,
+    "observed_at": "2026-06-16T01:59:34.838Z",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.15964829"
+  },
+  {
+    "source_id": "agora-ai-governance-regulatory-archive",
+    "provider": "datacite",
+    "metric": "views",
+    "value": 0,
+    "observed_at": "2026-06-16T01:59:34.838Z",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.15964829"
+  },
+  {
+    "source_id": "agora-ai-governance-regulatory-archive",
+    "provider": "openalex",
+    "metric": "citations",
+    "value": 0,
+    "observed_at": "2026-06-16T01:59:34.748Z",
+    "url": "https://openalex.org/W6949361440"
+  },
+  {
+    "source_id": "agora-ai-governance-regulatory-archive",
+    "provider": "zenodo",
+    "metric": "downloads",
+    "value": 1463,
+    "observed_at": "2026-06-16T01:59:34.939Z",
+    "url": "https://zenodo.org/records/15964829"
+  },
+  {
+    "source_id": "agora-ai-governance-regulatory-archive",
+    "provider": "zenodo",
+    "metric": "unique_downloads",
+    "value": 1335,
+    "observed_at": "2026-06-16T01:59:34.939Z",
+    "url": "https://zenodo.org/records/15964829"
+  },
+  {
+    "source_id": "agora-ai-governance-regulatory-archive",
+    "provider": "zenodo",
+    "metric": "unique_views",
+    "value": 4378,
+    "observed_at": "2026-06-16T01:59:34.939Z",
+    "url": "https://zenodo.org/records/15964829"
+  },
+  {
+    "source_id": "agora-ai-governance-regulatory-archive",
+    "provider": "zenodo",
+    "metric": "views",
+    "value": 4849,
+    "observed_at": "2026-06-16T01:59:34.939Z",
+    "url": "https://zenodo.org/records/15964829"
+  },
+  {
+    "source_id": "ai-incident-database",
+    "provider": "github",
+    "metric": "forks",
+    "value": 46,
+    "observed_at": "2026-06-16T01:59:34.662Z",
+    "url": "https://github.com/responsible-ai-collaborative/aiid"
+  },
+  {
+    "source_id": "ai-incident-database",
+    "provider": "github",
+    "metric": "stars",
+    "value": 258,
+    "observed_at": "2026-06-16T01:59:34.662Z",
+    "url": "https://github.com/responsible-ai-collaborative/aiid"
+  },
+  {
+    "source_id": "ai-incident-database",
+    "provider": "github",
+    "metric": "subscribers",
+    "value": 6,
+    "observed_at": "2026-06-16T01:59:34.662Z",
+    "url": "https://github.com/responsible-ai-collaborative/aiid"
+  },
+  {
+    "source_id": "cei-fingerprint-explorer",
+    "provider": "github",
+    "metric": "forks",
+    "value": 0,
+    "observed_at": "2026-06-16T01:59:34.463Z",
+    "url": "https://github.com/cjimmylin/cei-fingerprint-explorer"
+  },
+  {
+    "source_id": "cei-fingerprint-explorer",
+    "provider": "github",
+    "metric": "stars",
+    "value": 0,
+    "observed_at": "2026-06-16T01:59:34.463Z",
+    "url": "https://github.com/cjimmylin/cei-fingerprint-explorer"
+  },
+  {
+    "source_id": "cei-fingerprint-explorer",
+    "provider": "github",
+    "metric": "subscribers",
+    "value": 0,
+    "observed_at": "2026-06-16T01:59:34.463Z",
+    "url": "https://github.com/cjimmylin/cei-fingerprint-explorer"
+  },
+  {
+    "source_id": "cei-ontology-explorer",
+    "provider": "github",
+    "metric": "forks",
+    "value": 0,
+    "observed_at": "2026-06-16T01:59:34.462Z",
+    "url": "https://github.com/cjimmylin/cei-ontology-explorer"
+  },
+  {
+    "source_id": "cei-ontology-explorer",
+    "provider": "github",
+    "metric": "stars",
+    "value": 0,
+    "observed_at": "2026-06-16T01:59:34.462Z",
+    "url": "https://github.com/cjimmylin/cei-ontology-explorer"
+  },
+  {
+    "source_id": "cei-ontology-explorer",
+    "provider": "github",
+    "metric": "subscribers",
+    "value": 0,
+    "observed_at": "2026-06-16T01:59:34.462Z",
+    "url": "https://github.com/cjimmylin/cei-ontology-explorer"
+  },
+  {
+    "source_id": "cei-statements-dashboard-b3",
+    "provider": "github",
+    "metric": "forks",
+    "value": 0,
+    "observed_at": "2026-06-16T01:59:34.462Z",
+    "url": "https://github.com/cjimmylin/cei-statements-dashboard-b3"
+  },
+  {
+    "source_id": "cei-statements-dashboard-b3",
+    "provider": "github",
+    "metric": "stars",
+    "value": 0,
+    "observed_at": "2026-06-16T01:59:34.462Z",
+    "url": "https://github.com/cjimmylin/cei-statements-dashboard-b3"
+  },
+  {
+    "source_id": "cei-statements-dashboard-b3",
+    "provider": "github",
+    "metric": "subscribers",
+    "value": 0,
+    "observed_at": "2026-06-16T01:59:34.462Z",
+    "url": "https://github.com/cjimmylin/cei-statements-dashboard-b3"
+  },
+  {
+    "source_id": "cei-unified-taxonomy",
+    "provider": "github",
+    "metric": "forks",
+    "value": 0,
+    "observed_at": "2026-06-16T01:59:34.462Z",
+    "url": "https://github.com/cjimmylin/cei-unified-taxonomy"
+  },
+  {
+    "source_id": "cei-unified-taxonomy",
+    "provider": "github",
+    "metric": "stars",
+    "value": 0,
+    "observed_at": "2026-06-16T01:59:34.462Z",
+    "url": "https://github.com/cjimmylin/cei-unified-taxonomy"
+  },
+  {
+    "source_id": "cei-unified-taxonomy",
+    "provider": "github",
+    "metric": "subscribers",
+    "value": 0,
+    "observed_at": "2026-06-16T01:59:34.462Z",
+    "url": "https://github.com/cjimmylin/cei-unified-taxonomy"
+  }
+]

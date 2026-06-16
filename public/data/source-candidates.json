@@ -1,19 +1,291 @@
 [
   {
+    "id": "cei-fingerprint-explorer",
+    "title": "CEI Fingerprint Explorer",
+    "publisher": "CEI / cjimmylin",
+    "description": "Upstream CEI fingerprint release used for UMAP points, policy-family clusters, dimensions, heatmap cells, and fingerprint scores.",
+    "source_url": "https://github.com/cjimmylin/cei-fingerprint-explorer",
+    "canonical_url": "https://github.com/cjimmylin/cei-fingerprint-explorer",
+    "coverage": "Global AI governance statement fingerprints",
+    "formats": [
+      "JavaScript data artifact",
+      "GitHub"
+    ],
+    "source_type": "CEI source release",
+    "aliases": [
+      "fingerprints-2026-03-15",
+      "CEI Fingerprint Explorer"
+    ],
+    "status": "included",
+    "created_at": "2026-06-16T00:00:00Z",
+    "vote_count": 0,
+    "user_voted": false,
+    "license_review_status": "needs_review",
+    "dedupe_review_status": "needs_review",
+    "recommended_action": null,
+    "admin_notes": null,
+    "reviewed_at": null,
+    "metadata": {
+      "source_kind": "CEI source release",
+      "update_cadence": "Pinned release import",
+      "license_status": "Review upstream repository license before redistribution",
+      "import_complexity": "low",
+      "priority": "high",
+      "review_checks": [
+        "Already imported as a dataset release"
+      ],
+      "known_gaps": [
+        "Root data copy lacks independent commit provenance"
+      ],
+      "live": {
+        "checked_at": "2026-06-16T01:59:32.297Z",
+        "ok": true,
+        "http_status": 200,
+        "resolved_url": "https://github.com/cjimmylin/cei-fingerprint-explorer",
+        "content_type": "text/html; charset=utf-8",
+        "last_modified": null,
+        "page_title": "GitHub - cjimmylin/cei-fingerprint-explorer: Fingerprint Explorer: AI Governance Policy Families Dashboard (Tapestry database)",
+        "meta_description": "Fingerprint Explorer: AI Governance Policy Families Dashboard (Tapestry database) - cjimmylin/cei-fingerprint-explorer"
+      },
+      "metadata_quality_score": 98,
+      "quality_flags": [
+        "Known metadata gaps"
+      ]
+    },
+    "identifiers": [
+      {
+        "identifier_type": "github_repo",
+        "identifier_value": "cjimmylin/cei-fingerprint-explorer",
+        "url": "https://github.com/cjimmylin/cei-fingerprint-explorer"
+      },
+      {
+        "identifier_type": "canonical_url",
+        "identifier_value": "https://github.com/cjimmylin/cei-fingerprint-explorer",
+        "url": "https://github.com/cjimmylin/cei-fingerprint-explorer"
+      }
+    ]
+  },
+  {
+    "id": "cei-ontology-explorer",
+    "title": "CEI Ontology Explorer",
+    "publisher": "CEI / cjimmylin",
+    "description": "Upstream CEI ontology release used for embedded concepts, typed relationships, crosswalks, and aggregate ontology analyses.",
+    "source_url": "https://github.com/cjimmylin/cei-ontology-explorer",
+    "canonical_url": "https://github.com/cjimmylin/cei-ontology-explorer",
+    "coverage": "AI governance ontology concepts and relationships",
+    "formats": [
+      "Embedded HTML data",
+      "GitHub"
+    ],
+    "source_type": "CEI source release",
+    "aliases": [
+      "ontology-ont3",
+      "CEI Ontology Explorer"
+    ],
+    "status": "included",
+    "created_at": "2026-06-16T00:00:00Z",
+    "vote_count": 0,
+    "user_voted": false,
+    "license_review_status": "needs_review",
+    "dedupe_review_status": "needs_review",
+    "recommended_action": null,
+    "admin_notes": null,
+    "reviewed_at": null,
+    "metadata": {
+      "source_kind": "CEI source release",
+      "update_cadence": "Pinned release import",
+      "license_status": "Review upstream repository license before redistribution",
+      "import_complexity": "low",
+      "priority": "high",
+      "review_checks": [
+        "Already imported as a dataset release"
+      ],
+      "known_gaps": [
+        "Ontology is parsed from embedded page data"
+      ],
+      "live": {
+        "checked_at": "2026-06-16T01:59:32.297Z",
+        "ok": true,
+        "http_status": 200,
+        "resolved_url": "https://github.com/cjimmylin/cei-ontology-explorer",
+        "content_type": "text/html; charset=utf-8",
+        "last_modified": null,
+        "page_title": "GitHub - cjimmylin/cei-ontology-explorer: Tapestry Ontology Explorer (ont3) - LLM-semantic scoring of 1,405 AI governance statements across 22 ontology concepts",
+        "meta_description": "Tapestry Ontology Explorer (ont3) - LLM-semantic scoring of 1,405 AI governance statements across 22 ontology concepts - cjimmylin/cei-ontology-explorer"
+      },
+      "metadata_quality_score": 98,
+      "quality_flags": [
+        "Known metadata gaps"
+      ]
+    },
+    "identifiers": [
+      {
+        "identifier_type": "github_repo",
+        "identifier_value": "cjimmylin/cei-ontology-explorer",
+        "url": "https://github.com/cjimmylin/cei-ontology-explorer"
+      },
+      {
+        "identifier_type": "canonical_url",
+        "identifier_value": "https://github.com/cjimmylin/cei-ontology-explorer",
+        "url": "https://github.com/cjimmylin/cei-ontology-explorer"
+      }
+    ]
+  },
+  {
+    "id": "cei-statements-dashboard-b3",
+    "title": "CEI Statements Dashboard B3",
+    "publisher": "CEI / cjimmylin",
+    "description": "Upstream CEI statement registry release used for statement metadata, abstracts, source URLs, instrument fields, and ontology scores.",
+    "source_url": "https://github.com/cjimmylin/cei-statements-dashboard-b3",
+    "canonical_url": "https://github.com/cjimmylin/cei-statements-dashboard-b3",
+    "coverage": "Global AI governance statements",
+    "formats": [
+      "JavaScript data artifact",
+      "GitHub"
+    ],
+    "source_type": "CEI source release",
+    "aliases": [
+      "statements-b3-2026-03-15",
+      "CEI Statements Dashboard"
+    ],
+    "status": "included",
+    "created_at": "2026-06-16T00:00:00Z",
+    "vote_count": 0,
+    "user_voted": false,
+    "license_review_status": "needs_review",
+    "dedupe_review_status": "needs_review",
+    "recommended_action": null,
+    "admin_notes": null,
+    "reviewed_at": null,
+    "metadata": {
+      "source_kind": "CEI source release",
+      "update_cadence": "Pinned release import",
+      "license_status": "Review upstream repository license before redistribution",
+      "import_complexity": "low",
+      "priority": "high",
+      "review_checks": [
+        "Already imported as a dataset release"
+      ],
+      "known_gaps": [
+        "Root data copy lacks independent commit provenance"
+      ],
+      "live": {
+        "checked_at": "2026-06-16T01:59:32.296Z",
+        "ok": true,
+        "http_status": 200,
+        "resolved_url": "https://github.com/cjimmylin/cei-statements-dashboard-b3",
+        "content_type": "text/html; charset=utf-8",
+        "last_modified": null,
+        "page_title": "GitHub - cjimmylin/cei-statements-dashboard-b3: Tapestry - CEI AI Statements Dashboard B3 (Coverage Analysis)",
+        "meta_description": "Tapestry - CEI AI Statements Dashboard B3 (Coverage Analysis) - cjimmylin/cei-statements-dashboard-b3"
+      },
+      "metadata_quality_score": 98,
+      "quality_flags": [
+        "Known metadata gaps"
+      ]
+    },
+    "identifiers": [
+      {
+        "identifier_type": "github_repo",
+        "identifier_value": "cjimmylin/cei-statements-dashboard-b3",
+        "url": "https://github.com/cjimmylin/cei-statements-dashboard-b3"
+      },
+      {
+        "identifier_type": "canonical_url",
+        "identifier_value": "https://github.com/cjimmylin/cei-statements-dashboard-b3",
+        "url": "https://github.com/cjimmylin/cei-statements-dashboard-b3"
+      }
+    ]
+  },
+  {
+    "id": "cei-unified-taxonomy",
+    "title": "CEI Unified Taxonomy",
+    "publisher": "CEI / cjimmylin",
+    "description": "Upstream CEI taxonomy release used for the broadest statement registry, taxonomy categories, and unified taxonomy scores.",
+    "source_url": "https://github.com/cjimmylin/cei-unified-taxonomy",
+    "canonical_url": "https://github.com/cjimmylin/cei-unified-taxonomy",
+    "coverage": "Global AI governance taxonomy records",
+    "formats": [
+      "JavaScript data artifact",
+      "GitHub"
+    ],
+    "source_type": "CEI source release",
+    "aliases": [
+      "unified-taxonomy-2026-03-15",
+      "CEI Unified Taxonomy"
+    ],
+    "status": "included",
+    "created_at": "2026-06-16T00:00:00Z",
+    "vote_count": 0,
+    "user_voted": false,
+    "license_review_status": "needs_review",
+    "dedupe_review_status": "needs_review",
+    "recommended_action": null,
+    "admin_notes": null,
+    "reviewed_at": null,
+    "metadata": {
+      "source_kind": "CEI source release",
+      "update_cadence": "Pinned release import",
+      "license_status": "Review upstream repository license before redistribution",
+      "import_complexity": "low",
+      "priority": "high",
+      "review_checks": [
+        "Already imported as a dataset release"
+      ],
+      "known_gaps": [
+        "Root data copy lacks independent commit provenance"
+      ],
+      "live": {
+        "checked_at": "2026-06-16T01:59:32.298Z",
+        "ok": true,
+        "http_status": 200,
+        "resolved_url": "https://github.com/cjimmylin/cei-unified-taxonomy",
+        "content_type": "text/html; charset=utf-8",
+        "last_modified": null,
+        "page_title": "GitHub - cjimmylin/cei-unified-taxonomy: Unified AI Governance Taxonomy Dashboard",
+        "meta_description": "Unified AI Governance Taxonomy Dashboard. Contribute to cjimmylin/cei-unified-taxonomy development by creating an account on GitHub."
+      },
+      "metadata_quality_score": 98,
+      "quality_flags": [
+        "Known metadata gaps"
+      ]
+    },
+    "identifiers": [
+      {
+        "identifier_type": "github_repo",
+        "identifier_value": "cjimmylin/cei-unified-taxonomy",
+        "url": "https://github.com/cjimmylin/cei-unified-taxonomy"
+      },
+      {
+        "identifier_type": "canonical_url",
+        "identifier_value": "https://github.com/cjimmylin/cei-unified-taxonomy",
+        "url": "https://github.com/cjimmylin/cei-unified-taxonomy"
+      }
+    ]
+  },
+  {
     "id": "eu-ai-act",
     "title": "EU AI Act implementation resources",
     "publisher": "European Commission",
     "description": "Official implementation materials, codes of practice, guidance, and policy updates related to the European Union AI Act.",
     "source_url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+    "canonical_url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
     "coverage": "European Union",
     "formats": [
       "HTML",
       "PDF"
     ],
+    "source_type": "Regulatory implementation hub",
+    "aliases": [],
     "status": "approved",
     "created_at": "2026-06-15T00:00:00Z",
     "vote_count": 42,
     "user_voted": false,
+    "license_review_status": "needs_review",
+    "dedupe_review_status": "needs_review",
+    "recommended_action": null,
+    "admin_notes": null,
+    "reviewed_at": null,
     "metadata": {
       "source_kind": "Regulatory implementation hub",
       "update_cadence": "Rolling implementation updates",
@@ -30,12 +302,12 @@
         "Map implementation updates to existing statement keys"
       ],
       "live": {
-        "checked_at": "2026-06-16T00:15:12.867Z",
+        "checked_at": "2026-06-16T01:59:32.225Z",
         "ok": true,
         "http_status": 200,
         "resolved_url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
         "content_type": "text/html; charset=UTF-8",
-        "last_modified": "Tue, 16 Jun 2026 00:01:57 GMT",
+        "last_modified": "Tue, 16 Jun 2026 01:01:05 GMT",
         "page_title": "AI Act",
         "meta_description": "The AI Act is the first-ever legal framework on AI, which addresses the risks of AI and positions Europe to play a leading role globally."
       },
@@ -44,7 +316,14 @@
         "Manual extraction likely",
         "Known metadata gaps"
       ]
-    }
+    },
+    "identifiers": [
+      {
+        "identifier_type": "canonical_url",
+        "identifier_value": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+      }
+    ]
   },
   {
     "id": "nist-ai-rmf",
@@ -52,15 +331,23 @@
     "publisher": "National Institute of Standards and Technology",
     "description": "Framework, playbook, profiles, crosswalks, and supporting resources for voluntary AI risk management practice.",
     "source_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "canonical_url": "https://www.nist.gov/itl/ai-risk-management-framework",
     "coverage": "United States and international practice",
     "formats": [
       "HTML",
       "PDF"
     ],
+    "source_type": "Risk management framework hub",
+    "aliases": [],
     "status": "approved",
     "created_at": "2026-06-15T00:00:00Z",
     "vote_count": 33,
     "user_voted": false,
+    "license_review_status": "needs_review",
+    "dedupe_review_status": "needs_review",
+    "recommended_action": null,
+    "admin_notes": null,
+    "reviewed_at": null,
     "metadata": {
       "source_kind": "Risk management framework hub",
       "update_cadence": "Framework and profile updates",
@@ -77,12 +364,12 @@
         "Capture version dates for each PDF resource"
       ],
       "live": {
-        "checked_at": "2026-06-16T00:15:12.963Z",
+        "checked_at": "2026-06-16T01:59:32.287Z",
         "ok": true,
         "http_status": 200,
         "resolved_url": "https://www.nist.gov/itl/ai-risk-management-framework",
         "content_type": "text/html; charset=UTF-8",
-        "last_modified": "Mon, 15 Jun 2026 21:40:41 GMT",
+        "last_modified": "Tue, 16 Jun 2026 01:50:58 GMT",
         "page_title": "AI Risk Management Framework",
         "meta_description": null
       },
@@ -91,7 +378,14 @@
         "Manual extraction likely",
         "Known metadata gaps"
       ]
-    }
+    },
+    "identifiers": [
+      {
+        "identifier_type": "canonical_url",
+        "identifier_value": "https://www.nist.gov/itl/ai-risk-management-framework",
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      }
+    ]
   },
   {
     "id": "unesco-ai-ethics",
@@ -99,16 +393,24 @@
     "publisher": "UNESCO",
     "description": "Global AI ethics standard, implementation resources, readiness methodology, and impact assessment materials from UNESCO.",
     "source_url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics",
+    "canonical_url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics",
     "coverage": "UNESCO member states",
     "formats": [
       "HTML",
       "PDF",
       "Toolkit"
     ],
+    "source_type": "International standard and implementation toolkit",
+    "aliases": [],
     "status": "approved",
     "created_at": "2026-06-15T00:00:00Z",
     "vote_count": 27,
     "user_voted": false,
+    "license_review_status": "needs_review",
+    "dedupe_review_status": "needs_review",
+    "recommended_action": null,
+    "admin_notes": null,
+    "reviewed_at": null,
     "metadata": {
       "source_kind": "International standard and implementation toolkit",
       "update_cadence": "Program and implementation updates",
@@ -125,7 +427,7 @@
         "Track multilingual resource variants"
       ],
       "live": {
-        "checked_at": "2026-06-16T00:15:12.966Z",
+        "checked_at": "2026-06-16T01:59:32.290Z",
         "ok": true,
         "http_status": 200,
         "resolved_url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics",
@@ -139,7 +441,14 @@
         "Manual extraction likely",
         "Known metadata gaps"
       ]
-    }
+    },
+    "identifiers": [
+      {
+        "identifier_type": "canonical_url",
+        "identifier_value": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics",
+        "url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics"
+      }
+    ]
   },
   {
     "id": "oecd-ai-policy-observatory",
@@ -147,15 +456,23 @@
     "publisher": "OECD.AI",
     "description": "Living repository of national and international AI policy initiatives maintained by OECD.AI contributors and experts.",
     "source_url": "https://oecd.ai/en/dashboards/overview",
+    "canonical_url": "https://oecd.ai/en/dashboards/overview",
     "coverage": "Global policy initiatives",
     "formats": [
       "HTML",
       "Data explorer"
     ],
+    "source_type": "Policy navigator",
+    "aliases": [],
     "status": "under_review",
     "created_at": "2026-06-15T00:00:00Z",
     "vote_count": 38,
     "user_voted": false,
+    "license_review_status": "needs_review",
+    "dedupe_review_status": "needs_review",
+    "recommended_action": null,
+    "admin_notes": null,
+    "reviewed_at": null,
     "metadata": {
       "source_kind": "Policy navigator",
       "update_cadence": "Regularly updated",
@@ -172,7 +489,7 @@
         "Confirm attribution and reuse requirements"
       ],
       "live": {
-        "checked_at": "2026-06-16T00:15:12.961Z",
+        "checked_at": "2026-06-16T01:59:32.285Z",
         "ok": true,
         "http_status": 200,
         "resolved_url": "https://oecd.ai/en/dashboards/overview",
@@ -186,7 +503,91 @@
         "High import complexity",
         "Known metadata gaps"
       ]
-    }
+    },
+    "identifiers": [
+      {
+        "identifier_type": "canonical_url",
+        "identifier_value": "https://oecd.ai/en/dashboards/overview",
+        "url": "https://oecd.ai/en/dashboards/overview"
+      }
+    ]
+  },
+  {
+    "id": "agora-ai-governance-regulatory-archive",
+    "title": "AGORA AI Governance and Regulatory Archive",
+    "publisher": "Emerging Technology Observatory",
+    "description": "Living collection of AI-relevant laws, regulations, standards, document text, metadata, summaries, and thematic tags.",
+    "source_url": "https://agora.eto.tech/",
+    "canonical_url": "https://agora.eto.tech/",
+    "coverage": "United States and global AI governance documents",
+    "formats": [
+      "HTML",
+      "Bulk dataset",
+      "Zenodo",
+      "Document text"
+    ],
+    "source_type": "Governance document archive",
+    "aliases": [
+      "AGORA",
+      "AI GOvernance and Regulatory Archive",
+      "AI Governance and Regulatory Archive"
+    ],
+    "status": "under_review",
+    "created_at": "2026-06-16T00:00:00Z",
+    "vote_count": 35,
+    "user_voted": false,
+    "license_review_status": "needs_review",
+    "dedupe_review_status": "needs_review",
+    "recommended_action": null,
+    "admin_notes": null,
+    "reviewed_at": null,
+    "metadata": {
+      "source_kind": "Governance document archive",
+      "update_cadence": "Regularly updated",
+      "license_status": "Bulk dataset is public; license and attribution terms require review",
+      "import_complexity": "medium",
+      "priority": "high",
+      "review_checks": [
+        "Canonical archive and bulk dataset identified",
+        "Includes document text and structured metadata",
+        "Likely high value for record-level indexing"
+      ],
+      "known_gaps": [
+        "Map AGORA document IDs to existing STMT-* records",
+        "Confirm whether all text can be stored and redistributed"
+      ],
+      "live": {
+        "checked_at": "2026-06-16T01:59:32.295Z",
+        "ok": true,
+        "http_status": 200,
+        "resolved_url": "https://agora.eto.tech/",
+        "content_type": "text/html; charset=utf-8",
+        "last_modified": "Tue, 01 Jan 1980 00:00:01 GMT",
+        "page_title": "ETO AGORA",
+        "meta_description": "A living collection of AI-related laws, regulations, and governance documents."
+      },
+      "metadata_quality_score": 98,
+      "quality_flags": [
+        "Known metadata gaps"
+      ]
+    },
+    "identifiers": [
+      {
+        "identifier_type": "zenodo_record",
+        "identifier_value": "15964829",
+        "url": "https://zenodo.org/records/15964829"
+      },
+      {
+        "identifier_type": "doi",
+        "identifier_value": "10.5281/zenodo.15964829",
+        "url": "https://doi.org/10.5281/zenodo.15964829"
+      },
+      {
+        "identifier_type": "canonical_url",
+        "identifier_value": "https://agora.eto.tech/",
+        "url": "https://agora.eto.tech/"
+      }
+    ]
   },
   {
     "id": "coe-framework-convention-ai",
@@ -194,15 +595,23 @@
     "publisher": "Council of Europe",
     "description": "Official treaty page for the Framework Convention on Artificial Intelligence, Human Rights, Democracy and the Rule of Law.",
     "source_url": "https://www.coe.int/en/web/artificial-intelligence/the-framework-convention-on-artificial-intelligence",
+    "canonical_url": "https://www.coe.int/en/web/artificial-intelligence/the-framework-convention-on-artificial-intelligence",
     "coverage": "Council of Europe and treaty signatories",
     "formats": [
       "HTML",
       "PDF"
     ],
+    "source_type": "Treaty source",
+    "aliases": [],
     "status": "under_review",
     "created_at": "2026-06-15T00:00:00Z",
     "vote_count": 29,
     "user_voted": false,
+    "license_review_status": "needs_review",
+    "dedupe_review_status": "needs_review",
+    "recommended_action": null,
+    "admin_notes": null,
+    "reviewed_at": null,
     "metadata": {
       "source_kind": "Treaty source",
       "update_cadence": "Treaty status and implementation updates",
@@ -219,7 +628,7 @@
         "Reconcile national implementation documents"
       ],
       "live": {
-        "checked_at": "2026-06-16T00:15:12.965Z",
+        "checked_at": "2026-06-16T01:59:32.288Z",
         "ok": false,
         "http_status": 403,
         "resolved_url": "https://www.coe.int/en/web/artificial-intelligence/the-framework-convention-on-artificial-intelligence",
@@ -234,7 +643,86 @@
         "Manual extraction likely",
         "Known metadata gaps"
       ]
-    }
+    },
+    "identifiers": [
+      {
+        "identifier_type": "canonical_url",
+        "identifier_value": "https://www.coe.int/en/web/artificial-intelligence/the-framework-convention-on-artificial-intelligence",
+        "url": "https://www.coe.int/en/web/artificial-intelligence/the-framework-convention-on-artificial-intelligence"
+      }
+    ]
+  },
+  {
+    "id": "ai-incident-database",
+    "title": "AI Incident Database",
+    "publisher": "Responsible AI Collaborative",
+    "description": "Public database of real-world AI harms and near harms, including incident reports, classifications, and links to supporting evidence.",
+    "source_url": "https://incidentdatabase.ai/",
+    "canonical_url": "https://incidentdatabase.ai/",
+    "coverage": "Global AI incidents",
+    "formats": [
+      "HTML",
+      "Database",
+      "GitHub"
+    ],
+    "source_type": "Incident database",
+    "aliases": [
+      "Artificial Intelligence Incident Database",
+      "AIID",
+      "Responsible AI Collaborative"
+    ],
+    "status": "proposed",
+    "created_at": "2026-06-16T00:00:00Z",
+    "vote_count": 26,
+    "user_voted": false,
+    "license_review_status": "needs_review",
+    "dedupe_review_status": "needs_review",
+    "recommended_action": null,
+    "admin_notes": null,
+    "reviewed_at": null,
+    "metadata": {
+      "source_kind": "Incident database",
+      "update_cadence": "Continuously updated",
+      "license_status": "Public web source; database reuse terms require review",
+      "import_complexity": "high",
+      "priority": "medium",
+      "review_checks": [
+        "Canonical public database identified",
+        "GitHub repository linked for developer traction signals",
+        "Scope is adjacent to policy statements and should be modeled separately"
+      ],
+      "known_gaps": [
+        "Determine whether incidents belong in this product's statement registry",
+        "Confirm database reuse terms and API/export path"
+      ],
+      "live": {
+        "checked_at": "2026-06-16T01:59:32.294Z",
+        "ok": true,
+        "http_status": 200,
+        "resolved_url": "https://incidentdatabase.ai/",
+        "content_type": "text/html; charset=UTF-8",
+        "last_modified": null,
+        "page_title": "Welcome to the Artificial Intelligence Incident Database",
+        "meta_description": "The starting point for information about the AI Incident Database"
+      },
+      "metadata_quality_score": 88,
+      "quality_flags": [
+        "High import complexity",
+        "Known metadata gaps"
+      ]
+    },
+    "identifiers": [
+      {
+        "identifier_type": "github_repo",
+        "identifier_value": "responsible-ai-collaborative/aiid",
+        "url": "https://github.com/responsible-ai-collaborative/aiid"
+      },
+      {
+        "identifier_type": "canonical_url",
+        "identifier_value": "https://incidentdatabase.ai/",
+        "url": "https://incidentdatabase.ai/"
+      }
+    ]
   },
   {
     "id": "global-index-responsible-ai",
@@ -242,16 +730,24 @@
     "publisher": "Global Center on AI Governance",
     "description": "Country-level responsible AI index tracking policy, capability, and safeguard indicators across a broad global sample.",
     "source_url": "https://www.global-index.ai/",
+    "canonical_url": "https://www.global-index.ai/",
     "coverage": "Global country index",
     "formats": [
       "HTML",
       "Dataset candidate",
       "Report"
     ],
+    "source_type": "Comparative governance index",
+    "aliases": [],
     "status": "proposed",
     "created_at": "2026-06-15T00:00:00Z",
     "vote_count": 22,
     "user_voted": false,
+    "license_review_status": "needs_review",
+    "dedupe_review_status": "needs_review",
+    "recommended_action": null,
+    "admin_notes": null,
+    "reviewed_at": null,
     "metadata": {
       "source_kind": "Comparative governance index",
       "update_cadence": "Periodic report releases",
@@ -268,7 +764,7 @@
         "Keep index indicators separate from source policy records"
       ],
       "live": {
-        "checked_at": "2026-06-16T00:15:12.969Z",
+        "checked_at": "2026-06-16T01:59:32.291Z",
         "ok": true,
         "http_status": 200,
         "resolved_url": "https://www.global-index.ai/",
@@ -282,7 +778,81 @@
         "High import complexity",
         "Known metadata gaps"
       ]
-    }
+    },
+    "identifiers": [
+      {
+        "identifier_type": "canonical_url",
+        "identifier_value": "https://www.global-index.ai/",
+        "url": "https://www.global-index.ai/"
+      }
+    ]
+  },
+  {
+    "id": "oecd-ai-index",
+    "title": "OECD.AI Index",
+    "publisher": "OECD.AI",
+    "description": "Composite measurement framework for national AI capabilities and implementation progress using indicators from the OECD.AI Policy Observatory.",
+    "source_url": "https://oecd.ai/en/site/ai-index",
+    "canonical_url": "https://oecd.ai/en/site/ai-index",
+    "coverage": "OECD and partner country AI ecosystem indicators",
+    "formats": [
+      "HTML",
+      "Report",
+      "Indicators"
+    ],
+    "source_type": "Comparative AI index",
+    "aliases": [
+      "OECD AI Index",
+      "OECD AI Observatory Index",
+      "The OECD.AI Index"
+    ],
+    "status": "proposed",
+    "created_at": "2026-06-16T00:00:00Z",
+    "vote_count": 21,
+    "user_voted": false,
+    "license_review_status": "needs_review",
+    "dedupe_review_status": "needs_review",
+    "recommended_action": null,
+    "admin_notes": null,
+    "reviewed_at": null,
+    "metadata": {
+      "source_kind": "Comparative AI index",
+      "update_cadence": "Periodic index releases",
+      "license_status": "Public OECD source; reuse terms require review",
+      "import_complexity": "medium",
+      "priority": "medium",
+      "review_checks": [
+        "Canonical OECD.AI index page identified",
+        "Should be modeled as indicators, not policy statements",
+        "Related to OECD.AI Policy Navigator"
+      ],
+      "known_gaps": [
+        "Identify stable indicator export path",
+        "Keep index values separate from canonical statements"
+      ],
+      "live": {
+        "checked_at": "2026-06-16T01:59:32.295Z",
+        "ok": true,
+        "http_status": 200,
+        "resolved_url": "https://oecd.ai/en/site/ai-index",
+        "content_type": "text/html; charset=utf-8",
+        "last_modified": null,
+        "page_title": "AI Index",
+        "meta_description": "The OECD AI Index aims to design and implement a synthetic measurement framework on Trustworthy Artificial Intelligence (AI), leveraging the framework of the ten principles for trustworthy AI contained in the OECD Recommendation on Artificial Intelligence. Why an OECD AI Index? The OECD AI Index aims to meet demand from policy makers for a comprehensive […]"
+      },
+      "metadata_quality_score": 90,
+      "quality_flags": [
+        "Manual extraction likely",
+        "Known metadata gaps"
+      ]
+    },
+    "identifiers": [
+      {
+        "identifier_type": "canonical_url",
+        "identifier_value": "https://oecd.ai/en/site/ai-index",
+        "url": "https://oecd.ai/en/site/ai-index"
+      }
+    ]
   },
   {
     "id": "caidp-ai-democratic-values",
@@ -290,15 +860,23 @@
     "publisher": "Center for AI and Digital Policy",
     "description": "Annual comparative review of national AI policies, democratic governance, human rights, and rule-of-law alignment.",
     "source_url": "https://www.caidp.org/reports/caidp-index-2025",
+    "canonical_url": "https://www.caidp.org/reports/caidp-index-2025",
     "coverage": "Global country index",
     "formats": [
       "HTML",
       "Report"
     ],
+    "source_type": "Comparative policy index",
+    "aliases": [],
     "status": "proposed",
     "created_at": "2026-06-15T00:00:00Z",
     "vote_count": 18,
     "user_voted": false,
+    "license_review_status": "needs_review",
+    "dedupe_review_status": "needs_review",
+    "recommended_action": null,
+    "admin_notes": null,
+    "reviewed_at": null,
     "metadata": {
       "source_kind": "Comparative policy index",
       "update_cadence": "Annual report releases",
@@ -315,7 +893,7 @@
         "Model country scores separately from statement records"
       ],
       "live": {
-        "checked_at": "2026-06-16T00:15:12.971Z",
+        "checked_at": "2026-06-16T01:59:32.292Z",
         "ok": true,
         "http_status": 200,
         "resolved_url": "https://www.caidp.org/reports/caidp-index-2025",
@@ -329,7 +907,14 @@
         "Manual extraction likely",
         "Known metadata gaps"
       ]
-    }
+    },
+    "identifiers": [
+      {
+        "identifier_type": "canonical_url",
+        "identifier_value": "https://www.caidp.org/reports/caidp-index-2025",
+        "url": "https://www.caidp.org/reports/caidp-index-2025"
+      }
+    ]
   },
   {
     "id": "stanford-ai-index",
@@ -337,16 +922,24 @@
     "publisher": "Stanford Institute for Human-Centered AI",
     "description": "Annual report and supporting analysis on AI trends, including policy, regulation, public opinion, and technical indicators.",
     "source_url": "https://aiindex.stanford.edu/report",
+    "canonical_url": "https://aiindex.stanford.edu/report",
     "coverage": "Global AI trend indicators",
     "formats": [
       "HTML",
       "PDF",
       "Dataset candidate"
     ],
+    "source_type": "Annual trend report",
+    "aliases": [],
     "status": "proposed",
     "created_at": "2026-06-15T00:00:00Z",
     "vote_count": 15,
     "user_voted": false,
+    "license_review_status": "needs_review",
+    "dedupe_review_status": "needs_review",
+    "recommended_action": null,
+    "admin_notes": null,
+    "reviewed_at": null,
     "metadata": {
       "source_kind": "Annual trend report",
       "update_cadence": "Annual report releases",
@@ -363,7 +956,7 @@
         "Avoid mixing trend indicators with statement provenance"
       ],
       "live": {
-        "checked_at": "2026-06-16T00:15:12.973Z",
+        "checked_at": "2026-06-16T01:59:32.293Z",
         "ok": true,
         "http_status": 200,
         "resolved_url": "https://hai.stanford.edu/ai-index",
@@ -376,6 +969,13 @@
       "quality_flags": [
         "Known metadata gaps"
       ]
-    }
+    },
+    "identifiers": [
+      {
+        "identifier_type": "canonical_url",
+        "identifier_value": "https://aiindex.stanford.edu/report",
+        "url": "https://aiindex.stanford.edu/report"
+      }
+    ]
   }
 ]

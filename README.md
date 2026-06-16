@@ -144,8 +144,13 @@ normalizes the sparse fingerprint heatmap, and writes:
 - `public/data/statements.json`: searchable statement registry snapshot
 - `public/data/fingerprints.json`: UMAP and cluster snapshot
 - `public/data/source-candidates.json`: checked third-party source-priority queue
+- `public/data/source-signals.json`: provider-attributed popularity signals without bulky raw payloads
+- `public/data/source-indexing-status.json`: local matcher output showing whether sources are already indexed
+- `public/data/source-registry.json`: joined source registry used by `/sources`
 - `generated/import-summary.json`: import quality report
 - `generated/source-candidates-summary.json`: third-party source check summary
+- `generated/source-signals.json`: raw provider signal payloads for audit
+- `generated/source-registry-summary.json`: joined source registry summary
 
 Validate referential integrity and expected reconciliation counts:
 
@@ -168,9 +173,30 @@ npm run data:sources
 ```
 
 The source queue starts from `data/source-candidates.seed.json`, fetches each canonical source URL,
-records response status, content type, page title, description, and metadata quality flags, then
-feeds the `/sources` product surface. These source candidates are review targets, not canonical
-statement records, until licensing, duplication, provenance, and metadata mapping are complete.
+records response status, content type, page title, description, and metadata quality flags, collects
+external popularity signals, checks local indexing status, and builds the joined `/sources` registry.
+These source candidates are review targets, not canonical statement records, until licensing,
+duplication, provenance, and metadata mapping are complete.
+
+Refresh only external popularity signals:
+
+```bash
+npm run data:signals
+```
+
+Signals are stored as raw provider-specific evidence, such as GitHub stars, forks, Zenodo downloads,
+DataCite citations, or OpenAlex citations. They are shown as badges and are not combined into a
+single popularity score because provider counts are not directly comparable.
+
+Refresh local source-indexing status:
+
+```bash
+npm run data:indexing
+```
+
+The matcher compares source URLs, aliases, publisher names, identifiers, and known CEI source
+release metadata against `public/data/statements.json`. Its output distinguishes `not_found`,
+`partially_indexed`, `indexed_as_records`, and `indexed_as_source_release`.
 
 To import the normalized records into Supabase:
 
@@ -286,6 +312,11 @@ it through a `NEXT_PUBLIC_` variable.
 - `profiles`: invited members and selected admins
 - `source_requests`: proposed external data sources and review state
 - `source_request_votes`: one vote per invited user and source request
+- `external_sources`: durable registry for candidate and included external source datasets
+- `external_source_identifiers`: DOI, GitHub, Hugging Face, Zenodo, OpenAlex, and other IDs
+- `external_source_checks`: live source checks and response metadata
+- `external_source_popularity_signals`: raw provider-specific traction metrics
+- `external_source_indexing_status`: source-to-catalog indexing state and matched `STMT-*` IDs
 
 ## Source Repositories
 
@@ -296,4 +327,6 @@ it through a `NEXT_PUBLIC_` variable.
 
 ## Next Data Phase
 
-Add conflict reporting for fields that differ between source releases, then expose provenance and ontology relationships directly in the statement detail experience.
+Use the source registry to prioritize selective ingestion. Favor metadata-only indexing when license
+or dedupe status is unclear, record-level indexing when structured data and reuse terms are strong,
+and source-registry-only monitoring for trend reports, indexes, and adjacent incident datasets.

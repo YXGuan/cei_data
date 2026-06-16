@@ -1,4 +1,4 @@
-import { Database, FileSearch, GitMerge, ShieldCheck } from 'lucide-react'
+import { BarChart3, Database, FileSearch, GitMerge, ShieldCheck } from 'lucide-react'
 
 const steps = [
   {
@@ -20,6 +20,11 @@ const steps = [
     icon: ShieldCheck,
     title: 'Govern',
     copy: 'Source proposals and votes are public; inclusion decisions and metadata changes remain admin-controlled.',
+  },
+  {
+    icon: BarChart3,
+    title: 'Signal',
+    copy: 'Popularity signals are imported from external providers with timestamps instead of collapsed into a homemade score.',
   },
 ]
 
@@ -50,6 +55,14 @@ export default function MethodologyPage() {
         <div><span>System of record</span><strong>Supabase Postgres + Auth + RLS</strong></div>
         <i />
         <div><span>Processing</span><strong>Local Python + versioned imports</strong></div>
+      </section>
+      <section className="method-note">
+        <h2>External popularity signals</h2>
+        <p>
+          Citation, download, star, fork, and repository-use counts are stored as provider-specific
+          evidence. They are useful for prioritization, but they are not directly comparable across
+          providers and should not be treated as a single popularity score.
+        </p>
       </section>
     </main>
   )

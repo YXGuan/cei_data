@@ -1,31 +1,61 @@
 'use client'
 
 import { useCallback, useEffect, useState } from 'react'
+import Link from 'next/link'
 import {
-  ArrowUp, ArrowUpRight, Check, CircleUserRound, Database, FileCheck2, Gauge,
-  LogIn, Plus, ShieldCheck, Wifi,
+  ArrowUp, ArrowUpRight, BarChart3, Check, CircleUserRound, Database, FileCheck2,
+  Gauge, GitFork, LogIn, Plus, SearchCheck, ShieldCheck, Star, Wifi,
 } from 'lucide-react'
 import type { Session } from '@supabase/supabase-js'
 import { supabase } from '@/lib/supabase-browser'
-import type { SourceRequest } from '@/lib/types'
-import sourceCandidates from '@/public/data/source-candidates.json'
+import type { ExternalSource, PopularitySignal, SourceRequest } from '@/lib/types'
+import sourceRegistry from '@/public/data/source-registry.json'
 
-const fallbackRequests = sourceCandidates as SourceRequest[]
+const fallbackRequests = sourceRegistry as ExternalSource[]
+const registryById = new Map(fallbackRequests.map((source) => [source.id, source]))
+const registryByUrl = new Map(fallbackRequests.map((source) => [source.source_url.toLowerCase(), source]))
+const indexingLabels = {
+  not_found: 'Not indexed',
+  source_candidate_only: 'Candidate only',
+  partially_indexed: 'Partial',
+  indexed_as_records: 'Indexed records',
+  indexed_as_source_release: 'Source release',
+}
+const actionLabels = {
+  monitor_only: 'Monitor',
+  source_registry_only: 'Registry only',
+  index_metadata: 'Index metadata',
+  index_records: 'Index records',
+  index_full_text: 'Index full text',
+}
 
 export function SourceVoting() {
-  const [requests, setRequests] = useState(fallbackRequests)
+  const [requests, setRequests] = useState<ExternalSource[]>(fallbackRequests)
   const [session, setSession] = useState<Session | null>(null)
   const [message, setMessage] = useState('')
   const [showLogin, setShowLogin] = useState(false)
   const [showProposal, setShowProposal] = useState(false)
+  const [filters, setFilters] = useState({ status: '', type: '', complexity: '', indexing: '', signal: '' })
+  const [sort, setSort] = useState('priority')
 
   const refresh = useCallback(async () => {
     if (!supabase) return
     const { data, error } = await supabase.rpc('source_request_feed')
-    if (!error && data) setRequests(data.map((row: SourceRequest & { vote_count: number | string }) => ({
-      ...row,
-      vote_count: Number(row.vote_count),
-    })))
+    if (!error && data) setRequests(data.map((row: SourceRequest & { vote_count: number | string }) => {
+      const local = registryById.get(row.id) || registryByUrl.get(row.source_url.toLowerCase())
+      return {
+        ...local,
+        ...row,
+        vote_count: Number(row.vote_count),
+        aliases: local?.aliases || row.aliases || [],
+        identifiers: local?.identifiers || row.identifiers || [],
+        checks: local?.checks || row.checks || [],
+        popularity_signals: local?.popularity_signals || row.popularity_signals || [],
+        indexing_status: local?.indexing_status || row.indexing_status,
+        recommended_action: row.recommended_action || local?.recommended_action,
+        source_type: row.source_type || local?.source_type || row.metadata?.source_kind || 'External source',
+      } as ExternalSource
+    }))
   }, [])
 
   useEffect(() => {
@@ -51,13 +81,28 @@ export function SourceVoting() {
     setMessage(error ? error.message : 'Vote updated.')
     if (!error) await refresh()
   }
+  const sourceTypes = [...new Set(requests.map((request) => request.source_type).filter(Boolean))].sort()
+  const complexities = [...new Set(requests.map((request) => request.metadata?.import_complexity).filter(Boolean))].sort()
+  const visibleRequests = requests.filter((request) => (
+    (!filters.status || request.status === filters.status)
+    && (!filters.type || request.source_type === filters.type)
+    && (!filters.complexity || request.metadata?.import_complexity === filters.complexity)
+    && (!filters.indexing || request.indexing_status?.indexing_status === filters.indexing)
+    && (!filters.signal || (filters.signal === 'yes' ? (request.popularity_signals?.length || 0) > 0 : (request.popularity_signals?.length || 0) === 0))
+  )).sort((a, b) => {
+    if (sort === 'checked') return String(b.latest_observed_at || '').localeCompare(String(a.latest_observed_at || ''))
+    if (sort === 'citations') return signalTotal(b, 'citations') - signalTotal(a, 'citations')
+    if (sort === 'downloads') return signalTotal(b, 'downloads') - signalTotal(a, 'downloads')
+    if (sort === 'stars') return signalTotal(b, 'stars') - signalTotal(a, 'stars')
+    return b.vote_count - a.vote_count || a.title.localeCompare(b.title)
+  })
 
   return (
     <div className="source-workspace">
       <section className="source-toolbar">
         <div>
           <span><Database size={15} /> {supabase ? 'Live Supabase queue' : 'Prepared demonstration queue'}</span>
-          <strong>{requests.length} candidate sources</strong>
+          <strong>{requests.length} registry sources</strong>
         </div>
         <div>
           {session ? <span className="signed-in"><CircleUserRound size={15} /> {session.user.email}</span> : null}
@@ -66,12 +111,58 @@ export function SourceVoting() {
         </div>
       </section>
 
+      <section className="source-controls" aria-label="Source filters">
+        <label>Status
+          <select value={filters.status} onChange={(event) => setFilters((current) => ({ ...current, status: event.target.value }))}>
+            <option value="">All</option>
+            <option value="included">Included</option>
+            <option value="approved">Approved</option>
+            <option value="under_review">Under review</option>
+            <option value="proposed">Proposed</option>
+          </select>
+        </label>
+        <label>Type
+          <select value={filters.type} onChange={(event) => setFilters((current) => ({ ...current, type: event.target.value }))}>
+            <option value="">All</option>
+            {sourceTypes.map((type) => <option key={type} value={type}>{type}</option>)}
+          </select>
+        </label>
+        <label>Indexed
+          <select value={filters.indexing} onChange={(event) => setFilters((current) => ({ ...current, indexing: event.target.value }))}>
+            <option value="">All</option>
+            {Object.entries(indexingLabels).map(([value, label]) => <option key={value} value={value}>{label}</option>)}
+          </select>
+        </label>
+        <label>Complexity
+          <select value={filters.complexity} onChange={(event) => setFilters((current) => ({ ...current, complexity: event.target.value }))}>
+            <option value="">All</option>
+            {complexities.map((complexity) => <option key={complexity} value={complexity}>{complexity}</option>)}
+          </select>
+        </label>
+        <label>Signals
+          <select value={filters.signal} onChange={(event) => setFilters((current) => ({ ...current, signal: event.target.value }))}>
+            <option value="">All</option>
+            <option value="yes">Has signals</option>
+            <option value="no">No signals</option>
+          </select>
+        </label>
+        <label>Sort
+          <select value={sort} onChange={(event) => setSort(event.target.value)}>
+            <option value="priority">Review priority</option>
+            <option value="checked">Latest checked</option>
+            <option value="citations">Citations</option>
+            <option value="downloads">Downloads</option>
+            <option value="stars">Stars</option>
+          </select>
+        </label>
+      </section>
+
       {message ? <div className="notice">{message}<button onClick={() => setMessage('')}>Dismiss</button></div> : null}
       {showLogin ? <LoginPanel session={session} onClose={() => setShowLogin(false)} /> : null}
       {showProposal && session ? <ProposalForm userId={session.user.id} onCreated={() => { setShowProposal(false); void refresh() }} /> : null}
 
       <section className="source-list">
-        {requests.map((request, index) => (
+        {visibleRequests.map((request, index) => (
           <article className="source-card" key={request.id}>
             <button className={`vote-button ${request.user_voted ? 'voted' : ''}`} onClick={() => vote(request.id)}>
               <ArrowUp size={17} /><strong>{request.vote_count}</strong><span>{request.user_voted ? 'Voted' : 'Vote'}</span>
@@ -79,16 +170,18 @@ export function SourceVoting() {
             <div className="source-card-body">
               <div className="source-card-top">
                 <span className="queue-rank">Priority {String(index + 1).padStart(2, '0')}</span>
-                <Status value={request.status} />
+                <div className="status-stack"><Status value={request.status} /><IndexingBadge request={request} /></div>
               </div>
-              <h2>{request.title}</h2>
+              <Link href={`/sources/${request.id}`}><h2>{request.title}</h2></Link>
               <p className="source-publisher">{request.publisher}</p>
               <p>{request.description}</p>
               <SourceMetadata request={request} />
               <div className="source-meta">
                 {request.coverage ? <span>{request.coverage}</span> : null}
                 {request.formats.map((format) => <span key={format}>{format}</span>)}
+                {request.recommended_action ? <span>{actionLabels[request.recommended_action]}</span> : null}
                 <a href={request.source_url} rel="noreferrer" target="_blank">Inspect source <ArrowUpRight size={13} /></a>
+                <Link href={`/sources/${request.id}`}>Registry record <ArrowUpRight size={13} /></Link>
               </div>
             </div>
           </article>
@@ -103,28 +196,60 @@ export function SourceVoting() {
   )
 }
 
+function signalTotal(request: SourceRequest, metric: PopularitySignal['metric']) {
+  return (request.popularity_signals || [])
+    .filter((signal) => signal.metric === metric)
+    .reduce((sum, signal) => sum + signal.value, 0)
+}
+
 function SourceMetadata({ request }: { request: SourceRequest }) {
   const metadata = request.metadata
-  if (!metadata) return null
-  const live = metadata.live
-  const score = Math.round(metadata.metadata_quality_score || 0)
-  const checkedAt = live?.checked_at ? live.checked_at.slice(0, 10) : null
-  const flags = metadata.quality_flags?.slice(0, 3) || []
+  if (!metadata && !request.popularity_signals?.length) return null
+  const live = metadata?.live
+  const score = Math.round(metadata?.metadata_quality_score || 0)
+  const checkedAt = request.latest_observed_at?.slice(0, 10) || (live?.checked_at ? live.checked_at.slice(0, 10) : null)
+  const flags = metadata?.quality_flags?.slice(0, 3) || []
   return (
     <div className="source-insights">
-      <div className="source-score" aria-label={`Metadata score ${score || 'not available'}`}>
-        <div><Gauge size={14} /><span>Metadata</span><strong>{score || 'NA'}</strong></div>
-        <i><b style={{ width: `${Math.min(score, 100)}%` }} /></i>
-      </div>
+      {score ? (
+        <div className="source-score" aria-label={`Metadata score ${score}`}>
+          <div><Gauge size={14} /><span>Metadata</span><strong>{score}</strong></div>
+          <i><b style={{ width: `${Math.min(score, 100)}%` }} /></i>
+        </div>
+      ) : null}
       <div className="source-signals">
-        {metadata.source_kind ? <span><FileCheck2 size={13} /> {metadata.source_kind}</span> : null}
-        {metadata.import_complexity ? <span>{metadata.import_complexity} import</span> : null}
+        {metadata?.source_kind ? <span><FileCheck2 size={13} /> {metadata.source_kind}</span> : null}
+        {metadata?.import_complexity ? <span>{metadata.import_complexity} import</span> : null}
         {live?.http_status ? <span><Wifi size={13} /> HTTP {live.http_status}</span> : null}
         {checkedAt ? <span>Checked {checkedAt}</span> : null}
+        <SignalBadges signals={request.popularity_signals || []} />
       </div>
       {flags.length ? <div className="source-flags">{flags.map((flag) => <span key={flag}>{flag}</span>)}</div> : null}
     </div>
   )
+}
+
+function SignalBadges({ signals }: { signals: PopularitySignal[] }) {
+  const visible = [
+    { metric: 'citations' as const, icon: BarChart3, label: 'citations' },
+    { metric: 'downloads' as const, icon: Database, label: 'downloads' },
+    { metric: 'stars' as const, icon: Star, label: 'stars' },
+    { metric: 'forks' as const, icon: GitFork, label: 'forks' },
+  ].map(({ metric, icon: Icon, label }) => ({
+    metric,
+    Icon,
+    label,
+    value: signals.filter((signal) => signal.metric === metric).reduce((sum, signal) => sum + signal.value, 0),
+  })).filter((item) => item.value > 0)
+  return visible.slice(0, 4).map(({ metric, Icon, label, value }) => (
+    <span key={metric}><Icon size={13} /> {value.toLocaleString()} {label}</span>
+  ))
+}
+
+function IndexingBadge({ request }: { request: SourceRequest }) {
+  const value = request.indexing_status?.indexing_status
+  if (!value) return null
+  return <span className={`indexing-status ${value}`}><SearchCheck size={12} /> {indexingLabels[value]}</span>
 }
 
 function Status({ value }: { value: SourceRequest['status'] }) {

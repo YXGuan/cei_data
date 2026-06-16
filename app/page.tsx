@@ -1,7 +1,7 @@
 import { CatalogExplorer } from '@/components/catalog-explorer'
 import { getCatalogFacets, searchCatalog } from '@/lib/catalog'
 import dashboard from '@/public/data/dashboard.json'
-import sourceCandidates from '@/public/data/source-candidates.json'
+import sourceRegistry from '@/public/data/source-registry.json'
 
 export default async function Home() {
   const [initial, facets] = await Promise.all([
@@ -24,7 +24,7 @@ export default async function Home() {
             <div><strong>{totals.statements.toLocaleString()}</strong><span>reconciled records</span></div>
             <div><strong>{totals.countries.toLocaleString()}</strong><span>countries</span></div>
             <div><strong>{totals.languages.toLocaleString()}</strong><span>languages</span></div>
-            <div><strong>{sourceCandidates.length.toLocaleString()}</strong><span>third-party source candidates</span></div>
+            <div><strong>{sourceRegistry.length.toLocaleString()}</strong><span>source registry entries</span></div>
           </div>
         </div>
       </section>
