@@ -1,11 +1,14 @@
 import { CatalogExplorer } from '@/components/catalog-explorer'
 import { getCatalogFacets, searchCatalog } from '@/lib/catalog'
+import dashboard from '@/public/data/dashboard.json'
+import sourceCandidates from '@/public/data/source-candidates.json'
 
 export default async function Home() {
   const [initial, facets] = await Promise.all([
     searchCatalog({ sort: 'year', limit: 20 }),
     getCatalogFacets(),
   ])
+  const totals = dashboard.totals
 
   return (
     <main>
@@ -18,10 +21,10 @@ export default async function Home() {
             back to its provenance.
           </p>
           <div className="hero-stats" aria-label="Catalog summary">
-            <div><strong>1,666</strong><span>reconciled records</span></div>
-            <div><strong>143</strong><span>countries</span></div>
-            <div><strong>97</strong><span>languages</span></div>
-            <div><strong>4</strong><span>versioned source releases</span></div>
+            <div><strong>{totals.statements.toLocaleString()}</strong><span>reconciled records</span></div>
+            <div><strong>{totals.countries.toLocaleString()}</strong><span>countries</span></div>
+            <div><strong>{totals.languages.toLocaleString()}</strong><span>languages</span></div>
+            <div><strong>{sourceCandidates.length.toLocaleString()}</strong><span>third-party source candidates</span></div>
           </div>
         </div>
       </section>

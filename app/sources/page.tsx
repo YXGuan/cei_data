@@ -5,12 +5,12 @@ export default function SourcesPage() {
     <main className="content-page source-page">
       <section className="page-intro split-intro">
         <div>
-          <span className="overline">Community prioritization</span>
-          <h1>Help decide what enters the index next.</h1>
+          <span className="overline">Third-party source pipeline</span>
+          <h1>Review the evidence sources that can expand the index.</h1>
         </div>
         <p>
-          Vote for sources with the greatest research value. Votes inform the review queue;
-          inclusion still requires provenance, licensing, and metadata-quality checks.
+          Candidate sources are checked for live availability, import complexity, provenance,
+          licensing risk, and metadata completeness before they enter the catalog.
         </p>
       </section>
       <SourceVoting />

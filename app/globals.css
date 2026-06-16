@@ -128,6 +128,15 @@ a { color: inherit; text-decoration: none; }
 .source-card h2 { font-size: 19px; letter-spacing: -.4px; margin: 11px 0 3px; }
 .source-publisher { color: var(--green)!important; font-weight: 600; font-size: 10px!important; margin-top: 0!important; }
 .source-card-body > p { color: var(--muted); font-size: 12px; line-height: 1.6; max-width: 850px; margin: 10px 0; }
+.source-insights { border-top: 1px solid var(--soft-line); border-bottom: 1px solid var(--soft-line); margin-top: 15px; padding: 12px 0; display: grid; gap: 9px; }
+.source-score { display: grid; grid-template-columns: 155px minmax(80px, 1fr); gap: 10px; align-items: center; }
+.source-score > div { display: flex; align-items: center; gap: 5px; color: var(--green); font-family: var(--font-mono), monospace; font-size: 9px; text-transform: uppercase; letter-spacing: .4px; }
+.source-score strong { color: var(--ink); margin-left: auto; }
+.source-score i { height: 5px; background: #eaf0ed; border-radius: 4px; overflow: hidden; }
+.source-score b { display: block; height: 100%; background: var(--green); }
+.source-signals, .source-flags { display: flex; flex-wrap: wrap; gap: 6px; }
+.source-signals span, .source-flags span { border: 1px solid var(--line); background: #fbfcfb; border-radius: 3px; padding: 4px 7px; color: #526159; font-size: 9px; display: inline-flex; align-items: center; gap: 4px; }
+.source-flags span { border-color: #e3cfb1; background: var(--amber-soft); color: var(--amber); }
 .source-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
 .source-meta a { margin-left: auto; color: var(--green); font-size: 10px; font-weight: 600; display: flex; align-items: center; gap: 4px; }
 .review-note { display: flex; gap: 11px; padding: 17px 19px; background: var(--green-soft); color: var(--green-dark); border: 1px solid #c7ded2; }

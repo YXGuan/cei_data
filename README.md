@@ -143,7 +143,9 @@ normalizes the sparse fingerprint heatmap, and writes:
 - `public/data/dashboard.json`: lightweight frontend snapshot
 - `public/data/statements.json`: searchable statement registry snapshot
 - `public/data/fingerprints.json`: UMAP and cluster snapshot
+- `public/data/source-candidates.json`: checked third-party source-priority queue
 - `generated/import-summary.json`: import quality report
+- `generated/source-candidates-summary.json`: third-party source check summary
 
 Validate referential integrity and expected reconciliation counts:
 
@@ -158,6 +160,17 @@ The normalized score table currently contains:
 - 6,745 Dashboard B3 ontology scores
 - 34,957 unified-taxonomy scores
 - 28,188 recovered fingerprint-dimension scores
+
+Refresh only the third-party source-priority queue without rebuilding the full catalog:
+
+```bash
+npm run data:sources
+```
+
+The source queue starts from `data/source-candidates.seed.json`, fetches each canonical source URL,
+records response status, content type, page title, description, and metadata quality flags, then
+feeds the `/sources` product surface. These source candidates are review targets, not canonical
+statement records, until licensing, duplication, provenance, and metadata mapping are complete.
 
 To import the normalized records into Supabase:
 

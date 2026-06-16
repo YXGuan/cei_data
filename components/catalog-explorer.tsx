@@ -81,9 +81,7 @@ export function CatalogExplorer({ initial, facets }: { initial: CatalogSearch; f
           <SlidersHorizontal size={15} /> Filters {activeFilterCount ? <b>{activeFilterCount}</b> : null}
         </button>
         <p><Database size={14} /> Results from <strong>{result.source}</strong></p>
-        {/*
-        <Link href="/sources">Vote on the next source <ArrowRight size={14} /></Link>
-        */}
+        <Link href="/sources">Review source pipeline <ArrowRight size={14} /></Link>
       </div>
 
       <div className={`catalog-layout ${showFilters ? 'filters-visible' : ''}`}>
@@ -100,7 +98,7 @@ export function CatalogExplorer({ initial, facets }: { initial: CatalogSearch; f
           <div className="results-heading">
             <div>
               <strong>{result.total.toLocaleString()}</strong>
-              <span>{appliedQuery ? `records matching “${appliedQuery}”` : 'records in the catalog'}</span>
+              <span>{appliedQuery ? `records matching "${appliedQuery}"` : 'records in the catalog'}</span>
             </div>
             <label>Sort
               <select value={sort} onChange={(event) => { setSort(event.target.value); setPage(1) }}>

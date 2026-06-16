@@ -1,0 +1,234 @@
+[
+  {
+    "id": "eu-ai-act",
+    "title": "EU AI Act implementation resources",
+    "publisher": "European Commission",
+    "description": "Official implementation materials, codes of practice, guidance, and policy updates related to the European Union AI Act.",
+    "source_url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+    "coverage": "European Union",
+    "formats": ["HTML", "PDF"],
+    "status": "approved",
+    "created_at": "2026-06-15T00:00:00Z",
+    "vote_count": 42,
+    "user_voted": false,
+    "metadata": {
+      "source_kind": "Regulatory implementation hub",
+      "update_cadence": "Rolling implementation updates",
+      "license_status": "Official public web source; reuse terms require review",
+      "import_complexity": "medium",
+      "priority": "high",
+      "review_checks": [
+        "Canonical publisher page identified",
+        "Jurisdiction coverage normalized",
+        "Known overlap with existing CEI EU records"
+      ],
+      "known_gaps": [
+        "Confirm reuse terms before storing full text",
+        "Map implementation updates to existing statement keys"
+      ]
+    }
+  },
+  {
+    "id": "oecd-ai-policy-observatory",
+    "title": "OECD.AI Policy Navigator",
+    "publisher": "OECD.AI",
+    "description": "Living repository of national and international AI policy initiatives maintained by OECD.AI contributors and experts.",
+    "source_url": "https://oecd.ai/en/dashboards/overview",
+    "coverage": "Global policy initiatives",
+    "formats": ["HTML", "Data explorer"],
+    "status": "under_review",
+    "created_at": "2026-06-15T00:00:00Z",
+    "vote_count": 38,
+    "user_voted": false,
+    "metadata": {
+      "source_kind": "Policy navigator",
+      "update_cadence": "Regularly updated",
+      "license_status": "Public web source; data reuse terms require review",
+      "import_complexity": "high",
+      "priority": "high",
+      "review_checks": [
+        "Canonical policy navigator identified",
+        "Global coverage normalized",
+        "Candidate duplicate matching against existing CEI records"
+      ],
+      "known_gaps": [
+        "Determine stable record-level export path",
+        "Confirm attribution and reuse requirements"
+      ]
+    }
+  },
+  {
+    "id": "nist-ai-rmf",
+    "title": "NIST AI Risk Management Framework resources",
+    "publisher": "National Institute of Standards and Technology",
+    "description": "Framework, playbook, profiles, crosswalks, and supporting resources for voluntary AI risk management practice.",
+    "source_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "coverage": "United States and international practice",
+    "formats": ["HTML", "PDF"],
+    "status": "approved",
+    "created_at": "2026-06-15T00:00:00Z",
+    "vote_count": 33,
+    "user_voted": false,
+    "metadata": {
+      "source_kind": "Risk management framework hub",
+      "update_cadence": "Framework and profile updates",
+      "license_status": "US government public source; citation and downstream reuse review still required",
+      "import_complexity": "medium",
+      "priority": "high",
+      "review_checks": [
+        "Canonical .gov page identified",
+        "Resource family grouped under one source",
+        "Existing CEI NIST records likely matchable"
+      ],
+      "known_gaps": [
+        "Split framework, profiles, and playbook into separate records",
+        "Capture version dates for each PDF resource"
+      ]
+    }
+  },
+  {
+    "id": "coe-framework-convention-ai",
+    "title": "Council of Europe Framework Convention on AI",
+    "publisher": "Council of Europe",
+    "description": "Official treaty page for the Framework Convention on Artificial Intelligence, Human Rights, Democracy and the Rule of Law.",
+    "source_url": "https://www.coe.int/en/web/artificial-intelligence/the-framework-convention-on-artificial-intelligence",
+    "coverage": "Council of Europe and treaty signatories",
+    "formats": ["HTML", "PDF"],
+    "status": "under_review",
+    "created_at": "2026-06-15T00:00:00Z",
+    "vote_count": 29,
+    "user_voted": false,
+    "metadata": {
+      "source_kind": "Treaty source",
+      "update_cadence": "Treaty status and implementation updates",
+      "license_status": "Official public web source; treaty text reuse terms require review",
+      "import_complexity": "medium",
+      "priority": "high",
+      "review_checks": [
+        "Canonical treaty page identified",
+        "Coverage field names treaty scope",
+        "High-value provenance target for legal instruments"
+      ],
+      "known_gaps": [
+        "Capture signatory status separately from treaty text",
+        "Reconcile national implementation documents"
+      ]
+    }
+  },
+  {
+    "id": "unesco-ai-ethics",
+    "title": "UNESCO Recommendation on the Ethics of AI",
+    "publisher": "UNESCO",
+    "description": "Global AI ethics standard, implementation resources, readiness methodology, and impact assessment materials from UNESCO.",
+    "source_url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics",
+    "coverage": "UNESCO member states",
+    "formats": ["HTML", "PDF", "Toolkit"],
+    "status": "approved",
+    "created_at": "2026-06-15T00:00:00Z",
+    "vote_count": 27,
+    "user_voted": false,
+    "metadata": {
+      "source_kind": "International standard and implementation toolkit",
+      "update_cadence": "Program and implementation updates",
+      "license_status": "Official public web source; publication reuse terms require review",
+      "import_complexity": "medium",
+      "priority": "high",
+      "review_checks": [
+        "Canonical UNESCO page identified",
+        "Implementation methods noted as separate artifacts",
+        "Global coverage normalized"
+      ],
+      "known_gaps": [
+        "Separate recommendation text from implementation tools",
+        "Track multilingual resource variants"
+      ]
+    }
+  },
+  {
+    "id": "global-index-responsible-ai",
+    "title": "Global Index on Responsible AI",
+    "publisher": "Global Center on AI Governance",
+    "description": "Country-level responsible AI index tracking policy, capability, and safeguard indicators across a broad global sample.",
+    "source_url": "https://www.global-index.ai/",
+    "coverage": "Global country index",
+    "formats": ["HTML", "Dataset candidate", "Report"],
+    "status": "proposed",
+    "created_at": "2026-06-15T00:00:00Z",
+    "vote_count": 22,
+    "user_voted": false,
+    "metadata": {
+      "source_kind": "Comparative governance index",
+      "update_cadence": "Periodic report releases",
+      "license_status": "Reuse terms require review",
+      "import_complexity": "high",
+      "priority": "medium",
+      "review_checks": [
+        "Canonical index page identified",
+        "Coverage normalized as country-level comparative data",
+        "Potential value for benchmarking records"
+      ],
+      "known_gaps": [
+        "Confirm whether record-level data is downloadable",
+        "Keep index indicators separate from source policy records"
+      ]
+    }
+  },
+  {
+    "id": "caidp-ai-democratic-values",
+    "title": "CAIDP Artificial Intelligence and Democratic Values Index",
+    "publisher": "Center for AI and Digital Policy",
+    "description": "Annual comparative review of national AI policies, democratic governance, human rights, and rule-of-law alignment.",
+    "source_url": "https://www.caidp.org/reports/caidp-index-2025/",
+    "coverage": "Global country index",
+    "formats": ["HTML", "Report"],
+    "status": "proposed",
+    "created_at": "2026-06-15T00:00:00Z",
+    "vote_count": 18,
+    "user_voted": false,
+    "metadata": {
+      "source_kind": "Comparative policy index",
+      "update_cadence": "Annual report releases",
+      "license_status": "Reuse terms require review",
+      "import_complexity": "medium",
+      "priority": "medium",
+      "review_checks": [
+        "Canonical report page identified",
+        "Coverage normalized as country-level comparative data",
+        "Useful for evaluation context rather than canonical statements"
+      ],
+      "known_gaps": [
+        "Confirm report licensing",
+        "Model country scores separately from statement records"
+      ]
+    }
+  },
+  {
+    "id": "stanford-ai-index",
+    "title": "Stanford AI Index Report",
+    "publisher": "Stanford Institute for Human-Centered AI",
+    "description": "Annual report and supporting analysis on AI trends, including policy, regulation, public opinion, and technical indicators.",
+    "source_url": "https://aiindex.stanford.edu/report/",
+    "coverage": "Global AI trend indicators",
+    "formats": ["HTML", "PDF", "Dataset candidate"],
+    "status": "proposed",
+    "created_at": "2026-06-15T00:00:00Z",
+    "vote_count": 15,
+    "user_voted": false,
+    "metadata": {
+      "source_kind": "Annual trend report",
+      "update_cadence": "Annual report releases",
+      "license_status": "Reuse terms require review",
+      "import_complexity": "medium",
+      "priority": "medium",
+      "review_checks": [
+        "Canonical report page identified",
+        "Can enrich policy context and trend metadata",
+        "Should remain separate from canonical policy sources"
+      ],
+      "known_gaps": [
+        "Identify stable table/data downloads",
+        "Avoid mixing trend indicators with statement provenance"
+      ]
+    }
+  }
+]

@@ -4,7 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "data:prepare": "node scripts/import-cei.mjs --prepare",
+    "data:prepare": "node scripts/import-cei.mjs --prepare && node scripts/prepare-source-candidates.mjs",
+    "data:sources": "node scripts/prepare-source-candidates.mjs",
     "data:validate": "node scripts/validate-data.mjs",
     "data:import": "node scripts/import-cei.mjs --push",
     "data:describe": "uv run cei-data describe",

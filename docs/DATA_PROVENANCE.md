@@ -43,13 +43,28 @@ The current prepared output contains:
 - 66 ontology relationships
 - 28,188 fingerprint-dimension scores
 - 34,957 unified-taxonomy scores
+- 8 checked third-party source candidates for the review queue
 
 `generated/import-summary.json` records artifact checksums and counts for the most recent import.
+`generated/source-candidates-summary.json` records the latest third-party source metadata check.
 `statement_sources` and `dataset_artifacts` preserve original source payloads after a Supabase import.
+
+## Third-Party Source Candidates
+
+`npm run data:sources` starts from `data/source-candidates.seed.json` and checks canonical public
+source pages for the governed expansion queue. The current candidates include official or
+well-known resources from the European Commission, OECD.AI, NIST, the Council of Europe, UNESCO,
+the Global Center on AI Governance, the Center for AI and Digital Policy, and Stanford HAI.
+
+These candidates are not merged into the canonical statement registry by the metadata checker. They
+remain review targets until the project confirms license/reuse terms, stable record-level import
+paths, duplicate matching against existing `STMT-*` records, and the correct representation for
+indexes or trend datasets that are not primary policy statements.
 
 ## Important Limitation
 
 Many records include a canonical source URL pointing to an original policy, standard, report, or
 publisher. However, the CEI upstream repositories are the immediate source of the normalized
 metadata and analysis values in this database. Review the upstream repositories' methodology and
-licenses before republishing the corpus.
+licenses before republishing the corpus. Review the third-party source candidates separately before
+importing or storing their full text.

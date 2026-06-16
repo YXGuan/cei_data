@@ -41,7 +41,7 @@ export default async function RecordPage({ params }: { params: Promise<{ id: str
           <h2>Record metadata</h2>
           <Metadata icon={Landmark} label="Organization type" value={record.organization_type} />
           <Metadata icon={Calendar} label="Publication year" value={record.year?.toString()} />
-          <Metadata icon={Globe2} label="Region / country" value={[record.region, record.country_code].filter(Boolean).join(' · ')} />
+          <Metadata icon={Globe2} label="Region / country" value={[record.region, record.country_code].filter(Boolean).join(' / ')} />
           <Metadata icon={FileText} label="Scope" value={record.geographic_scope} />
           <Metadata icon={BookOpenText} label="Language" value={record.language_code?.toUpperCase()} />
           {record.word_count ? <Metadata icon={FileText} label="Word count" value={record.word_count.toLocaleString()} /> : null}

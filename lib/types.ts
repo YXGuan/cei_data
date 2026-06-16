@@ -39,6 +39,29 @@ export type CatalogSearch = {
   source: 'Supabase' | 'Prepared snapshot'
 }
 
+export type SourceRequestMetadata = {
+  source_kind?: string
+  update_cadence?: string
+  license_status?: string
+  import_complexity?: 'low' | 'medium' | 'high' | string
+  priority?: 'low' | 'medium' | 'high' | string
+  review_checks?: string[]
+  known_gaps?: string[]
+  metadata_quality_score?: number
+  quality_flags?: string[]
+  live?: {
+    checked_at?: string
+    ok?: boolean
+    http_status?: number | null
+    resolved_url?: string | null
+    content_type?: string | null
+    last_modified?: string | null
+    page_title?: string | null
+    meta_description?: string | null
+    error?: string
+  }
+}
+
 export type SourceRequest = {
   id: string
   title: string
@@ -51,4 +74,5 @@ export type SourceRequest = {
   created_at: string
   vote_count: number
   user_voted: boolean
+  metadata?: SourceRequestMetadata
 }

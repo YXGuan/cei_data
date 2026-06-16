@@ -1,31 +1,16 @@
 'use client'
 
 import { useCallback, useEffect, useState } from 'react'
-import { ArrowUp, ArrowUpRight, Check, CircleUserRound, Database, LogIn, Plus, ShieldCheck } from 'lucide-react'
+import {
+  ArrowUp, ArrowUpRight, Check, CircleUserRound, Database, FileCheck2, Gauge,
+  LogIn, Plus, ShieldCheck, Wifi,
+} from 'lucide-react'
 import type { Session } from '@supabase/supabase-js'
 import { supabase } from '@/lib/supabase-browser'
 import type { SourceRequest } from '@/lib/types'
+import sourceCandidates from '@/public/data/source-candidates.json'
 
-const fallbackRequests: SourceRequest[] = [
-  {
-    id: 'fallback-eu', title: 'EU AI Act implementation resources', publisher: 'European Commission',
-    description: 'Official implementation materials, codes of practice, and guidance related to the European Union AI Act.',
-    source_url: 'https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai', coverage: 'European Union',
-    formats: ['PDF', 'HTML'], status: 'approved', created_at: '2026-06-13T00:00:00Z', vote_count: 31, user_voted: false,
-  },
-  {
-    id: 'fallback-oecd', title: 'OECD AI Policy Observatory', publisher: 'OECD.AI',
-    description: 'Policy initiatives, national strategies, and governance instruments from the OECD AI Policy Observatory.',
-    source_url: 'https://oecd.ai/en/dashboards/overview', coverage: 'Global policy initiatives',
-    formats: ['API', 'HTML'], status: 'under_review', created_at: '2026-06-13T00:00:00Z', vote_count: 24, user_voted: false,
-  },
-  {
-    id: 'fallback-nist', title: 'NIST AI Risk Management Framework resources', publisher: 'NIST',
-    description: 'Implementation resources, profiles, and supporting documents associated with the NIST AI Risk Management Framework.',
-    source_url: 'https://www.nist.gov/itl/ai-risk-management-framework', coverage: 'United States and international practice',
-    formats: ['PDF', 'HTML'], status: 'proposed', created_at: '2026-06-13T00:00:00Z', vote_count: 18, user_voted: false,
-  },
-]
+const fallbackRequests = sourceCandidates as SourceRequest[]
 
 export function SourceVoting() {
   const [requests, setRequests] = useState(fallbackRequests)
@@ -99,6 +84,7 @@ export function SourceVoting() {
               <h2>{request.title}</h2>
               <p className="source-publisher">{request.publisher}</p>
               <p>{request.description}</p>
+              <SourceMetadata request={request} />
               <div className="source-meta">
                 {request.coverage ? <span>{request.coverage}</span> : null}
                 {request.formats.map((format) => <span key={format}>{format}</span>)}
@@ -113,6 +99,30 @@ export function SourceVoting() {
         <ShieldCheck size={18} />
         <div><strong>Votes prioritize review, not automatic inclusion.</strong><p>Admins verify licensing, provenance, duplication, stability, and metadata completeness before importing a source.</p></div>
       </aside>
+    </div>
+  )
+}
+
+function SourceMetadata({ request }: { request: SourceRequest }) {
+  const metadata = request.metadata
+  if (!metadata) return null
+  const live = metadata.live
+  const score = Math.round(metadata.metadata_quality_score || 0)
+  const checkedAt = live?.checked_at ? live.checked_at.slice(0, 10) : null
+  const flags = metadata.quality_flags?.slice(0, 3) || []
+  return (
+    <div className="source-insights">
+      <div className="source-score" aria-label={`Metadata score ${score || 'not available'}`}>
+        <div><Gauge size={14} /><span>Metadata</span><strong>{score || 'NA'}</strong></div>
+        <i><b style={{ width: `${Math.min(score, 100)}%` }} /></i>
+      </div>
+      <div className="source-signals">
+        {metadata.source_kind ? <span><FileCheck2 size={13} /> {metadata.source_kind}</span> : null}
+        {metadata.import_complexity ? <span>{metadata.import_complexity} import</span> : null}
+        {live?.http_status ? <span><Wifi size={13} /> HTTP {live.http_status}</span> : null}
+        {checkedAt ? <span>Checked {checkedAt}</span> : null}
+      </div>
+      {flags.length ? <div className="source-flags">{flags.map((flag) => <span key={flag}>{flag}</span>)}</div> : null}
     </div>
   )
 }
