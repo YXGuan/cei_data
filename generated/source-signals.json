@@ -1,0 +1,3724 @@
+[
+  {
+    "source_id": "agora-ai-governance-regulatory-archive",
+    "provider": "datacite",
+    "metric": "citations",
+    "value": 0,
+    "observed_at": "2026-06-16T01:59:34.838Z",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.15964829",
+    "raw_payload": {
+      "data": {
+        "id": "10.5281/zenodo.15964829",
+        "type": "dois",
+        "attributes": {
+          "doi": "10.5281/zenodo.15964829",
+          "prefix": "10.5281",
+          "suffix": "zenodo.15964829",
+          "identifiers": [
+            {
+              "identifier": "oai:zenodo.org:15964829",
+              "identifierType": "oai"
+            }
+          ],
+          "alternateIdentifiers": [
+            {
+              "alternateIdentifierType": "oai",
+              "alternateIdentifier": "oai:zenodo.org:15964829"
+            }
+          ],
+          "creators": [
+            {
+              "name": "Arnold, Zachary",
+              "nameType": "Personal",
+              "givenName": "Zachary",
+              "familyName": "Arnold",
+              "affiliation": [
+                "Center for Security and Emerging Technology"
+              ],
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0003-4193-7812",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ]
+            },
+            {
+              "name": "Melot, Jennifer",
+              "nameType": "Personal",
+              "givenName": "Jennifer",
+              "familyName": "Melot",
+              "affiliation": [
+                "Center for Security and Emerging Technology"
+              ],
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0002-3772-6097",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ]
+            },
+            {
+              "name": "Enwereazu, Ogadinma",
+              "nameType": "Personal",
+              "givenName": "Ogadinma",
+              "familyName": "Enwereazu",
+              "affiliation": [
+                "Purdue University System"
+              ],
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0002-5369-9463",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ]
+            },
+            {
+              "name": "Schiff, Daniel S.",
+              "nameType": "Personal",
+              "givenName": "Daniel S.",
+              "familyName": "Schiff",
+              "affiliation": [
+                "Purdue University System"
+              ],
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0002-4376-7303",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ]
+            },
+            {
+              "name": "Schiff, Kaylyn Jackson",
+              "nameType": "Personal",
+              "givenName": "Kaylyn Jackson",
+              "familyName": "Schiff",
+              "affiliation": [
+                "Purdue University System"
+              ],
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0002-4239-5915",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ]
+            },
+            {
+              "name": "Girard, Tyler",
+              "nameType": "Personal",
+              "givenName": "Tyler",
+              "familyName": "Girard",
+              "affiliation": [
+                "Purdue University System"
+              ],
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0001-8568-8868",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ]
+            }
+          ],
+          "titles": [
+            {
+              "title": "AGORA Dataset"
+            }
+          ],
+          "publisher": "Zenodo",
+          "container": {},
+          "publicationYear": 2025,
+          "subjects": [],
+          "contributors": [],
+          "dates": [
+            {
+              "date": "2025-07-16",
+              "dateType": "Issued"
+            }
+          ],
+          "language": null,
+          "types": {
+            "ris": "DATA",
+            "bibtex": "misc",
+            "citeproc": "dataset",
+            "schemaOrg": "Dataset",
+            "resourceType": "",
+            "resourceTypeGeneral": "Dataset"
+          },
+          "relatedIdentifiers": [
+            {
+              "relationType": "IsVersionOf",
+              "relatedIdentifier": "10.5281/zenodo.13883066",
+              "relatedIdentifierType": "DOI"
+            }
+          ],
+          "relatedItems": [],
+          "sizes": [],
+          "formats": [],
+          "version": "1.20.0",
+          "rightsList": [
+            {
+              "rights": "Creative Commons Attribution Non Commercial 4.0 International",
+              "rightsUri": "https://creativecommons.org/licenses/by-nc/4.0/legalcode",
+              "schemeUri": "https://spdx.org/licenses/",
+              "rightsIdentifier": "cc-by-nc-4.0",
+              "rightsIdentifierScheme": "SPDX"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "AGORA (AI GOvernance and Regulatory Archive) is a living collection of AI-relevant laws, regulations, standards, and other governance documents. This dataset includes bulk metadata, summaries, and text for all AGORA documents. For further details, licensing, and full credits, visit the official documentation.\n\nAGORA is a project of the Emerging Technology Observatory.",
+              "descriptionType": "Abstract"
+            }
+          ],
+          "geoLocations": [],
+          "fundingReferences": [],
+          "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00L21ldGFkYXRhLnhzZCI+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuNTI4MS9aRU5PRE8uMTU5NjQ4Mjk8L2lkZW50aWZpZXI+CiAgPGNyZWF0b3JzPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkFybm9sZCwgWmFjaGFyeTwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+WmFjaGFyeTwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5Bcm5vbGQ8L2ZhbWlseU5hbWU+CiAgICAgIDxuYW1lSWRlbnRpZmllciBuYW1lSWRlbnRpZmllclNjaGVtZT0iT1JDSUQiIHNjaGVtZVVSST0iIj4wMDAwLTAwMDMtNDE5My03ODEyPC9uYW1lSWRlbnRpZmllcj4KICAgICAgPGFmZmlsaWF0aW9uPkNlbnRlciBmb3IgU2VjdXJpdHkgYW5kIEVtZXJnaW5nIFRlY2hub2xvZ3k8L2FmZmlsaWF0aW9uPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPk1lbG90LCBKZW5uaWZlcjwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+SmVubmlmZXI8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+TWVsb3Q8L2ZhbWlseU5hbWU+CiAgICAgIDxuYW1lSWRlbnRpZmllciBuYW1lSWRlbnRpZmllclNjaGVtZT0iT1JDSUQiIHNjaGVtZVVSST0iIj4wMDAwLTAwMDItMzc3Mi02MDk3PC9uYW1lSWRlbnRpZmllcj4KICAgICAgPGFmZmlsaWF0aW9uPkNlbnRlciBmb3IgU2VjdXJpdHkgYW5kIEVtZXJnaW5nIFRlY2hub2xvZ3k8L2FmZmlsaWF0aW9uPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkVud2VyZWF6dSwgT2dhZGlubWE8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPk9nYWRpbm1hPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkVud2VyZWF6dTwvZmFtaWx5TmFtZT4KICAgICAgPG5hbWVJZGVudGlmaWVyIG5hbWVJZGVudGlmaWVyU2NoZW1lPSJPUkNJRCIgc2NoZW1lVVJJPSIiPjAwMDAtMDAwMi01MzY5LTk0NjM8L25hbWVJZGVudGlmaWVyPgogICAgICA8YWZmaWxpYXRpb24+UHVyZHVlIFVuaXZlcnNpdHkgU3lzdGVtPC9hZmZpbGlhdGlvbj4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5TY2hpZmYsIERhbmllbCBTLjwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+RGFuaWVsIFMuPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPlNjaGlmZjwvZmFtaWx5TmFtZT4KICAgICAgPG5hbWVJZGVudGlmaWVyIG5hbWVJZGVudGlmaWVyU2NoZW1lPSJPUkNJRCIgc2NoZW1lVVJJPSIiPjAwMDAtMDAwMi00Mzc2LTczMDM8L25hbWVJZGVudGlmaWVyPgogICAgICA8YWZmaWxpYXRpb24+UHVyZHVlIFVuaXZlcnNpdHkgU3lzdGVtPC9hZmZpbGlhdGlvbj4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5TY2hpZmYsIEtheWx5biBKYWNrc29uPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5LYXlseW4gSmFja3NvbjwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5TY2hpZmY8L2ZhbWlseU5hbWU+CiAgICAgIDxuYW1lSWRlbnRpZmllciBuYW1lSWRlbnRpZmllclNjaGVtZT0iT1JDSUQiIHNjaGVtZVVSST0iIj4wMDAwLTAwMDItNDIzOS01OTE1PC9uYW1lSWRlbnRpZmllcj4KICAgICAgPGFmZmlsaWF0aW9uPlB1cmR1ZSBVbml2ZXJzaXR5IFN5c3RlbTwvYWZmaWxpYXRpb24+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+R2lyYXJkLCBUeWxlcjwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+VHlsZXI8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+R2lyYXJkPC9mYW1pbHlOYW1lPgogICAgICA8bmFtZUlkZW50aWZpZXIgbmFtZUlkZW50aWZpZXJTY2hlbWU9Ik9SQ0lEIiBzY2hlbWVVUkk9IiI+MDAwMC0wMDAxLTg1NjgtODg2ODwvbmFtZUlkZW50aWZpZXI+CiAgICAgIDxhZmZpbGlhdGlvbj5QdXJkdWUgVW5pdmVyc2l0eSBTeXN0ZW08L2FmZmlsaWF0aW9uPgogICAgPC9jcmVhdG9yPgogIDwvY3JlYXRvcnM+CiAgPHRpdGxlcz4KICAgIDx0aXRsZT5BR09SQSBEYXRhc2V0PC90aXRsZT4KICA8L3RpdGxlcz4KICA8cHVibGlzaGVyPlplbm9kbzwvcHVibGlzaGVyPgogIDxwdWJsaWNhdGlvblllYXI+MjAyNTwvcHVibGljYXRpb25ZZWFyPgogIDxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iRGF0YXNldCIvPgogIDxkYXRlcz4KICAgIDxkYXRlIGRhdGVUeXBlPSJJc3N1ZWQiPjIwMjUtMDctMTY8L2RhdGU+CiAgPC9kYXRlcz4KICA8YWx0ZXJuYXRlSWRlbnRpZmllcnM+CiAgICA8YWx0ZXJuYXRlSWRlbnRpZmllciBhbHRlcm5hdGVJZGVudGlmaWVyVHlwZT0ib2FpIj5vYWk6emVub2RvLm9yZzoxNTk2NDgyOTwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxyZWxhdGVkSWRlbnRpZmllcnM+CiAgICA8cmVsYXRlZElkZW50aWZpZXIgcmVsYXRlZElkZW50aWZpZXJUeXBlPSJET0kiIHJlbGF0aW9uVHlwZT0iSXNWZXJzaW9uT2YiPjEwLjUyODEvemVub2RvLjEzODgzMDY2PC9yZWxhdGVkSWRlbnRpZmllcj4KICA8L3JlbGF0ZWRJZGVudGlmaWVycz4KICA8c2l6ZXMvPgogIDxmb3JtYXRzLz4KICA8dmVyc2lvbj4xLjIwLjA8L3ZlcnNpb24+CiAgPHJpZ2h0c0xpc3Q+CiAgICA8cmlnaHRzIHJpZ2h0c1VSST0iaHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLzQuMC9sZWdhbGNvZGUiIHJpZ2h0c0lkZW50aWZpZXI9ImNjLWJ5LW5jLTQuMCIgcmlnaHRzSWRlbnRpZmllclNjaGVtZT0ic3BkeCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbiBOb24gQ29tbWVyY2lhbCA0LjAgSW50ZXJuYXRpb25hbDwvcmlnaHRzPgogIDwvcmlnaHRzTGlzdD4KICA8ZGVzY3JpcHRpb25zPgogICAgPGRlc2NyaXB0aW9uIGRlc2NyaXB0aW9uVHlwZT0iQWJzdHJhY3QiPkFHT1JBIChBSSBHT3Zlcm5hbmNlIGFuZCBSZWd1bGF0b3J5IEFyY2hpdmUpIGlzIGEgbGl2aW5nIGNvbGxlY3Rpb24gb2YgQUktcmVsZXZhbnQgbGF3cywgcmVndWxhdGlvbnMsIHN0YW5kYXJkcywgYW5kIG90aGVyIGdvdmVybmFuY2UgZG9jdW1lbnRzLiBUaGlzIGRhdGFzZXQgaW5jbHVkZXMgYnVsayBtZXRhZGF0YSwgc3VtbWFyaWVzLCBhbmQgdGV4dCBmb3IgYWxsIEFHT1JBIGRvY3VtZW50cy4gRm9yIGZ1cnRoZXIgZGV0YWlscywgbGljZW5zaW5nLCBhbmQgZnVsbCBjcmVkaXRzLCB2aXNpdCB0aGUgb2ZmaWNpYWwgZG9jdW1lbnRhdGlvbi4KCkFHT1JBIGlzIGEgcHJvamVjdCBvZiB0aGUgRW1lcmdpbmcgVGVjaG5vbG9neSBPYnNlcnZhdG9yeS48L2Rlc2NyaXB0aW9uPgogIDwvZGVzY3JpcHRpb25zPgo8L3Jlc291cmNlPgo=",
+          "url": "https://zenodo.org/doi/10.5281/zenodo.15964829",
+          "contentUrl": null,
+          "metadataVersion": 0,
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "source": "api",
+          "isActive": true,
+          "state": "findable",
+          "reason": null,
+          "viewCount": 0,
+          "viewsOverTime": [],
+          "downloadCount": 0,
+          "downloadsOverTime": [],
+          "referenceCount": 0,
+          "citationCount": 0,
+          "citationsOverTime": [],
+          "partCount": 0,
+          "partOfCount": 0,
+          "versionCount": 0,
+          "versionOfCount": 1,
+          "created": "2025-07-16T08:09:59.000Z",
+          "registered": "2025-07-16T08:09:59.000Z",
+          "published": "2025",
+          "updated": "2025-07-16T08:09:59.000Z"
+        },
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "cern.zenodo",
+              "type": "clients"
+            }
+          },
+          "provider": {
+            "data": {
+              "id": "cern",
+              "type": "providers"
+            }
+          },
+          "media": {
+            "data": {
+              "id": "10.5281/zenodo.15964829",
+              "type": "media"
+            }
+          },
+          "references": {
+            "data": []
+          },
+          "citations": {
+            "data": []
+          },
+          "parts": {
+            "data": []
+          },
+          "partOf": {
+            "data": []
+          },
+          "versions": {
+            "data": []
+          },
+          "versionOf": {
+            "data": [
+              {
+                "id": "10.5281/zenodo.13883066",
+                "type": "dois"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "source_id": "agora-ai-governance-regulatory-archive",
+    "provider": "datacite",
+    "metric": "downloads",
+    "value": 0,
+    "observed_at": "2026-06-16T01:59:34.838Z",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.15964829",
+    "raw_payload": {
+      "data": {
+        "id": "10.5281/zenodo.15964829",
+        "type": "dois",
+        "attributes": {
+          "doi": "10.5281/zenodo.15964829",
+          "prefix": "10.5281",
+          "suffix": "zenodo.15964829",
+          "identifiers": [
+            {
+              "identifier": "oai:zenodo.org:15964829",
+              "identifierType": "oai"
+            }
+          ],
+          "alternateIdentifiers": [
+            {
+              "alternateIdentifierType": "oai",
+              "alternateIdentifier": "oai:zenodo.org:15964829"
+            }
+          ],
+          "creators": [
+            {
+              "name": "Arnold, Zachary",
+              "nameType": "Personal",
+              "givenName": "Zachary",
+              "familyName": "Arnold",
+              "affiliation": [
+                "Center for Security and Emerging Technology"
+              ],
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0003-4193-7812",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ]
+            },
+            {
+              "name": "Melot, Jennifer",
+              "nameType": "Personal",
+              "givenName": "Jennifer",
+              "familyName": "Melot",
+              "affiliation": [
+                "Center for Security and Emerging Technology"
+              ],
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0002-3772-6097",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ]
+            },
+            {
+              "name": "Enwereazu, Ogadinma",
+              "nameType": "Personal",
+              "givenName": "Ogadinma",
+              "familyName": "Enwereazu",
+              "affiliation": [
+                "Purdue University System"
+              ],
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0002-5369-9463",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ]
+            },
+            {
+              "name": "Schiff, Daniel S.",
+              "nameType": "Personal",
+              "givenName": "Daniel S.",
+              "familyName": "Schiff",
+              "affiliation": [
+                "Purdue University System"
+              ],
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0002-4376-7303",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ]
+            },
+            {
+              "name": "Schiff, Kaylyn Jackson",
+              "nameType": "Personal",
+              "givenName": "Kaylyn Jackson",
+              "familyName": "Schiff",
+              "affiliation": [
+                "Purdue University System"
+              ],
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0002-4239-5915",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ]
+            },
+            {
+              "name": "Girard, Tyler",
+              "nameType": "Personal",
+              "givenName": "Tyler",
+              "familyName": "Girard",
+              "affiliation": [
+                "Purdue University System"
+              ],
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0001-8568-8868",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ]
+            }
+          ],
+          "titles": [
+            {
+              "title": "AGORA Dataset"
+            }
+          ],
+          "publisher": "Zenodo",
+          "container": {},
+          "publicationYear": 2025,
+          "subjects": [],
+          "contributors": [],
+          "dates": [
+            {
+              "date": "2025-07-16",
+              "dateType": "Issued"
+            }
+          ],
+          "language": null,
+          "types": {
+            "ris": "DATA",
+            "bibtex": "misc",
+            "citeproc": "dataset",
+            "schemaOrg": "Dataset",
+            "resourceType": "",
+            "resourceTypeGeneral": "Dataset"
+          },
+          "relatedIdentifiers": [
+            {
+              "relationType": "IsVersionOf",
+              "relatedIdentifier": "10.5281/zenodo.13883066",
+              "relatedIdentifierType": "DOI"
+            }
+          ],
+          "relatedItems": [],
+          "sizes": [],
+          "formats": [],
+          "version": "1.20.0",
+          "rightsList": [
+            {
+              "rights": "Creative Commons Attribution Non Commercial 4.0 International",
+              "rightsUri": "https://creativecommons.org/licenses/by-nc/4.0/legalcode",
+              "schemeUri": "https://spdx.org/licenses/",
+              "rightsIdentifier": "cc-by-nc-4.0",
+              "rightsIdentifierScheme": "SPDX"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "AGORA (AI GOvernance and Regulatory Archive) is a living collection of AI-relevant laws, regulations, standards, and other governance documents. This dataset includes bulk metadata, summaries, and text for all AGORA documents. For further details, licensing, and full credits, visit the official documentation.\n\nAGORA is a project of the Emerging Technology Observatory.",
+              "descriptionType": "Abstract"
+            }
+          ],
+          "geoLocations": [],
+          "fundingReferences": [],
+          "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00L21ldGFkYXRhLnhzZCI+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuNTI4MS9aRU5PRE8uMTU5NjQ4Mjk8L2lkZW50aWZpZXI+CiAgPGNyZWF0b3JzPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkFybm9sZCwgWmFjaGFyeTwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+WmFjaGFyeTwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5Bcm5vbGQ8L2ZhbWlseU5hbWU+CiAgICAgIDxuYW1lSWRlbnRpZmllciBuYW1lSWRlbnRpZmllclNjaGVtZT0iT1JDSUQiIHNjaGVtZVVSST0iIj4wMDAwLTAwMDMtNDE5My03ODEyPC9uYW1lSWRlbnRpZmllcj4KICAgICAgPGFmZmlsaWF0aW9uPkNlbnRlciBmb3IgU2VjdXJpdHkgYW5kIEVtZXJnaW5nIFRlY2hub2xvZ3k8L2FmZmlsaWF0aW9uPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPk1lbG90LCBKZW5uaWZlcjwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+SmVubmlmZXI8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+TWVsb3Q8L2ZhbWlseU5hbWU+CiAgICAgIDxuYW1lSWRlbnRpZmllciBuYW1lSWRlbnRpZmllclNjaGVtZT0iT1JDSUQiIHNjaGVtZVVSST0iIj4wMDAwLTAwMDItMzc3Mi02MDk3PC9uYW1lSWRlbnRpZmllcj4KICAgICAgPGFmZmlsaWF0aW9uPkNlbnRlciBmb3IgU2VjdXJpdHkgYW5kIEVtZXJnaW5nIFRlY2hub2xvZ3k8L2FmZmlsaWF0aW9uPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkVud2VyZWF6dSwgT2dhZGlubWE8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPk9nYWRpbm1hPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkVud2VyZWF6dTwvZmFtaWx5TmFtZT4KICAgICAgPG5hbWVJZGVudGlmaWVyIG5hbWVJZGVudGlmaWVyU2NoZW1lPSJPUkNJRCIgc2NoZW1lVVJJPSIiPjAwMDAtMDAwMi01MzY5LTk0NjM8L25hbWVJZGVudGlmaWVyPgogICAgICA8YWZmaWxpYXRpb24+UHVyZHVlIFVuaXZlcnNpdHkgU3lzdGVtPC9hZmZpbGlhdGlvbj4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5TY2hpZmYsIERhbmllbCBTLjwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+RGFuaWVsIFMuPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPlNjaGlmZjwvZmFtaWx5TmFtZT4KICAgICAgPG5hbWVJZGVudGlmaWVyIG5hbWVJZGVudGlmaWVyU2NoZW1lPSJPUkNJRCIgc2NoZW1lVVJJPSIiPjAwMDAtMDAwMi00Mzc2LTczMDM8L25hbWVJZGVudGlmaWVyPgogICAgICA8YWZmaWxpYXRpb24+UHVyZHVlIFVuaXZlcnNpdHkgU3lzdGVtPC9hZmZpbGlhdGlvbj4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5TY2hpZmYsIEtheWx5biBKYWNrc29uPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5LYXlseW4gSmFja3NvbjwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5TY2hpZmY8L2ZhbWlseU5hbWU+CiAgICAgIDxuYW1lSWRlbnRpZmllciBuYW1lSWRlbnRpZmllclNjaGVtZT0iT1JDSUQiIHNjaGVtZVVSST0iIj4wMDAwLTAwMDItNDIzOS01OTE1PC9uYW1lSWRlbnRpZmllcj4KICAgICAgPGFmZmlsaWF0aW9uPlB1cmR1ZSBVbml2ZXJzaXR5IFN5c3RlbTwvYWZmaWxpYXRpb24+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+R2lyYXJkLCBUeWxlcjwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+VHlsZXI8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+R2lyYXJkPC9mYW1pbHlOYW1lPgogICAgICA8bmFtZUlkZW50aWZpZXIgbmFtZUlkZW50aWZpZXJTY2hlbWU9Ik9SQ0lEIiBzY2hlbWVVUkk9IiI+MDAwMC0wMDAxLTg1NjgtODg2ODwvbmFtZUlkZW50aWZpZXI+CiAgICAgIDxhZmZpbGlhdGlvbj5QdXJkdWUgVW5pdmVyc2l0eSBTeXN0ZW08L2FmZmlsaWF0aW9uPgogICAgPC9jcmVhdG9yPgogIDwvY3JlYXRvcnM+CiAgPHRpdGxlcz4KICAgIDx0aXRsZT5BR09SQSBEYXRhc2V0PC90aXRsZT4KICA8L3RpdGxlcz4KICA8cHVibGlzaGVyPlplbm9kbzwvcHVibGlzaGVyPgogIDxwdWJsaWNhdGlvblllYXI+MjAyNTwvcHVibGljYXRpb25ZZWFyPgogIDxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iRGF0YXNldCIvPgogIDxkYXRlcz4KICAgIDxkYXRlIGRhdGVUeXBlPSJJc3N1ZWQiPjIwMjUtMDctMTY8L2RhdGU+CiAgPC9kYXRlcz4KICA8YWx0ZXJuYXRlSWRlbnRpZmllcnM+CiAgICA8YWx0ZXJuYXRlSWRlbnRpZmllciBhbHRlcm5hdGVJZGVudGlmaWVyVHlwZT0ib2FpIj5vYWk6emVub2RvLm9yZzoxNTk2NDgyOTwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxyZWxhdGVkSWRlbnRpZmllcnM+CiAgICA8cmVsYXRlZElkZW50aWZpZXIgcmVsYXRlZElkZW50aWZpZXJUeXBlPSJET0kiIHJlbGF0aW9uVHlwZT0iSXNWZXJzaW9uT2YiPjEwLjUyODEvemVub2RvLjEzODgzMDY2PC9yZWxhdGVkSWRlbnRpZmllcj4KICA8L3JlbGF0ZWRJZGVudGlmaWVycz4KICA8c2l6ZXMvPgogIDxmb3JtYXRzLz4KICA8dmVyc2lvbj4xLjIwLjA8L3ZlcnNpb24+CiAgPHJpZ2h0c0xpc3Q+CiAgICA8cmlnaHRzIHJpZ2h0c1VSST0iaHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLzQuMC9sZWdhbGNvZGUiIHJpZ2h0c0lkZW50aWZpZXI9ImNjLWJ5LW5jLTQuMCIgcmlnaHRzSWRlbnRpZmllclNjaGVtZT0ic3BkeCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbiBOb24gQ29tbWVyY2lhbCA0LjAgSW50ZXJuYXRpb25hbDwvcmlnaHRzPgogIDwvcmlnaHRzTGlzdD4KICA8ZGVzY3JpcHRpb25zPgogICAgPGRlc2NyaXB0aW9uIGRlc2NyaXB0aW9uVHlwZT0iQWJzdHJhY3QiPkFHT1JBIChBSSBHT3Zlcm5hbmNlIGFuZCBSZWd1bGF0b3J5IEFyY2hpdmUpIGlzIGEgbGl2aW5nIGNvbGxlY3Rpb24gb2YgQUktcmVsZXZhbnQgbGF3cywgcmVndWxhdGlvbnMsIHN0YW5kYXJkcywgYW5kIG90aGVyIGdvdmVybmFuY2UgZG9jdW1lbnRzLiBUaGlzIGRhdGFzZXQgaW5jbHVkZXMgYnVsayBtZXRhZGF0YSwgc3VtbWFyaWVzLCBhbmQgdGV4dCBmb3IgYWxsIEFHT1JBIGRvY3VtZW50cy4gRm9yIGZ1cnRoZXIgZGV0YWlscywgbGljZW5zaW5nLCBhbmQgZnVsbCBjcmVkaXRzLCB2aXNpdCB0aGUgb2ZmaWNpYWwgZG9jdW1lbnRhdGlvbi4KCkFHT1JBIGlzIGEgcHJvamVjdCBvZiB0aGUgRW1lcmdpbmcgVGVjaG5vbG9neSBPYnNlcnZhdG9yeS48L2Rlc2NyaXB0aW9uPgogIDwvZGVzY3JpcHRpb25zPgo8L3Jlc291cmNlPgo=",
+          "url": "https://zenodo.org/doi/10.5281/zenodo.15964829",
+          "contentUrl": null,
+          "metadataVersion": 0,
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "source": "api",
+          "isActive": true,
+          "state": "findable",
+          "reason": null,
+          "viewCount": 0,
+          "viewsOverTime": [],
+          "downloadCount": 0,
+          "downloadsOverTime": [],
+          "referenceCount": 0,
+          "citationCount": 0,
+          "citationsOverTime": [],
+          "partCount": 0,
+          "partOfCount": 0,
+          "versionCount": 0,
+          "versionOfCount": 1,
+          "created": "2025-07-16T08:09:59.000Z",
+          "registered": "2025-07-16T08:09:59.000Z",
+          "published": "2025",
+          "updated": "2025-07-16T08:09:59.000Z"
+        },
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "cern.zenodo",
+              "type": "clients"
+            }
+          },
+          "provider": {
+            "data": {
+              "id": "cern",
+              "type": "providers"
+            }
+          },
+          "media": {
+            "data": {
+              "id": "10.5281/zenodo.15964829",
+              "type": "media"
+            }
+          },
+          "references": {
+            "data": []
+          },
+          "citations": {
+            "data": []
+          },
+          "parts": {
+            "data": []
+          },
+          "partOf": {
+            "data": []
+          },
+          "versions": {
+            "data": []
+          },
+          "versionOf": {
+            "data": [
+              {
+                "id": "10.5281/zenodo.13883066",
+                "type": "dois"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "source_id": "agora-ai-governance-regulatory-archive",
+    "provider": "datacite",
+    "metric": "views",
+    "value": 0,
+    "observed_at": "2026-06-16T01:59:34.838Z",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.15964829",
+    "raw_payload": {
+      "data": {
+        "id": "10.5281/zenodo.15964829",
+        "type": "dois",
+        "attributes": {
+          "doi": "10.5281/zenodo.15964829",
+          "prefix": "10.5281",
+          "suffix": "zenodo.15964829",
+          "identifiers": [
+            {
+              "identifier": "oai:zenodo.org:15964829",
+              "identifierType": "oai"
+            }
+          ],
+          "alternateIdentifiers": [
+            {
+              "alternateIdentifierType": "oai",
+              "alternateIdentifier": "oai:zenodo.org:15964829"
+            }
+          ],
+          "creators": [
+            {
+              "name": "Arnold, Zachary",
+              "nameType": "Personal",
+              "givenName": "Zachary",
+              "familyName": "Arnold",
+              "affiliation": [
+                "Center for Security and Emerging Technology"
+              ],
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0003-4193-7812",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ]
+            },
+            {
+              "name": "Melot, Jennifer",
+              "nameType": "Personal",
+              "givenName": "Jennifer",
+              "familyName": "Melot",
+              "affiliation": [
+                "Center for Security and Emerging Technology"
+              ],
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0002-3772-6097",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ]
+            },
+            {
+              "name": "Enwereazu, Ogadinma",
+              "nameType": "Personal",
+              "givenName": "Ogadinma",
+              "familyName": "Enwereazu",
+              "affiliation": [
+                "Purdue University System"
+              ],
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0002-5369-9463",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ]
+            },
+            {
+              "name": "Schiff, Daniel S.",
+              "nameType": "Personal",
+              "givenName": "Daniel S.",
+              "familyName": "Schiff",
+              "affiliation": [
+                "Purdue University System"
+              ],
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0002-4376-7303",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ]
+            },
+            {
+              "name": "Schiff, Kaylyn Jackson",
+              "nameType": "Personal",
+              "givenName": "Kaylyn Jackson",
+              "familyName": "Schiff",
+              "affiliation": [
+                "Purdue University System"
+              ],
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0002-4239-5915",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ]
+            },
+            {
+              "name": "Girard, Tyler",
+              "nameType": "Personal",
+              "givenName": "Tyler",
+              "familyName": "Girard",
+              "affiliation": [
+                "Purdue University System"
+              ],
+              "nameIdentifiers": [
+                {
+                  "nameIdentifier": "0000-0001-8568-8868",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ]
+            }
+          ],
+          "titles": [
+            {
+              "title": "AGORA Dataset"
+            }
+          ],
+          "publisher": "Zenodo",
+          "container": {},
+          "publicationYear": 2025,
+          "subjects": [],
+          "contributors": [],
+          "dates": [
+            {
+              "date": "2025-07-16",
+              "dateType": "Issued"
+            }
+          ],
+          "language": null,
+          "types": {
+            "ris": "DATA",
+            "bibtex": "misc",
+            "citeproc": "dataset",
+            "schemaOrg": "Dataset",
+            "resourceType": "",
+            "resourceTypeGeneral": "Dataset"
+          },
+          "relatedIdentifiers": [
+            {
+              "relationType": "IsVersionOf",
+              "relatedIdentifier": "10.5281/zenodo.13883066",
+              "relatedIdentifierType": "DOI"
+            }
+          ],
+          "relatedItems": [],
+          "sizes": [],
+          "formats": [],
+          "version": "1.20.0",
+          "rightsList": [
+            {
+              "rights": "Creative Commons Attribution Non Commercial 4.0 International",
+              "rightsUri": "https://creativecommons.org/licenses/by-nc/4.0/legalcode",
+              "schemeUri": "https://spdx.org/licenses/",
+              "rightsIdentifier": "cc-by-nc-4.0",
+              "rightsIdentifierScheme": "SPDX"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "AGORA (AI GOvernance and Regulatory Archive) is a living collection of AI-relevant laws, regulations, standards, and other governance documents. This dataset includes bulk metadata, summaries, and text for all AGORA documents. For further details, licensing, and full credits, visit the official documentation.\n\nAGORA is a project of the Emerging Technology Observatory.",
+              "descriptionType": "Abstract"
+            }
+          ],
+          "geoLocations": [],
+          "fundingReferences": [],
+          "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00L21ldGFkYXRhLnhzZCI+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuNTI4MS9aRU5PRE8uMTU5NjQ4Mjk8L2lkZW50aWZpZXI+CiAgPGNyZWF0b3JzPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkFybm9sZCwgWmFjaGFyeTwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+WmFjaGFyeTwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5Bcm5vbGQ8L2ZhbWlseU5hbWU+CiAgICAgIDxuYW1lSWRlbnRpZmllciBuYW1lSWRlbnRpZmllclNjaGVtZT0iT1JDSUQiIHNjaGVtZVVSST0iIj4wMDAwLTAwMDMtNDE5My03ODEyPC9uYW1lSWRlbnRpZmllcj4KICAgICAgPGFmZmlsaWF0aW9uPkNlbnRlciBmb3IgU2VjdXJpdHkgYW5kIEVtZXJnaW5nIFRlY2hub2xvZ3k8L2FmZmlsaWF0aW9uPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPk1lbG90LCBKZW5uaWZlcjwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+SmVubmlmZXI8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+TWVsb3Q8L2ZhbWlseU5hbWU+CiAgICAgIDxuYW1lSWRlbnRpZmllciBuYW1lSWRlbnRpZmllclNjaGVtZT0iT1JDSUQiIHNjaGVtZVVSST0iIj4wMDAwLTAwMDItMzc3Mi02MDk3PC9uYW1lSWRlbnRpZmllcj4KICAgICAgPGFmZmlsaWF0aW9uPkNlbnRlciBmb3IgU2VjdXJpdHkgYW5kIEVtZXJnaW5nIFRlY2hub2xvZ3k8L2FmZmlsaWF0aW9uPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkVud2VyZWF6dSwgT2dhZGlubWE8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPk9nYWRpbm1hPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkVud2VyZWF6dTwvZmFtaWx5TmFtZT4KICAgICAgPG5hbWVJZGVudGlmaWVyIG5hbWVJZGVudGlmaWVyU2NoZW1lPSJPUkNJRCIgc2NoZW1lVVJJPSIiPjAwMDAtMDAwMi01MzY5LTk0NjM8L25hbWVJZGVudGlmaWVyPgogICAgICA8YWZmaWxpYXRpb24+UHVyZHVlIFVuaXZlcnNpdHkgU3lzdGVtPC9hZmZpbGlhdGlvbj4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5TY2hpZmYsIERhbmllbCBTLjwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+RGFuaWVsIFMuPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPlNjaGlmZjwvZmFtaWx5TmFtZT4KICAgICAgPG5hbWVJZGVudGlmaWVyIG5hbWVJZGVudGlmaWVyU2NoZW1lPSJPUkNJRCIgc2NoZW1lVVJJPSIiPjAwMDAtMDAwMi00Mzc2LTczMDM8L25hbWVJZGVudGlmaWVyPgogICAgICA8YWZmaWxpYXRpb24+UHVyZHVlIFVuaXZlcnNpdHkgU3lzdGVtPC9hZmZpbGlhdGlvbj4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5TY2hpZmYsIEtheWx5biBKYWNrc29uPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5LYXlseW4gSmFja3NvbjwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5TY2hpZmY8L2ZhbWlseU5hbWU+CiAgICAgIDxuYW1lSWRlbnRpZmllciBuYW1lSWRlbnRpZmllclNjaGVtZT0iT1JDSUQiIHNjaGVtZVVSST0iIj4wMDAwLTAwMDItNDIzOS01OTE1PC9uYW1lSWRlbnRpZmllcj4KICAgICAgPGFmZmlsaWF0aW9uPlB1cmR1ZSBVbml2ZXJzaXR5IFN5c3RlbTwvYWZmaWxpYXRpb24+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+R2lyYXJkLCBUeWxlcjwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+VHlsZXI8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+R2lyYXJkPC9mYW1pbHlOYW1lPgogICAgICA8bmFtZUlkZW50aWZpZXIgbmFtZUlkZW50aWZpZXJTY2hlbWU9Ik9SQ0lEIiBzY2hlbWVVUkk9IiI+MDAwMC0wMDAxLTg1NjgtODg2ODwvbmFtZUlkZW50aWZpZXI+CiAgICAgIDxhZmZpbGlhdGlvbj5QdXJkdWUgVW5pdmVyc2l0eSBTeXN0ZW08L2FmZmlsaWF0aW9uPgogICAgPC9jcmVhdG9yPgogIDwvY3JlYXRvcnM+CiAgPHRpdGxlcz4KICAgIDx0aXRsZT5BR09SQSBEYXRhc2V0PC90aXRsZT4KICA8L3RpdGxlcz4KICA8cHVibGlzaGVyPlplbm9kbzwvcHVibGlzaGVyPgogIDxwdWJsaWNhdGlvblllYXI+MjAyNTwvcHVibGljYXRpb25ZZWFyPgogIDxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iRGF0YXNldCIvPgogIDxkYXRlcz4KICAgIDxkYXRlIGRhdGVUeXBlPSJJc3N1ZWQiPjIwMjUtMDctMTY8L2RhdGU+CiAgPC9kYXRlcz4KICA8YWx0ZXJuYXRlSWRlbnRpZmllcnM+CiAgICA8YWx0ZXJuYXRlSWRlbnRpZmllciBhbHRlcm5hdGVJZGVudGlmaWVyVHlwZT0ib2FpIj5vYWk6emVub2RvLm9yZzoxNTk2NDgyOTwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxyZWxhdGVkSWRlbnRpZmllcnM+CiAgICA8cmVsYXRlZElkZW50aWZpZXIgcmVsYXRlZElkZW50aWZpZXJUeXBlPSJET0kiIHJlbGF0aW9uVHlwZT0iSXNWZXJzaW9uT2YiPjEwLjUyODEvemVub2RvLjEzODgzMDY2PC9yZWxhdGVkSWRlbnRpZmllcj4KICA8L3JlbGF0ZWRJZGVudGlmaWVycz4KICA8c2l6ZXMvPgogIDxmb3JtYXRzLz4KICA8dmVyc2lvbj4xLjIwLjA8L3ZlcnNpb24+CiAgPHJpZ2h0c0xpc3Q+CiAgICA8cmlnaHRzIHJpZ2h0c1VSST0iaHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLzQuMC9sZWdhbGNvZGUiIHJpZ2h0c0lkZW50aWZpZXI9ImNjLWJ5LW5jLTQuMCIgcmlnaHRzSWRlbnRpZmllclNjaGVtZT0ic3BkeCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbiBOb24gQ29tbWVyY2lhbCA0LjAgSW50ZXJuYXRpb25hbDwvcmlnaHRzPgogIDwvcmlnaHRzTGlzdD4KICA8ZGVzY3JpcHRpb25zPgogICAgPGRlc2NyaXB0aW9uIGRlc2NyaXB0aW9uVHlwZT0iQWJzdHJhY3QiPkFHT1JBIChBSSBHT3Zlcm5hbmNlIGFuZCBSZWd1bGF0b3J5IEFyY2hpdmUpIGlzIGEgbGl2aW5nIGNvbGxlY3Rpb24gb2YgQUktcmVsZXZhbnQgbGF3cywgcmVndWxhdGlvbnMsIHN0YW5kYXJkcywgYW5kIG90aGVyIGdvdmVybmFuY2UgZG9jdW1lbnRzLiBUaGlzIGRhdGFzZXQgaW5jbHVkZXMgYnVsayBtZXRhZGF0YSwgc3VtbWFyaWVzLCBhbmQgdGV4dCBmb3IgYWxsIEFHT1JBIGRvY3VtZW50cy4gRm9yIGZ1cnRoZXIgZGV0YWlscywgbGljZW5zaW5nLCBhbmQgZnVsbCBjcmVkaXRzLCB2aXNpdCB0aGUgb2ZmaWNpYWwgZG9jdW1lbnRhdGlvbi4KCkFHT1JBIGlzIGEgcHJvamVjdCBvZiB0aGUgRW1lcmdpbmcgVGVjaG5vbG9neSBPYnNlcnZhdG9yeS48L2Rlc2NyaXB0aW9uPgogIDwvZGVzY3JpcHRpb25zPgo8L3Jlc291cmNlPgo=",
+          "url": "https://zenodo.org/doi/10.5281/zenodo.15964829",
+          "contentUrl": null,
+          "metadataVersion": 0,
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "source": "api",
+          "isActive": true,
+          "state": "findable",
+          "reason": null,
+          "viewCount": 0,
+          "viewsOverTime": [],
+          "downloadCount": 0,
+          "downloadsOverTime": [],
+          "referenceCount": 0,
+          "citationCount": 0,
+          "citationsOverTime": [],
+          "partCount": 0,
+          "partOfCount": 0,
+          "versionCount": 0,
+          "versionOfCount": 1,
+          "created": "2025-07-16T08:09:59.000Z",
+          "registered": "2025-07-16T08:09:59.000Z",
+          "published": "2025",
+          "updated": "2025-07-16T08:09:59.000Z"
+        },
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "cern.zenodo",
+              "type": "clients"
+            }
+          },
+          "provider": {
+            "data": {
+              "id": "cern",
+              "type": "providers"
+            }
+          },
+          "media": {
+            "data": {
+              "id": "10.5281/zenodo.15964829",
+              "type": "media"
+            }
+          },
+          "references": {
+            "data": []
+          },
+          "citations": {
+            "data": []
+          },
+          "parts": {
+            "data": []
+          },
+          "partOf": {
+            "data": []
+          },
+          "versions": {
+            "data": []
+          },
+          "versionOf": {
+            "data": [
+              {
+                "id": "10.5281/zenodo.13883066",
+                "type": "dois"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "source_id": "agora-ai-governance-regulatory-archive",
+    "provider": "openalex",
+    "metric": "citations",
+    "value": 0,
+    "observed_at": "2026-06-16T01:59:34.748Z",
+    "url": "https://openalex.org/W6949361440",
+    "raw_payload": {
+      "id": "https://openalex.org/W6949361440",
+      "doi": "https://doi.org/10.5281/zenodo.15964829",
+      "title": "AGORA Dataset",
+      "display_name": "AGORA Dataset",
+      "publication_year": 2025,
+      "publication_date": "2025-07-16",
+      "ids": {
+        "openalex": "https://openalex.org/W6949361440",
+        "doi": "https://doi.org/10.5281/zenodo.15964829"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.5281/zenodo.15964829",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5281/zenodo.15964829",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306400562",
+          "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I67311998",
+          "host_organization_name": "European Organization for Nuclear Research",
+          "host_organization_lineage": [
+            "https://openalex.org/I67311998"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "dataset"
+      },
+      "type": "dataset",
+      "indexed_in": [
+        "datacite"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://doi.org/10.5281/zenodo.15964829",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": null,
+            "display_name": "Arnold, Zachary",
+            "orcid": "https://orcid.org/0000-0003-4193-7812"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210145449",
+              "display_name": "Center for Security and Emerging Technology",
+              "ror": "https://ror.org/045qf3j54",
+              "country_code": "US",
+              "type": "other",
+              "lineage": [
+                "https://openalex.org/I184565670",
+                "https://openalex.org/I4210145449"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Arnold, Zachary",
+          "raw_affiliation_strings": [
+            "Center for Security and Emerging Technology"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-4193-7812",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Center for Security and Emerging Technology",
+              "institution_ids": [
+                "https://openalex.org/I4210145449"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Melot, Jennifer",
+            "orcid": "https://orcid.org/0000-0002-3772-6097"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210145449",
+              "display_name": "Center for Security and Emerging Technology",
+              "ror": "https://ror.org/045qf3j54",
+              "country_code": "US",
+              "type": "other",
+              "lineage": [
+                "https://openalex.org/I184565670",
+                "https://openalex.org/I4210145449"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Melot, Jennifer",
+          "raw_affiliation_strings": [
+            "Center for Security and Emerging Technology"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-3772-6097",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Center for Security and Emerging Technology",
+              "institution_ids": [
+                "https://openalex.org/I4210145449"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Enwereazu, Ogadinma",
+            "orcid": "https://orcid.org/0000-0002-5369-9463"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I219193219",
+              "display_name": "Purdue University West Lafayette",
+              "ror": "https://ror.org/02dqehb95",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I219193219"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Enwereazu, Ogadinma",
+          "raw_affiliation_strings": [
+            "Purdue University System"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-5369-9463",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Purdue University System",
+              "institution_ids": [
+                "https://openalex.org/I219193219"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Schiff, Daniel S.",
+            "orcid": "https://orcid.org/0000-0002-4376-7303"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I219193219",
+              "display_name": "Purdue University West Lafayette",
+              "ror": "https://ror.org/02dqehb95",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I219193219"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Schiff, Daniel S.",
+          "raw_affiliation_strings": [
+            "Purdue University System"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-4376-7303",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Purdue University System",
+              "institution_ids": [
+                "https://openalex.org/I219193219"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Schiff, Kaylyn Jackson",
+            "orcid": "https://orcid.org/0000-0002-4239-5915"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I219193219",
+              "display_name": "Purdue University West Lafayette",
+              "ror": "https://ror.org/02dqehb95",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I219193219"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Schiff, Kaylyn Jackson",
+          "raw_affiliation_strings": [
+            "Purdue University System"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-4239-5915",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Purdue University System",
+              "institution_ids": [
+                "https://openalex.org/I219193219"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": null,
+            "display_name": "Girard, Tyler",
+            "orcid": "https://orcid.org/0000-0001-8568-8868"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I219193219",
+              "display_name": "Purdue University West Lafayette",
+              "ror": "https://ror.org/02dqehb95",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I219193219"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Girard, Tyler",
+          "raw_affiliation_strings": [
+            "Purdue University System"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-8568-8868",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Purdue University System",
+              "institution_ids": [
+                "https://openalex.org/I219193219"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 6,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": null,
+      "has_fulltext": false,
+      "cited_by_count": 0,
+      "citation_normalized_percentile": null,
+      "cited_by_percentile_year": null,
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": true,
+      "primary_topic": null,
+      "topics": [],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/agora",
+          "display_name": "Agora",
+          "score": 0.9417999982833862
+        },
+        {
+          "id": "https://openalex.org/keywords/corporate-governance",
+          "display_name": "Corporate governance",
+          "score": 0.40549999475479126
+        },
+        {
+          "id": "https://openalex.org/keywords/data-collection",
+          "display_name": "Data collection",
+          "score": 0.25679999589920044
+        },
+        {
+          "id": "https://openalex.org/keywords/annotation",
+          "display_name": "Annotation",
+          "score": 0.20800000429153442
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2779099944",
+          "wikidata": "https://www.wikidata.org/wiki/Q4693571",
+          "display_name": "Agora",
+          "level": 2,
+          "score": 0.9417999982833862
+        },
+        {
+          "id": "https://openalex.org/C39389867",
+          "wikidata": "https://www.wikidata.org/wiki/Q380767",
+          "display_name": "Corporate governance",
+          "level": 2,
+          "score": 0.40549999475479126
+        },
+        {
+          "id": "https://openalex.org/C17744445",
+          "wikidata": "https://www.wikidata.org/wiki/Q36442",
+          "display_name": "Political science",
+          "level": 0,
+          "score": 0.3359000086784363
+        },
+        {
+          "id": "https://openalex.org/C161191863",
+          "wikidata": "https://www.wikidata.org/wiki/Q199655",
+          "display_name": "Library science",
+          "level": 1,
+          "score": 0.2637999951839447
+        },
+        {
+          "id": "https://openalex.org/C133462117",
+          "wikidata": "https://www.wikidata.org/wiki/Q4929239",
+          "display_name": "Data collection",
+          "level": 2,
+          "score": 0.25679999589920044
+        },
+        {
+          "id": "https://openalex.org/C205649164",
+          "wikidata": "https://www.wikidata.org/wiki/Q1071",
+          "display_name": "Geography",
+          "level": 0,
+          "score": 0.24770000576972961
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.24269999563694
+        },
+        {
+          "id": "https://openalex.org/C144133560",
+          "wikidata": "https://www.wikidata.org/wiki/Q4830453",
+          "display_name": "Business",
+          "level": 0,
+          "score": 0.21209999918937683
+        },
+        {
+          "id": "https://openalex.org/C2776321320",
+          "wikidata": "https://www.wikidata.org/wiki/Q857525",
+          "display_name": "Annotation",
+          "level": 2,
+          "score": 0.20800000429153442
+        },
+        {
+          "id": "https://openalex.org/C136764020",
+          "wikidata": "https://www.wikidata.org/wiki/Q466",
+          "display_name": "World Wide Web",
+          "level": 1,
+          "score": 0.19930000603199005
+        }
+      ],
+      "mesh": [],
+      "locations_count": 1,
+      "locations": [
+        {
+          "id": "doi:10.5281/zenodo.15964829",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.5281/zenodo.15964829",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400562",
+            "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I67311998",
+            "host_organization_name": "European Organization for Nuclear Research",
+            "host_organization_lineage": [
+              "https://openalex.org/I67311998"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": null,
+          "is_accepted": false,
+          "is_published": null,
+          "raw_source_name": null,
+          "raw_type": "dataset"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.5281/zenodo.15964829",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.5281/zenodo.15964829",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306400562",
+          "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": true,
+          "is_in_doaj": false,
+          "is_core": false,
+          "host_organization": "https://openalex.org/I67311998",
+          "host_organization_name": "European Organization for Nuclear Research",
+          "host_organization_lineage": [
+            "https://openalex.org/I67311998"
+          ],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": null,
+        "license_id": null,
+        "version": null,
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "dataset"
+      },
+      "sustainable_development_goals": [],
+      "awards": [],
+      "funders": [],
+      "has_content": {
+        "pdf": false,
+        "grobid_xml": false
+      },
+      "content_urls": null,
+      "referenced_works_count": 0,
+      "referenced_works": [],
+      "related_works": [],
+      "abstract_inverted_index": {
+        "AGORA": [
+          0,
+          29,
+          42
+        ],
+        "(AI": [
+          1
+        ],
+        "GOvernance": [
+          2
+        ],
+        "and": [
+          3,
+          15,
+          25,
+          35
+        ],
+        "Regulatory": [
+          4
+        ],
+        "Archive)": [
+          5
+        ],
+        "is": [
+          6,
+          43
+        ],
+        "a": [
+          7,
+          44
+        ],
+        "living": [
+          8
+        ],
+        "collection": [
+          9
+        ],
+        "of": [
+          10,
+          46
+        ],
+        "AI-relevant": [
+          11
+        ],
+        "laws,": [
+          12
+        ],
+        "regulations,": [
+          13
+        ],
+        "standards,": [
+          14
+        ],
+        "other": [
+          16
+        ],
+        "governance": [
+          17
+        ],
+        "documents.": [
+          18,
+          30
+        ],
+        "This": [
+          19
+        ],
+        "dataset": [
+          20
+        ],
+        "includes": [
+          21
+        ],
+        "bulk": [
+          22
+        ],
+        "metadata,": [
+          23
+        ],
+        "summaries,": [
+          24
+        ],
+        "text": [
+          26
+        ],
+        "for": [
+          27
+        ],
+        "all": [
+          28
+        ],
+        "For": [
+          31
+        ],
+        "further": [
+          32
+        ],
+        "details,": [
+          33
+        ],
+        "licensing,": [
+          34
+        ],
+        "full": [
+          36
+        ],
+        "credits,": [
+          37
+        ],
+        "visit": [
+          38
+        ],
+        "the": [
+          39,
+          47
+        ],
+        "official": [
+          40
+        ],
+        "documentation.": [
+          41
+        ],
+        "project": [
+          45
+        ],
+        "Emerging": [
+          48
+        ],
+        "Technology": [
+          49
+        ],
+        "Observatory.": [
+          50
+        ]
+      },
+      "counts_by_year": [],
+      "updated_date": "2026-06-11T09:08:48.828518",
+      "created_date": "2025-10-10T00:00:00"
+    }
+  },
+  {
+    "source_id": "agora-ai-governance-regulatory-archive",
+    "provider": "zenodo",
+    "metric": "downloads",
+    "value": 1463,
+    "observed_at": "2026-06-16T01:59:34.939Z",
+    "url": "https://zenodo.org/records/15964829",
+    "raw_payload": {
+      "created": "2025-07-16T08:09:58.865186+00:00",
+      "modified": "2025-07-16T08:09:59.017931+00:00",
+      "id": 15964829,
+      "conceptrecid": "13883066",
+      "doi": "10.5281/zenodo.15964829",
+      "conceptdoi": "10.5281/zenodo.13883066",
+      "doi_url": "https://doi.org/10.5281/zenodo.15964829",
+      "metadata": {
+        "title": "AGORA Dataset",
+        "doi": "10.5281/zenodo.15964829",
+        "publication_date": "2025-07-16",
+        "description": "<p>AGORA (AI GOvernance and Regulatory Archive) is a living collection of AI-relevant laws, regulations, standards, and other governance documents. This dataset includes bulk metadata, summaries, and text for all AGORA documents. For further details, licensing, and full credits, visit the <a href=\"https://eto.tech/dataset-docs/agora-dataset/\">official documentation</a>.</p>\n<p>AGORA is a project of the <a href=\"https://eto.tech\" rel=\"nofollow\">Emerging Technology Observatory</a>.</p>",
+        "access_right": "open",
+        "creators": [
+          {
+            "name": "Arnold, Zachary",
+            "affiliation": "Center for Security and Emerging Technology",
+            "orcid": "0000-0003-4193-7812"
+          },
+          {
+            "name": "Melot, Jennifer",
+            "affiliation": "Center for Security and Emerging Technology",
+            "orcid": "0000-0002-3772-6097"
+          },
+          {
+            "name": "Enwereazu, Ogadinma",
+            "affiliation": "Purdue University System",
+            "orcid": "0000-0002-5369-9463"
+          },
+          {
+            "name": "Schiff, Daniel S.",
+            "affiliation": "Purdue University System",
+            "orcid": "0000-0002-4376-7303"
+          },
+          {
+            "name": "Schiff, Kaylyn Jackson",
+            "affiliation": "Purdue University System",
+            "orcid": "0000-0002-4239-5915"
+          },
+          {
+            "name": "Girard, Tyler",
+            "affiliation": "Purdue University System",
+            "orcid": "0000-0001-8568-8868"
+          }
+        ],
+        "version": "1.20.0",
+        "resource_type": {
+          "title": "Dataset",
+          "type": "dataset"
+        },
+        "license": {
+          "id": "cc-by-nc-4.0"
+        },
+        "relations": {
+          "version": [
+            {
+              "index": 26,
+              "is_last": false,
+              "parent": {
+                "pid_type": "recid",
+                "pid_value": "13883066"
+              }
+            }
+          ]
+        }
+      },
+      "title": "AGORA Dataset",
+      "links": {
+        "self": "https://zenodo.org/api/records/15964829",
+        "self_html": "https://zenodo.org/records/15964829",
+        "preview_html": "https://zenodo.org/records/15964829?preview=1",
+        "doi": "https://doi.org/10.5281/zenodo.15964829",
+        "self_doi": "https://doi.org/10.5281/zenodo.15964829",
+        "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15964829",
+        "reserve_doi": "https://zenodo.org/api/records/15964829/draft/pids/doi",
+        "parent": "https://zenodo.org/api/records/13883066",
+        "parent_html": "https://zenodo.org/records/13883066",
+        "parent_doi": "https://doi.org/10.5281/zenodo.13883066",
+        "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.13883066",
+        "self_iiif_manifest": "https://zenodo.org/api/iiif/record:15964829/manifest",
+        "self_iiif_sequence": "https://zenodo.org/api/iiif/record:15964829/sequence/default",
+        "files": "https://zenodo.org/api/records/15964829/files",
+        "media_files": "https://zenodo.org/api/records/15964829/media-files",
+        "archive": "https://zenodo.org/api/records/15964829/files-archive",
+        "archive_media": "https://zenodo.org/api/records/15964829/media-files-archive",
+        "latest": "https://zenodo.org/api/records/15964829/versions/latest",
+        "latest_html": "https://zenodo.org/records/15964829/latest",
+        "versions": "https://zenodo.org/api/records/15964829/versions",
+        "draft": "https://zenodo.org/api/records/15964829/draft",
+        "access_links": "https://zenodo.org/api/records/15964829/access/links",
+        "access_grants": "https://zenodo.org/api/records/15964829/access/grants",
+        "access_users": "https://zenodo.org/api/records/15964829/access/users",
+        "access_request": "https://zenodo.org/api/records/15964829/access/request",
+        "access": "https://zenodo.org/api/records/15964829/access",
+        "communities": "https://zenodo.org/api/records/15964829/communities",
+        "communities-suggestions": "https://zenodo.org/api/records/15964829/communities-suggestions",
+        "request_deletion": "https://zenodo.org/api/records/15964829/request-deletion",
+        "file_modification": "https://zenodo.org/api/records/15964829/file-modification",
+        "quota_increase": "https://zenodo.org/api/records/15964829/quota-increase",
+        "requests": "https://zenodo.org/api/records/15964829/requests"
+      },
+      "updated": "2025-07-16T08:09:59.017931+00:00",
+      "recid": "15964829",
+      "revision": 4,
+      "files": [
+        {
+          "id": "3ed151ab-eae9-4c83-9cd0-0fb7c9b50346",
+          "key": "agora.zip",
+          "size": 32365937,
+          "checksum": "md5:463f963ae480b03bf455ba6367035ea2",
+          "links": {
+            "self": "https://zenodo.org/api/records/15964829/files/agora.zip/content"
+          }
+        }
+      ],
+      "swh": {},
+      "owners": [
+        {
+          "id": "1042103"
+        }
+      ],
+      "status": "published",
+      "stats": {
+        "downloads": 1463,
+        "unique_downloads": 1335,
+        "views": 4849,
+        "unique_views": 4378,
+        "version_downloads": 163,
+        "version_unique_downloads": 136,
+        "version_unique_views": 451,
+        "version_views": 519
+      },
+      "state": "done",
+      "submitted": true
+    }
+  },
+  {
+    "source_id": "agora-ai-governance-regulatory-archive",
+    "provider": "zenodo",
+    "metric": "unique_downloads",
+    "value": 1335,
+    "observed_at": "2026-06-16T01:59:34.939Z",
+    "url": "https://zenodo.org/records/15964829",
+    "raw_payload": {
+      "created": "2025-07-16T08:09:58.865186+00:00",
+      "modified": "2025-07-16T08:09:59.017931+00:00",
+      "id": 15964829,
+      "conceptrecid": "13883066",
+      "doi": "10.5281/zenodo.15964829",
+      "conceptdoi": "10.5281/zenodo.13883066",
+      "doi_url": "https://doi.org/10.5281/zenodo.15964829",
+      "metadata": {
+        "title": "AGORA Dataset",
+        "doi": "10.5281/zenodo.15964829",
+        "publication_date": "2025-07-16",
+        "description": "<p>AGORA (AI GOvernance and Regulatory Archive) is a living collection of AI-relevant laws, regulations, standards, and other governance documents. This dataset includes bulk metadata, summaries, and text for all AGORA documents. For further details, licensing, and full credits, visit the <a href=\"https://eto.tech/dataset-docs/agora-dataset/\">official documentation</a>.</p>\n<p>AGORA is a project of the <a href=\"https://eto.tech\" rel=\"nofollow\">Emerging Technology Observatory</a>.</p>",
+        "access_right": "open",
+        "creators": [
+          {
+            "name": "Arnold, Zachary",
+            "affiliation": "Center for Security and Emerging Technology",
+            "orcid": "0000-0003-4193-7812"
+          },
+          {
+            "name": "Melot, Jennifer",
+            "affiliation": "Center for Security and Emerging Technology",
+            "orcid": "0000-0002-3772-6097"
+          },
+          {
+            "name": "Enwereazu, Ogadinma",
+            "affiliation": "Purdue University System",
+            "orcid": "0000-0002-5369-9463"
+          },
+          {
+            "name": "Schiff, Daniel S.",
+            "affiliation": "Purdue University System",
+            "orcid": "0000-0002-4376-7303"
+          },
+          {
+            "name": "Schiff, Kaylyn Jackson",
+            "affiliation": "Purdue University System",
+            "orcid": "0000-0002-4239-5915"
+          },
+          {
+            "name": "Girard, Tyler",
+            "affiliation": "Purdue University System",
+            "orcid": "0000-0001-8568-8868"
+          }
+        ],
+        "version": "1.20.0",
+        "resource_type": {
+          "title": "Dataset",
+          "type": "dataset"
+        },
+        "license": {
+          "id": "cc-by-nc-4.0"
+        },
+        "relations": {
+          "version": [
+            {
+              "index": 26,
+              "is_last": false,
+              "parent": {
+                "pid_type": "recid",
+                "pid_value": "13883066"
+              }
+            }
+          ]
+        }
+      },
+      "title": "AGORA Dataset",
+      "links": {
+        "self": "https://zenodo.org/api/records/15964829",
+        "self_html": "https://zenodo.org/records/15964829",
+        "preview_html": "https://zenodo.org/records/15964829?preview=1",
+        "doi": "https://doi.org/10.5281/zenodo.15964829",
+        "self_doi": "https://doi.org/10.5281/zenodo.15964829",
+        "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15964829",
+        "reserve_doi": "https://zenodo.org/api/records/15964829/draft/pids/doi",
+        "parent": "https://zenodo.org/api/records/13883066",
+        "parent_html": "https://zenodo.org/records/13883066",
+        "parent_doi": "https://doi.org/10.5281/zenodo.13883066",
+        "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.13883066",
+        "self_iiif_manifest": "https://zenodo.org/api/iiif/record:15964829/manifest",
+        "self_iiif_sequence": "https://zenodo.org/api/iiif/record:15964829/sequence/default",
+        "files": "https://zenodo.org/api/records/15964829/files",
+        "media_files": "https://zenodo.org/api/records/15964829/media-files",
+        "archive": "https://zenodo.org/api/records/15964829/files-archive",
+        "archive_media": "https://zenodo.org/api/records/15964829/media-files-archive",
+        "latest": "https://zenodo.org/api/records/15964829/versions/latest",
+        "latest_html": "https://zenodo.org/records/15964829/latest",
+        "versions": "https://zenodo.org/api/records/15964829/versions",
+        "draft": "https://zenodo.org/api/records/15964829/draft",
+        "access_links": "https://zenodo.org/api/records/15964829/access/links",
+        "access_grants": "https://zenodo.org/api/records/15964829/access/grants",
+        "access_users": "https://zenodo.org/api/records/15964829/access/users",
+        "access_request": "https://zenodo.org/api/records/15964829/access/request",
+        "access": "https://zenodo.org/api/records/15964829/access",
+        "communities": "https://zenodo.org/api/records/15964829/communities",
+        "communities-suggestions": "https://zenodo.org/api/records/15964829/communities-suggestions",
+        "request_deletion": "https://zenodo.org/api/records/15964829/request-deletion",
+        "file_modification": "https://zenodo.org/api/records/15964829/file-modification",
+        "quota_increase": "https://zenodo.org/api/records/15964829/quota-increase",
+        "requests": "https://zenodo.org/api/records/15964829/requests"
+      },
+      "updated": "2025-07-16T08:09:59.017931+00:00",
+      "recid": "15964829",
+      "revision": 4,
+      "files": [
+        {
+          "id": "3ed151ab-eae9-4c83-9cd0-0fb7c9b50346",
+          "key": "agora.zip",
+          "size": 32365937,
+          "checksum": "md5:463f963ae480b03bf455ba6367035ea2",
+          "links": {
+            "self": "https://zenodo.org/api/records/15964829/files/agora.zip/content"
+          }
+        }
+      ],
+      "swh": {},
+      "owners": [
+        {
+          "id": "1042103"
+        }
+      ],
+      "status": "published",
+      "stats": {
+        "downloads": 1463,
+        "unique_downloads": 1335,
+        "views": 4849,
+        "unique_views": 4378,
+        "version_downloads": 163,
+        "version_unique_downloads": 136,
+        "version_unique_views": 451,
+        "version_views": 519
+      },
+      "state": "done",
+      "submitted": true
+    }
+  },
+  {
+    "source_id": "agora-ai-governance-regulatory-archive",
+    "provider": "zenodo",
+    "metric": "unique_views",
+    "value": 4378,
+    "observed_at": "2026-06-16T01:59:34.939Z",
+    "url": "https://zenodo.org/records/15964829",
+    "raw_payload": {
+      "created": "2025-07-16T08:09:58.865186+00:00",
+      "modified": "2025-07-16T08:09:59.017931+00:00",
+      "id": 15964829,
+      "conceptrecid": "13883066",
+      "doi": "10.5281/zenodo.15964829",
+      "conceptdoi": "10.5281/zenodo.13883066",
+      "doi_url": "https://doi.org/10.5281/zenodo.15964829",
+      "metadata": {
+        "title": "AGORA Dataset",
+        "doi": "10.5281/zenodo.15964829",
+        "publication_date": "2025-07-16",
+        "description": "<p>AGORA (AI GOvernance and Regulatory Archive) is a living collection of AI-relevant laws, regulations, standards, and other governance documents. This dataset includes bulk metadata, summaries, and text for all AGORA documents. For further details, licensing, and full credits, visit the <a href=\"https://eto.tech/dataset-docs/agora-dataset/\">official documentation</a>.</p>\n<p>AGORA is a project of the <a href=\"https://eto.tech\" rel=\"nofollow\">Emerging Technology Observatory</a>.</p>",
+        "access_right": "open",
+        "creators": [
+          {
+            "name": "Arnold, Zachary",
+            "affiliation": "Center for Security and Emerging Technology",
+            "orcid": "0000-0003-4193-7812"
+          },
+          {
+            "name": "Melot, Jennifer",
+            "affiliation": "Center for Security and Emerging Technology",
+            "orcid": "0000-0002-3772-6097"
+          },
+          {
+            "name": "Enwereazu, Ogadinma",
+            "affiliation": "Purdue University System",
+            "orcid": "0000-0002-5369-9463"
+          },
+          {
+            "name": "Schiff, Daniel S.",
+            "affiliation": "Purdue University System",
+            "orcid": "0000-0002-4376-7303"
+          },
+          {
+            "name": "Schiff, Kaylyn Jackson",
+            "affiliation": "Purdue University System",
+            "orcid": "0000-0002-4239-5915"
+          },
+          {
+            "name": "Girard, Tyler",
+            "affiliation": "Purdue University System",
+            "orcid": "0000-0001-8568-8868"
+          }
+        ],
+        "version": "1.20.0",
+        "resource_type": {
+          "title": "Dataset",
+          "type": "dataset"
+        },
+        "license": {
+          "id": "cc-by-nc-4.0"
+        },
+        "relations": {
+          "version": [
+            {
+              "index": 26,
+              "is_last": false,
+              "parent": {
+                "pid_type": "recid",
+                "pid_value": "13883066"
+              }
+            }
+          ]
+        }
+      },
+      "title": "AGORA Dataset",
+      "links": {
+        "self": "https://zenodo.org/api/records/15964829",
+        "self_html": "https://zenodo.org/records/15964829",
+        "preview_html": "https://zenodo.org/records/15964829?preview=1",
+        "doi": "https://doi.org/10.5281/zenodo.15964829",
+        "self_doi": "https://doi.org/10.5281/zenodo.15964829",
+        "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15964829",
+        "reserve_doi": "https://zenodo.org/api/records/15964829/draft/pids/doi",
+        "parent": "https://zenodo.org/api/records/13883066",
+        "parent_html": "https://zenodo.org/records/13883066",
+        "parent_doi": "https://doi.org/10.5281/zenodo.13883066",
+        "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.13883066",
+        "self_iiif_manifest": "https://zenodo.org/api/iiif/record:15964829/manifest",
+        "self_iiif_sequence": "https://zenodo.org/api/iiif/record:15964829/sequence/default",
+        "files": "https://zenodo.org/api/records/15964829/files",
+        "media_files": "https://zenodo.org/api/records/15964829/media-files",
+        "archive": "https://zenodo.org/api/records/15964829/files-archive",
+        "archive_media": "https://zenodo.org/api/records/15964829/media-files-archive",
+        "latest": "https://zenodo.org/api/records/15964829/versions/latest",
+        "latest_html": "https://zenodo.org/records/15964829/latest",
+        "versions": "https://zenodo.org/api/records/15964829/versions",
+        "draft": "https://zenodo.org/api/records/15964829/draft",
+        "access_links": "https://zenodo.org/api/records/15964829/access/links",
+        "access_grants": "https://zenodo.org/api/records/15964829/access/grants",
+        "access_users": "https://zenodo.org/api/records/15964829/access/users",
+        "access_request": "https://zenodo.org/api/records/15964829/access/request",
+        "access": "https://zenodo.org/api/records/15964829/access",
+        "communities": "https://zenodo.org/api/records/15964829/communities",
+        "communities-suggestions": "https://zenodo.org/api/records/15964829/communities-suggestions",
+        "request_deletion": "https://zenodo.org/api/records/15964829/request-deletion",
+        "file_modification": "https://zenodo.org/api/records/15964829/file-modification",
+        "quota_increase": "https://zenodo.org/api/records/15964829/quota-increase",
+        "requests": "https://zenodo.org/api/records/15964829/requests"
+      },
+      "updated": "2025-07-16T08:09:59.017931+00:00",
+      "recid": "15964829",
+      "revision": 4,
+      "files": [
+        {
+          "id": "3ed151ab-eae9-4c83-9cd0-0fb7c9b50346",
+          "key": "agora.zip",
+          "size": 32365937,
+          "checksum": "md5:463f963ae480b03bf455ba6367035ea2",
+          "links": {
+            "self": "https://zenodo.org/api/records/15964829/files/agora.zip/content"
+          }
+        }
+      ],
+      "swh": {},
+      "owners": [
+        {
+          "id": "1042103"
+        }
+      ],
+      "status": "published",
+      "stats": {
+        "downloads": 1463,
+        "unique_downloads": 1335,
+        "views": 4849,
+        "unique_views": 4378,
+        "version_downloads": 163,
+        "version_unique_downloads": 136,
+        "version_unique_views": 451,
+        "version_views": 519
+      },
+      "state": "done",
+      "submitted": true
+    }
+  },
+  {
+    "source_id": "agora-ai-governance-regulatory-archive",
+    "provider": "zenodo",
+    "metric": "views",
+    "value": 4849,
+    "observed_at": "2026-06-16T01:59:34.939Z",
+    "url": "https://zenodo.org/records/15964829",
+    "raw_payload": {
+      "created": "2025-07-16T08:09:58.865186+00:00",
+      "modified": "2025-07-16T08:09:59.017931+00:00",
+      "id": 15964829,
+      "conceptrecid": "13883066",
+      "doi": "10.5281/zenodo.15964829",
+      "conceptdoi": "10.5281/zenodo.13883066",
+      "doi_url": "https://doi.org/10.5281/zenodo.15964829",
+      "metadata": {
+        "title": "AGORA Dataset",
+        "doi": "10.5281/zenodo.15964829",
+        "publication_date": "2025-07-16",
+        "description": "<p>AGORA (AI GOvernance and Regulatory Archive) is a living collection of AI-relevant laws, regulations, standards, and other governance documents. This dataset includes bulk metadata, summaries, and text for all AGORA documents. For further details, licensing, and full credits, visit the <a href=\"https://eto.tech/dataset-docs/agora-dataset/\">official documentation</a>.</p>\n<p>AGORA is a project of the <a href=\"https://eto.tech\" rel=\"nofollow\">Emerging Technology Observatory</a>.</p>",
+        "access_right": "open",
+        "creators": [
+          {
+            "name": "Arnold, Zachary",
+            "affiliation": "Center for Security and Emerging Technology",
+            "orcid": "0000-0003-4193-7812"
+          },
+          {
+            "name": "Melot, Jennifer",
+            "affiliation": "Center for Security and Emerging Technology",
+            "orcid": "0000-0002-3772-6097"
+          },
+          {
+            "name": "Enwereazu, Ogadinma",
+            "affiliation": "Purdue University System",
+            "orcid": "0000-0002-5369-9463"
+          },
+          {
+            "name": "Schiff, Daniel S.",
+            "affiliation": "Purdue University System",
+            "orcid": "0000-0002-4376-7303"
+          },
+          {
+            "name": "Schiff, Kaylyn Jackson",
+            "affiliation": "Purdue University System",
+            "orcid": "0000-0002-4239-5915"
+          },
+          {
+            "name": "Girard, Tyler",
+            "affiliation": "Purdue University System",
+            "orcid": "0000-0001-8568-8868"
+          }
+        ],
+        "version": "1.20.0",
+        "resource_type": {
+          "title": "Dataset",
+          "type": "dataset"
+        },
+        "license": {
+          "id": "cc-by-nc-4.0"
+        },
+        "relations": {
+          "version": [
+            {
+              "index": 26,
+              "is_last": false,
+              "parent": {
+                "pid_type": "recid",
+                "pid_value": "13883066"
+              }
+            }
+          ]
+        }
+      },
+      "title": "AGORA Dataset",
+      "links": {
+        "self": "https://zenodo.org/api/records/15964829",
+        "self_html": "https://zenodo.org/records/15964829",
+        "preview_html": "https://zenodo.org/records/15964829?preview=1",
+        "doi": "https://doi.org/10.5281/zenodo.15964829",
+        "self_doi": "https://doi.org/10.5281/zenodo.15964829",
+        "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.15964829",
+        "reserve_doi": "https://zenodo.org/api/records/15964829/draft/pids/doi",
+        "parent": "https://zenodo.org/api/records/13883066",
+        "parent_html": "https://zenodo.org/records/13883066",
+        "parent_doi": "https://doi.org/10.5281/zenodo.13883066",
+        "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.13883066",
+        "self_iiif_manifest": "https://zenodo.org/api/iiif/record:15964829/manifest",
+        "self_iiif_sequence": "https://zenodo.org/api/iiif/record:15964829/sequence/default",
+        "files": "https://zenodo.org/api/records/15964829/files",
+        "media_files": "https://zenodo.org/api/records/15964829/media-files",
+        "archive": "https://zenodo.org/api/records/15964829/files-archive",
+        "archive_media": "https://zenodo.org/api/records/15964829/media-files-archive",
+        "latest": "https://zenodo.org/api/records/15964829/versions/latest",
+        "latest_html": "https://zenodo.org/records/15964829/latest",
+        "versions": "https://zenodo.org/api/records/15964829/versions",
+        "draft": "https://zenodo.org/api/records/15964829/draft",
+        "access_links": "https://zenodo.org/api/records/15964829/access/links",
+        "access_grants": "https://zenodo.org/api/records/15964829/access/grants",
+        "access_users": "https://zenodo.org/api/records/15964829/access/users",
+        "access_request": "https://zenodo.org/api/records/15964829/access/request",
+        "access": "https://zenodo.org/api/records/15964829/access",
+        "communities": "https://zenodo.org/api/records/15964829/communities",
+        "communities-suggestions": "https://zenodo.org/api/records/15964829/communities-suggestions",
+        "request_deletion": "https://zenodo.org/api/records/15964829/request-deletion",
+        "file_modification": "https://zenodo.org/api/records/15964829/file-modification",
+        "quota_increase": "https://zenodo.org/api/records/15964829/quota-increase",
+        "requests": "https://zenodo.org/api/records/15964829/requests"
+      },
+      "updated": "2025-07-16T08:09:59.017931+00:00",
+      "recid": "15964829",
+      "revision": 4,
+      "files": [
+        {
+          "id": "3ed151ab-eae9-4c83-9cd0-0fb7c9b50346",
+          "key": "agora.zip",
+          "size": 32365937,
+          "checksum": "md5:463f963ae480b03bf455ba6367035ea2",
+          "links": {
+            "self": "https://zenodo.org/api/records/15964829/files/agora.zip/content"
+          }
+        }
+      ],
+      "swh": {},
+      "owners": [
+        {
+          "id": "1042103"
+        }
+      ],
+      "status": "published",
+      "stats": {
+        "downloads": 1463,
+        "unique_downloads": 1335,
+        "views": 4849,
+        "unique_views": 4378,
+        "version_downloads": 163,
+        "version_unique_downloads": 136,
+        "version_unique_views": 451,
+        "version_views": 519
+      },
+      "state": "done",
+      "submitted": true
+    }
+  },
+  {
+    "source_id": "ai-incident-database",
+    "provider": "github",
+    "metric": "forks",
+    "value": 46,
+    "observed_at": "2026-06-16T01:59:34.662Z",
+    "url": "https://github.com/responsible-ai-collaborative/aiid",
+    "raw_payload": {
+      "id": 167853042,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNjc4NTMwNDI=",
+      "name": "aiid",
+      "full_name": "responsible-ai-collaborative/aiid",
+      "private": false,
+      "owner": {
+        "login": "responsible-ai-collaborative",
+        "id": 101777371,
+        "node_id": "O_kgDOBhD_2w",
+        "avatar_url": "https://avatars.githubusercontent.com/u/101777371?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/responsible-ai-collaborative",
+        "html_url": "https://github.com/responsible-ai-collaborative",
+        "followers_url": "https://api.github.com/users/responsible-ai-collaborative/followers",
+        "following_url": "https://api.github.com/users/responsible-ai-collaborative/following{/other_user}",
+        "gists_url": "https://api.github.com/users/responsible-ai-collaborative/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/responsible-ai-collaborative/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/responsible-ai-collaborative/subscriptions",
+        "organizations_url": "https://api.github.com/users/responsible-ai-collaborative/orgs",
+        "repos_url": "https://api.github.com/users/responsible-ai-collaborative/repos",
+        "events_url": "https://api.github.com/users/responsible-ai-collaborative/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/responsible-ai-collaborative/received_events",
+        "type": "Organization",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/responsible-ai-collaborative/aiid",
+      "description": "The AI Incident Database seeks to identify, define, and catalog artificial intelligence incidents.",
+      "fork": false,
+      "url": "https://api.github.com/repos/responsible-ai-collaborative/aiid",
+      "forks_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/forks",
+      "keys_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/teams",
+      "hooks_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/hooks",
+      "issue_events_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/events",
+      "assignees_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/tags",
+      "blobs_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/languages",
+      "stargazers_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/stargazers",
+      "contributors_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/contributors",
+      "subscribers_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/subscribers",
+      "subscription_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/subscription",
+      "commits_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/merges",
+      "archive_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/downloads",
+      "issues_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/labels{/name}",
+      "releases_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/deployments",
+      "created_at": "2019-01-27T20:07:47Z",
+      "updated_at": "2026-06-15T12:16:41Z",
+      "pushed_at": "2026-06-15T14:07:07Z",
+      "git_url": "git://github.com/responsible-ai-collaborative/aiid.git",
+      "ssh_url": "git@github.com:responsible-ai-collaborative/aiid.git",
+      "clone_url": "https://github.com/responsible-ai-collaborative/aiid.git",
+      "svn_url": "https://github.com/responsible-ai-collaborative/aiid",
+      "homepage": "https://incidentdatabase.ai",
+      "size": 100279,
+      "stargazers_count": 258,
+      "watchers_count": 258,
+      "language": "JavaScript",
+      "has_issues": true,
+      "has_projects": true,
+      "has_downloads": true,
+      "has_wiki": true,
+      "has_pages": false,
+      "has_discussions": false,
+      "forks_count": 46,
+      "mirror_url": null,
+      "archived": false,
+      "disabled": false,
+      "open_issues_count": 254,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "allow_forking": true,
+      "is_template": false,
+      "web_commit_signoff_required": false,
+      "has_pull_requests": true,
+      "pull_request_creation_policy": "all",
+      "topics": [
+        "ai",
+        "trustworthy-ai"
+      ],
+      "visibility": "public",
+      "forks": 46,
+      "open_issues": 254,
+      "watchers": 258,
+      "default_branch": "main",
+      "temp_clone_token": null,
+      "custom_properties": {},
+      "organization": {
+        "login": "responsible-ai-collaborative",
+        "id": 101777371,
+        "node_id": "O_kgDOBhD_2w",
+        "avatar_url": "https://avatars.githubusercontent.com/u/101777371?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/responsible-ai-collaborative",
+        "html_url": "https://github.com/responsible-ai-collaborative",
+        "followers_url": "https://api.github.com/users/responsible-ai-collaborative/followers",
+        "following_url": "https://api.github.com/users/responsible-ai-collaborative/following{/other_user}",
+        "gists_url": "https://api.github.com/users/responsible-ai-collaborative/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/responsible-ai-collaborative/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/responsible-ai-collaborative/subscriptions",
+        "organizations_url": "https://api.github.com/users/responsible-ai-collaborative/orgs",
+        "repos_url": "https://api.github.com/users/responsible-ai-collaborative/repos",
+        "events_url": "https://api.github.com/users/responsible-ai-collaborative/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/responsible-ai-collaborative/received_events",
+        "type": "Organization",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "network_count": 46,
+      "subscribers_count": 6
+    }
+  },
+  {
+    "source_id": "ai-incident-database",
+    "provider": "github",
+    "metric": "stars",
+    "value": 258,
+    "observed_at": "2026-06-16T01:59:34.662Z",
+    "url": "https://github.com/responsible-ai-collaborative/aiid",
+    "raw_payload": {
+      "id": 167853042,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNjc4NTMwNDI=",
+      "name": "aiid",
+      "full_name": "responsible-ai-collaborative/aiid",
+      "private": false,
+      "owner": {
+        "login": "responsible-ai-collaborative",
+        "id": 101777371,
+        "node_id": "O_kgDOBhD_2w",
+        "avatar_url": "https://avatars.githubusercontent.com/u/101777371?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/responsible-ai-collaborative",
+        "html_url": "https://github.com/responsible-ai-collaborative",
+        "followers_url": "https://api.github.com/users/responsible-ai-collaborative/followers",
+        "following_url": "https://api.github.com/users/responsible-ai-collaborative/following{/other_user}",
+        "gists_url": "https://api.github.com/users/responsible-ai-collaborative/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/responsible-ai-collaborative/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/responsible-ai-collaborative/subscriptions",
+        "organizations_url": "https://api.github.com/users/responsible-ai-collaborative/orgs",
+        "repos_url": "https://api.github.com/users/responsible-ai-collaborative/repos",
+        "events_url": "https://api.github.com/users/responsible-ai-collaborative/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/responsible-ai-collaborative/received_events",
+        "type": "Organization",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/responsible-ai-collaborative/aiid",
+      "description": "The AI Incident Database seeks to identify, define, and catalog artificial intelligence incidents.",
+      "fork": false,
+      "url": "https://api.github.com/repos/responsible-ai-collaborative/aiid",
+      "forks_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/forks",
+      "keys_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/teams",
+      "hooks_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/hooks",
+      "issue_events_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/events",
+      "assignees_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/tags",
+      "blobs_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/languages",
+      "stargazers_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/stargazers",
+      "contributors_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/contributors",
+      "subscribers_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/subscribers",
+      "subscription_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/subscription",
+      "commits_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/merges",
+      "archive_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/downloads",
+      "issues_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/labels{/name}",
+      "releases_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/deployments",
+      "created_at": "2019-01-27T20:07:47Z",
+      "updated_at": "2026-06-15T12:16:41Z",
+      "pushed_at": "2026-06-15T14:07:07Z",
+      "git_url": "git://github.com/responsible-ai-collaborative/aiid.git",
+      "ssh_url": "git@github.com:responsible-ai-collaborative/aiid.git",
+      "clone_url": "https://github.com/responsible-ai-collaborative/aiid.git",
+      "svn_url": "https://github.com/responsible-ai-collaborative/aiid",
+      "homepage": "https://incidentdatabase.ai",
+      "size": 100279,
+      "stargazers_count": 258,
+      "watchers_count": 258,
+      "language": "JavaScript",
+      "has_issues": true,
+      "has_projects": true,
+      "has_downloads": true,
+      "has_wiki": true,
+      "has_pages": false,
+      "has_discussions": false,
+      "forks_count": 46,
+      "mirror_url": null,
+      "archived": false,
+      "disabled": false,
+      "open_issues_count": 254,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "allow_forking": true,
+      "is_template": false,
+      "web_commit_signoff_required": false,
+      "has_pull_requests": true,
+      "pull_request_creation_policy": "all",
+      "topics": [
+        "ai",
+        "trustworthy-ai"
+      ],
+      "visibility": "public",
+      "forks": 46,
+      "open_issues": 254,
+      "watchers": 258,
+      "default_branch": "main",
+      "temp_clone_token": null,
+      "custom_properties": {},
+      "organization": {
+        "login": "responsible-ai-collaborative",
+        "id": 101777371,
+        "node_id": "O_kgDOBhD_2w",
+        "avatar_url": "https://avatars.githubusercontent.com/u/101777371?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/responsible-ai-collaborative",
+        "html_url": "https://github.com/responsible-ai-collaborative",
+        "followers_url": "https://api.github.com/users/responsible-ai-collaborative/followers",
+        "following_url": "https://api.github.com/users/responsible-ai-collaborative/following{/other_user}",
+        "gists_url": "https://api.github.com/users/responsible-ai-collaborative/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/responsible-ai-collaborative/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/responsible-ai-collaborative/subscriptions",
+        "organizations_url": "https://api.github.com/users/responsible-ai-collaborative/orgs",
+        "repos_url": "https://api.github.com/users/responsible-ai-collaborative/repos",
+        "events_url": "https://api.github.com/users/responsible-ai-collaborative/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/responsible-ai-collaborative/received_events",
+        "type": "Organization",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "network_count": 46,
+      "subscribers_count": 6
+    }
+  },
+  {
+    "source_id": "ai-incident-database",
+    "provider": "github",
+    "metric": "subscribers",
+    "value": 6,
+    "observed_at": "2026-06-16T01:59:34.662Z",
+    "url": "https://github.com/responsible-ai-collaborative/aiid",
+    "raw_payload": {
+      "id": 167853042,
+      "node_id": "MDEwOlJlcG9zaXRvcnkxNjc4NTMwNDI=",
+      "name": "aiid",
+      "full_name": "responsible-ai-collaborative/aiid",
+      "private": false,
+      "owner": {
+        "login": "responsible-ai-collaborative",
+        "id": 101777371,
+        "node_id": "O_kgDOBhD_2w",
+        "avatar_url": "https://avatars.githubusercontent.com/u/101777371?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/responsible-ai-collaborative",
+        "html_url": "https://github.com/responsible-ai-collaborative",
+        "followers_url": "https://api.github.com/users/responsible-ai-collaborative/followers",
+        "following_url": "https://api.github.com/users/responsible-ai-collaborative/following{/other_user}",
+        "gists_url": "https://api.github.com/users/responsible-ai-collaborative/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/responsible-ai-collaborative/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/responsible-ai-collaborative/subscriptions",
+        "organizations_url": "https://api.github.com/users/responsible-ai-collaborative/orgs",
+        "repos_url": "https://api.github.com/users/responsible-ai-collaborative/repos",
+        "events_url": "https://api.github.com/users/responsible-ai-collaborative/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/responsible-ai-collaborative/received_events",
+        "type": "Organization",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/responsible-ai-collaborative/aiid",
+      "description": "The AI Incident Database seeks to identify, define, and catalog artificial intelligence incidents.",
+      "fork": false,
+      "url": "https://api.github.com/repos/responsible-ai-collaborative/aiid",
+      "forks_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/forks",
+      "keys_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/teams",
+      "hooks_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/hooks",
+      "issue_events_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/events",
+      "assignees_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/tags",
+      "blobs_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/languages",
+      "stargazers_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/stargazers",
+      "contributors_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/contributors",
+      "subscribers_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/subscribers",
+      "subscription_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/subscription",
+      "commits_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/merges",
+      "archive_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/downloads",
+      "issues_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/labels{/name}",
+      "releases_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/responsible-ai-collaborative/aiid/deployments",
+      "created_at": "2019-01-27T20:07:47Z",
+      "updated_at": "2026-06-15T12:16:41Z",
+      "pushed_at": "2026-06-15T14:07:07Z",
+      "git_url": "git://github.com/responsible-ai-collaborative/aiid.git",
+      "ssh_url": "git@github.com:responsible-ai-collaborative/aiid.git",
+      "clone_url": "https://github.com/responsible-ai-collaborative/aiid.git",
+      "svn_url": "https://github.com/responsible-ai-collaborative/aiid",
+      "homepage": "https://incidentdatabase.ai",
+      "size": 100279,
+      "stargazers_count": 258,
+      "watchers_count": 258,
+      "language": "JavaScript",
+      "has_issues": true,
+      "has_projects": true,
+      "has_downloads": true,
+      "has_wiki": true,
+      "has_pages": false,
+      "has_discussions": false,
+      "forks_count": 46,
+      "mirror_url": null,
+      "archived": false,
+      "disabled": false,
+      "open_issues_count": 254,
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "allow_forking": true,
+      "is_template": false,
+      "web_commit_signoff_required": false,
+      "has_pull_requests": true,
+      "pull_request_creation_policy": "all",
+      "topics": [
+        "ai",
+        "trustworthy-ai"
+      ],
+      "visibility": "public",
+      "forks": 46,
+      "open_issues": 254,
+      "watchers": 258,
+      "default_branch": "main",
+      "temp_clone_token": null,
+      "custom_properties": {},
+      "organization": {
+        "login": "responsible-ai-collaborative",
+        "id": 101777371,
+        "node_id": "O_kgDOBhD_2w",
+        "avatar_url": "https://avatars.githubusercontent.com/u/101777371?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/responsible-ai-collaborative",
+        "html_url": "https://github.com/responsible-ai-collaborative",
+        "followers_url": "https://api.github.com/users/responsible-ai-collaborative/followers",
+        "following_url": "https://api.github.com/users/responsible-ai-collaborative/following{/other_user}",
+        "gists_url": "https://api.github.com/users/responsible-ai-collaborative/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/responsible-ai-collaborative/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/responsible-ai-collaborative/subscriptions",
+        "organizations_url": "https://api.github.com/users/responsible-ai-collaborative/orgs",
+        "repos_url": "https://api.github.com/users/responsible-ai-collaborative/repos",
+        "events_url": "https://api.github.com/users/responsible-ai-collaborative/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/responsible-ai-collaborative/received_events",
+        "type": "Organization",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "network_count": 46,
+      "subscribers_count": 6
+    }
+  },
+  {
+    "source_id": "cei-fingerprint-explorer",
+    "provider": "github",
+    "metric": "forks",
+    "value": 0,
+    "observed_at": "2026-06-16T01:59:34.463Z",
+    "url": "https://github.com/cjimmylin/cei-fingerprint-explorer",
+    "raw_payload": {
+      "id": 1183476153,
+      "node_id": "R_kgDORoppuQ",
+      "name": "cei-fingerprint-explorer",
+      "full_name": "cjimmylin/cei-fingerprint-explorer",
+      "private": false,
+      "owner": {
+        "login": "cjimmylin",
+        "id": 50340220,
+        "node_id": "MDQ6VXNlcjUwMzQwMjIw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50340220?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cjimmylin",
+        "html_url": "https://github.com/cjimmylin",
+        "followers_url": "https://api.github.com/users/cjimmylin/followers",
+        "following_url": "https://api.github.com/users/cjimmylin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cjimmylin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cjimmylin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cjimmylin/subscriptions",
+        "organizations_url": "https://api.github.com/users/cjimmylin/orgs",
+        "repos_url": "https://api.github.com/users/cjimmylin/repos",
+        "events_url": "https://api.github.com/users/cjimmylin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cjimmylin/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/cjimmylin/cei-fingerprint-explorer",
+      "description": "Fingerprint Explorer: AI Governance Policy Families Dashboard (Tapestry database)",
+      "fork": false,
+      "url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer",
+      "forks_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/forks",
+      "keys_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/teams",
+      "hooks_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/hooks",
+      "issue_events_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/events",
+      "assignees_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/tags",
+      "blobs_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/languages",
+      "stargazers_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/stargazers",
+      "contributors_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/contributors",
+      "subscribers_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/subscribers",
+      "subscription_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/subscription",
+      "commits_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/merges",
+      "archive_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/downloads",
+      "issues_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/labels{/name}",
+      "releases_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/deployments",
+      "created_at": "2026-03-16T16:39:19Z",
+      "updated_at": "2026-03-16T16:39:36Z",
+      "pushed_at": "2026-03-16T16:39:31Z",
+      "git_url": "git://github.com/cjimmylin/cei-fingerprint-explorer.git",
+      "ssh_url": "git@github.com:cjimmylin/cei-fingerprint-explorer.git",
+      "clone_url": "https://github.com/cjimmylin/cei-fingerprint-explorer.git",
+      "svn_url": "https://github.com/cjimmylin/cei-fingerprint-explorer",
+      "homepage": null,
+      "size": 211,
+      "stargazers_count": 0,
+      "watchers_count": 0,
+      "language": "JavaScript",
+      "has_issues": true,
+      "has_projects": true,
+      "has_downloads": true,
+      "has_wiki": true,
+      "has_pages": true,
+      "has_discussions": false,
+      "forks_count": 0,
+      "mirror_url": null,
+      "archived": false,
+      "disabled": false,
+      "open_issues_count": 0,
+      "license": null,
+      "allow_forking": true,
+      "is_template": false,
+      "web_commit_signoff_required": false,
+      "has_pull_requests": true,
+      "pull_request_creation_policy": "all",
+      "topics": [],
+      "visibility": "public",
+      "forks": 0,
+      "open_issues": 0,
+      "watchers": 0,
+      "default_branch": "main",
+      "temp_clone_token": null,
+      "network_count": 0,
+      "subscribers_count": 0
+    }
+  },
+  {
+    "source_id": "cei-fingerprint-explorer",
+    "provider": "github",
+    "metric": "stars",
+    "value": 0,
+    "observed_at": "2026-06-16T01:59:34.463Z",
+    "url": "https://github.com/cjimmylin/cei-fingerprint-explorer",
+    "raw_payload": {
+      "id": 1183476153,
+      "node_id": "R_kgDORoppuQ",
+      "name": "cei-fingerprint-explorer",
+      "full_name": "cjimmylin/cei-fingerprint-explorer",
+      "private": false,
+      "owner": {
+        "login": "cjimmylin",
+        "id": 50340220,
+        "node_id": "MDQ6VXNlcjUwMzQwMjIw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50340220?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cjimmylin",
+        "html_url": "https://github.com/cjimmylin",
+        "followers_url": "https://api.github.com/users/cjimmylin/followers",
+        "following_url": "https://api.github.com/users/cjimmylin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cjimmylin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cjimmylin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cjimmylin/subscriptions",
+        "organizations_url": "https://api.github.com/users/cjimmylin/orgs",
+        "repos_url": "https://api.github.com/users/cjimmylin/repos",
+        "events_url": "https://api.github.com/users/cjimmylin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cjimmylin/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/cjimmylin/cei-fingerprint-explorer",
+      "description": "Fingerprint Explorer: AI Governance Policy Families Dashboard (Tapestry database)",
+      "fork": false,
+      "url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer",
+      "forks_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/forks",
+      "keys_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/teams",
+      "hooks_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/hooks",
+      "issue_events_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/events",
+      "assignees_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/tags",
+      "blobs_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/languages",
+      "stargazers_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/stargazers",
+      "contributors_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/contributors",
+      "subscribers_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/subscribers",
+      "subscription_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/subscription",
+      "commits_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/merges",
+      "archive_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/downloads",
+      "issues_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/labels{/name}",
+      "releases_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/deployments",
+      "created_at": "2026-03-16T16:39:19Z",
+      "updated_at": "2026-03-16T16:39:36Z",
+      "pushed_at": "2026-03-16T16:39:31Z",
+      "git_url": "git://github.com/cjimmylin/cei-fingerprint-explorer.git",
+      "ssh_url": "git@github.com:cjimmylin/cei-fingerprint-explorer.git",
+      "clone_url": "https://github.com/cjimmylin/cei-fingerprint-explorer.git",
+      "svn_url": "https://github.com/cjimmylin/cei-fingerprint-explorer",
+      "homepage": null,
+      "size": 211,
+      "stargazers_count": 0,
+      "watchers_count": 0,
+      "language": "JavaScript",
+      "has_issues": true,
+      "has_projects": true,
+      "has_downloads": true,
+      "has_wiki": true,
+      "has_pages": true,
+      "has_discussions": false,
+      "forks_count": 0,
+      "mirror_url": null,
+      "archived": false,
+      "disabled": false,
+      "open_issues_count": 0,
+      "license": null,
+      "allow_forking": true,
+      "is_template": false,
+      "web_commit_signoff_required": false,
+      "has_pull_requests": true,
+      "pull_request_creation_policy": "all",
+      "topics": [],
+      "visibility": "public",
+      "forks": 0,
+      "open_issues": 0,
+      "watchers": 0,
+      "default_branch": "main",
+      "temp_clone_token": null,
+      "network_count": 0,
+      "subscribers_count": 0
+    }
+  },
+  {
+    "source_id": "cei-fingerprint-explorer",
+    "provider": "github",
+    "metric": "subscribers",
+    "value": 0,
+    "observed_at": "2026-06-16T01:59:34.463Z",
+    "url": "https://github.com/cjimmylin/cei-fingerprint-explorer",
+    "raw_payload": {
+      "id": 1183476153,
+      "node_id": "R_kgDORoppuQ",
+      "name": "cei-fingerprint-explorer",
+      "full_name": "cjimmylin/cei-fingerprint-explorer",
+      "private": false,
+      "owner": {
+        "login": "cjimmylin",
+        "id": 50340220,
+        "node_id": "MDQ6VXNlcjUwMzQwMjIw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50340220?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cjimmylin",
+        "html_url": "https://github.com/cjimmylin",
+        "followers_url": "https://api.github.com/users/cjimmylin/followers",
+        "following_url": "https://api.github.com/users/cjimmylin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cjimmylin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cjimmylin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cjimmylin/subscriptions",
+        "organizations_url": "https://api.github.com/users/cjimmylin/orgs",
+        "repos_url": "https://api.github.com/users/cjimmylin/repos",
+        "events_url": "https://api.github.com/users/cjimmylin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cjimmylin/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/cjimmylin/cei-fingerprint-explorer",
+      "description": "Fingerprint Explorer: AI Governance Policy Families Dashboard (Tapestry database)",
+      "fork": false,
+      "url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer",
+      "forks_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/forks",
+      "keys_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/teams",
+      "hooks_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/hooks",
+      "issue_events_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/events",
+      "assignees_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/tags",
+      "blobs_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/languages",
+      "stargazers_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/stargazers",
+      "contributors_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/contributors",
+      "subscribers_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/subscribers",
+      "subscription_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/subscription",
+      "commits_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/merges",
+      "archive_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/downloads",
+      "issues_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/labels{/name}",
+      "releases_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/cjimmylin/cei-fingerprint-explorer/deployments",
+      "created_at": "2026-03-16T16:39:19Z",
+      "updated_at": "2026-03-16T16:39:36Z",
+      "pushed_at": "2026-03-16T16:39:31Z",
+      "git_url": "git://github.com/cjimmylin/cei-fingerprint-explorer.git",
+      "ssh_url": "git@github.com:cjimmylin/cei-fingerprint-explorer.git",
+      "clone_url": "https://github.com/cjimmylin/cei-fingerprint-explorer.git",
+      "svn_url": "https://github.com/cjimmylin/cei-fingerprint-explorer",
+      "homepage": null,
+      "size": 211,
+      "stargazers_count": 0,
+      "watchers_count": 0,
+      "language": "JavaScript",
+      "has_issues": true,
+      "has_projects": true,
+      "has_downloads": true,
+      "has_wiki": true,
+      "has_pages": true,
+      "has_discussions": false,
+      "forks_count": 0,
+      "mirror_url": null,
+      "archived": false,
+      "disabled": false,
+      "open_issues_count": 0,
+      "license": null,
+      "allow_forking": true,
+      "is_template": false,
+      "web_commit_signoff_required": false,
+      "has_pull_requests": true,
+      "pull_request_creation_policy": "all",
+      "topics": [],
+      "visibility": "public",
+      "forks": 0,
+      "open_issues": 0,
+      "watchers": 0,
+      "default_branch": "main",
+      "temp_clone_token": null,
+      "network_count": 0,
+      "subscribers_count": 0
+    }
+  },
+  {
+    "source_id": "cei-ontology-explorer",
+    "provider": "github",
+    "metric": "forks",
+    "value": 0,
+    "observed_at": "2026-06-16T01:59:34.462Z",
+    "url": "https://github.com/cjimmylin/cei-ontology-explorer",
+    "raw_payload": {
+      "id": 1183476195,
+      "node_id": "R_kgDORopp4w",
+      "name": "cei-ontology-explorer",
+      "full_name": "cjimmylin/cei-ontology-explorer",
+      "private": false,
+      "owner": {
+        "login": "cjimmylin",
+        "id": 50340220,
+        "node_id": "MDQ6VXNlcjUwMzQwMjIw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50340220?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cjimmylin",
+        "html_url": "https://github.com/cjimmylin",
+        "followers_url": "https://api.github.com/users/cjimmylin/followers",
+        "following_url": "https://api.github.com/users/cjimmylin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cjimmylin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cjimmylin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cjimmylin/subscriptions",
+        "organizations_url": "https://api.github.com/users/cjimmylin/orgs",
+        "repos_url": "https://api.github.com/users/cjimmylin/repos",
+        "events_url": "https://api.github.com/users/cjimmylin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cjimmylin/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/cjimmylin/cei-ontology-explorer",
+      "description": "Tapestry Ontology Explorer (ont3) — LLM-semantic scoring of 1,405 AI governance statements across 22 ontology concepts",
+      "fork": false,
+      "url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer",
+      "forks_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/forks",
+      "keys_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/teams",
+      "hooks_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/hooks",
+      "issue_events_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/events",
+      "assignees_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/tags",
+      "blobs_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/languages",
+      "stargazers_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/stargazers",
+      "contributors_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/contributors",
+      "subscribers_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/subscribers",
+      "subscription_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/subscription",
+      "commits_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/merges",
+      "archive_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/downloads",
+      "issues_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/labels{/name}",
+      "releases_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/deployments",
+      "created_at": "2026-03-16T16:39:22Z",
+      "updated_at": "2026-03-16T16:39:35Z",
+      "pushed_at": "2026-03-16T16:39:31Z",
+      "git_url": "git://github.com/cjimmylin/cei-ontology-explorer.git",
+      "ssh_url": "git@github.com:cjimmylin/cei-ontology-explorer.git",
+      "clone_url": "https://github.com/cjimmylin/cei-ontology-explorer.git",
+      "svn_url": "https://github.com/cjimmylin/cei-ontology-explorer",
+      "homepage": null,
+      "size": 140,
+      "stargazers_count": 0,
+      "watchers_count": 0,
+      "language": "HTML",
+      "has_issues": true,
+      "has_projects": true,
+      "has_downloads": true,
+      "has_wiki": true,
+      "has_pages": true,
+      "has_discussions": false,
+      "forks_count": 0,
+      "mirror_url": null,
+      "archived": false,
+      "disabled": false,
+      "open_issues_count": 0,
+      "license": null,
+      "allow_forking": true,
+      "is_template": false,
+      "web_commit_signoff_required": false,
+      "has_pull_requests": true,
+      "pull_request_creation_policy": "all",
+      "topics": [],
+      "visibility": "public",
+      "forks": 0,
+      "open_issues": 0,
+      "watchers": 0,
+      "default_branch": "main",
+      "temp_clone_token": null,
+      "network_count": 0,
+      "subscribers_count": 0
+    }
+  },
+  {
+    "source_id": "cei-ontology-explorer",
+    "provider": "github",
+    "metric": "stars",
+    "value": 0,
+    "observed_at": "2026-06-16T01:59:34.462Z",
+    "url": "https://github.com/cjimmylin/cei-ontology-explorer",
+    "raw_payload": {
+      "id": 1183476195,
+      "node_id": "R_kgDORopp4w",
+      "name": "cei-ontology-explorer",
+      "full_name": "cjimmylin/cei-ontology-explorer",
+      "private": false,
+      "owner": {
+        "login": "cjimmylin",
+        "id": 50340220,
+        "node_id": "MDQ6VXNlcjUwMzQwMjIw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50340220?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cjimmylin",
+        "html_url": "https://github.com/cjimmylin",
+        "followers_url": "https://api.github.com/users/cjimmylin/followers",
+        "following_url": "https://api.github.com/users/cjimmylin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cjimmylin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cjimmylin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cjimmylin/subscriptions",
+        "organizations_url": "https://api.github.com/users/cjimmylin/orgs",
+        "repos_url": "https://api.github.com/users/cjimmylin/repos",
+        "events_url": "https://api.github.com/users/cjimmylin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cjimmylin/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/cjimmylin/cei-ontology-explorer",
+      "description": "Tapestry Ontology Explorer (ont3) — LLM-semantic scoring of 1,405 AI governance statements across 22 ontology concepts",
+      "fork": false,
+      "url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer",
+      "forks_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/forks",
+      "keys_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/teams",
+      "hooks_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/hooks",
+      "issue_events_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/events",
+      "assignees_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/tags",
+      "blobs_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/languages",
+      "stargazers_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/stargazers",
+      "contributors_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/contributors",
+      "subscribers_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/subscribers",
+      "subscription_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/subscription",
+      "commits_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/merges",
+      "archive_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/downloads",
+      "issues_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/labels{/name}",
+      "releases_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/deployments",
+      "created_at": "2026-03-16T16:39:22Z",
+      "updated_at": "2026-03-16T16:39:35Z",
+      "pushed_at": "2026-03-16T16:39:31Z",
+      "git_url": "git://github.com/cjimmylin/cei-ontology-explorer.git",
+      "ssh_url": "git@github.com:cjimmylin/cei-ontology-explorer.git",
+      "clone_url": "https://github.com/cjimmylin/cei-ontology-explorer.git",
+      "svn_url": "https://github.com/cjimmylin/cei-ontology-explorer",
+      "homepage": null,
+      "size": 140,
+      "stargazers_count": 0,
+      "watchers_count": 0,
+      "language": "HTML",
+      "has_issues": true,
+      "has_projects": true,
+      "has_downloads": true,
+      "has_wiki": true,
+      "has_pages": true,
+      "has_discussions": false,
+      "forks_count": 0,
+      "mirror_url": null,
+      "archived": false,
+      "disabled": false,
+      "open_issues_count": 0,
+      "license": null,
+      "allow_forking": true,
+      "is_template": false,
+      "web_commit_signoff_required": false,
+      "has_pull_requests": true,
+      "pull_request_creation_policy": "all",
+      "topics": [],
+      "visibility": "public",
+      "forks": 0,
+      "open_issues": 0,
+      "watchers": 0,
+      "default_branch": "main",
+      "temp_clone_token": null,
+      "network_count": 0,
+      "subscribers_count": 0
+    }
+  },
+  {
+    "source_id": "cei-ontology-explorer",
+    "provider": "github",
+    "metric": "subscribers",
+    "value": 0,
+    "observed_at": "2026-06-16T01:59:34.462Z",
+    "url": "https://github.com/cjimmylin/cei-ontology-explorer",
+    "raw_payload": {
+      "id": 1183476195,
+      "node_id": "R_kgDORopp4w",
+      "name": "cei-ontology-explorer",
+      "full_name": "cjimmylin/cei-ontology-explorer",
+      "private": false,
+      "owner": {
+        "login": "cjimmylin",
+        "id": 50340220,
+        "node_id": "MDQ6VXNlcjUwMzQwMjIw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50340220?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cjimmylin",
+        "html_url": "https://github.com/cjimmylin",
+        "followers_url": "https://api.github.com/users/cjimmylin/followers",
+        "following_url": "https://api.github.com/users/cjimmylin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cjimmylin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cjimmylin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cjimmylin/subscriptions",
+        "organizations_url": "https://api.github.com/users/cjimmylin/orgs",
+        "repos_url": "https://api.github.com/users/cjimmylin/repos",
+        "events_url": "https://api.github.com/users/cjimmylin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cjimmylin/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/cjimmylin/cei-ontology-explorer",
+      "description": "Tapestry Ontology Explorer (ont3) — LLM-semantic scoring of 1,405 AI governance statements across 22 ontology concepts",
+      "fork": false,
+      "url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer",
+      "forks_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/forks",
+      "keys_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/teams",
+      "hooks_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/hooks",
+      "issue_events_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/events",
+      "assignees_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/tags",
+      "blobs_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/languages",
+      "stargazers_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/stargazers",
+      "contributors_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/contributors",
+      "subscribers_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/subscribers",
+      "subscription_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/subscription",
+      "commits_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/merges",
+      "archive_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/downloads",
+      "issues_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/labels{/name}",
+      "releases_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/cjimmylin/cei-ontology-explorer/deployments",
+      "created_at": "2026-03-16T16:39:22Z",
+      "updated_at": "2026-03-16T16:39:35Z",
+      "pushed_at": "2026-03-16T16:39:31Z",
+      "git_url": "git://github.com/cjimmylin/cei-ontology-explorer.git",
+      "ssh_url": "git@github.com:cjimmylin/cei-ontology-explorer.git",
+      "clone_url": "https://github.com/cjimmylin/cei-ontology-explorer.git",
+      "svn_url": "https://github.com/cjimmylin/cei-ontology-explorer",
+      "homepage": null,
+      "size": 140,
+      "stargazers_count": 0,
+      "watchers_count": 0,
+      "language": "HTML",
+      "has_issues": true,
+      "has_projects": true,
+      "has_downloads": true,
+      "has_wiki": true,
+      "has_pages": true,
+      "has_discussions": false,
+      "forks_count": 0,
+      "mirror_url": null,
+      "archived": false,
+      "disabled": false,
+      "open_issues_count": 0,
+      "license": null,
+      "allow_forking": true,
+      "is_template": false,
+      "web_commit_signoff_required": false,
+      "has_pull_requests": true,
+      "pull_request_creation_policy": "all",
+      "topics": [],
+      "visibility": "public",
+      "forks": 0,
+      "open_issues": 0,
+      "watchers": 0,
+      "default_branch": "main",
+      "temp_clone_token": null,
+      "network_count": 0,
+      "subscribers_count": 0
+    }
+  },
+  {
+    "source_id": "cei-statements-dashboard-b3",
+    "provider": "github",
+    "metric": "forks",
+    "value": 0,
+    "observed_at": "2026-06-16T01:59:34.462Z",
+    "url": "https://github.com/cjimmylin/cei-statements-dashboard-b3",
+    "raw_payload": {
+      "id": 1182910854,
+      "node_id": "R_kgDORoHJhg",
+      "name": "cei-statements-dashboard-b3",
+      "full_name": "cjimmylin/cei-statements-dashboard-b3",
+      "private": false,
+      "owner": {
+        "login": "cjimmylin",
+        "id": 50340220,
+        "node_id": "MDQ6VXNlcjUwMzQwMjIw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50340220?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cjimmylin",
+        "html_url": "https://github.com/cjimmylin",
+        "followers_url": "https://api.github.com/users/cjimmylin/followers",
+        "following_url": "https://api.github.com/users/cjimmylin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cjimmylin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cjimmylin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cjimmylin/subscriptions",
+        "organizations_url": "https://api.github.com/users/cjimmylin/orgs",
+        "repos_url": "https://api.github.com/users/cjimmylin/repos",
+        "events_url": "https://api.github.com/users/cjimmylin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cjimmylin/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/cjimmylin/cei-statements-dashboard-b3",
+      "description": "Tapestry — CEI AI Statements Dashboard B3 (Coverage Analysis)",
+      "fork": false,
+      "url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3",
+      "forks_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/forks",
+      "keys_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/teams",
+      "hooks_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/hooks",
+      "issue_events_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/events",
+      "assignees_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/tags",
+      "blobs_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/languages",
+      "stargazers_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/stargazers",
+      "contributors_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/contributors",
+      "subscribers_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/subscribers",
+      "subscription_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/subscription",
+      "commits_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/merges",
+      "archive_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/downloads",
+      "issues_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/labels{/name}",
+      "releases_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/deployments",
+      "created_at": "2026-03-16T04:38:36Z",
+      "updated_at": "2026-03-16T04:39:14Z",
+      "pushed_at": "2026-03-16T04:39:11Z",
+      "git_url": "git://github.com/cjimmylin/cei-statements-dashboard-b3.git",
+      "ssh_url": "git@github.com:cjimmylin/cei-statements-dashboard-b3.git",
+      "clone_url": "https://github.com/cjimmylin/cei-statements-dashboard-b3.git",
+      "svn_url": "https://github.com/cjimmylin/cei-statements-dashboard-b3",
+      "homepage": null,
+      "size": 575,
+      "stargazers_count": 0,
+      "watchers_count": 0,
+      "language": "JavaScript",
+      "has_issues": true,
+      "has_projects": true,
+      "has_downloads": true,
+      "has_wiki": true,
+      "has_pages": true,
+      "has_discussions": false,
+      "forks_count": 0,
+      "mirror_url": null,
+      "archived": false,
+      "disabled": false,
+      "open_issues_count": 0,
+      "license": null,
+      "allow_forking": true,
+      "is_template": false,
+      "web_commit_signoff_required": false,
+      "has_pull_requests": true,
+      "pull_request_creation_policy": "all",
+      "topics": [],
+      "visibility": "public",
+      "forks": 0,
+      "open_issues": 0,
+      "watchers": 0,
+      "default_branch": "main",
+      "temp_clone_token": null,
+      "network_count": 0,
+      "subscribers_count": 0
+    }
+  },
+  {
+    "source_id": "cei-statements-dashboard-b3",
+    "provider": "github",
+    "metric": "stars",
+    "value": 0,
+    "observed_at": "2026-06-16T01:59:34.462Z",
+    "url": "https://github.com/cjimmylin/cei-statements-dashboard-b3",
+    "raw_payload": {
+      "id": 1182910854,
+      "node_id": "R_kgDORoHJhg",
+      "name": "cei-statements-dashboard-b3",
+      "full_name": "cjimmylin/cei-statements-dashboard-b3",
+      "private": false,
+      "owner": {
+        "login": "cjimmylin",
+        "id": 50340220,
+        "node_id": "MDQ6VXNlcjUwMzQwMjIw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50340220?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cjimmylin",
+        "html_url": "https://github.com/cjimmylin",
+        "followers_url": "https://api.github.com/users/cjimmylin/followers",
+        "following_url": "https://api.github.com/users/cjimmylin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cjimmylin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cjimmylin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cjimmylin/subscriptions",
+        "organizations_url": "https://api.github.com/users/cjimmylin/orgs",
+        "repos_url": "https://api.github.com/users/cjimmylin/repos",
+        "events_url": "https://api.github.com/users/cjimmylin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cjimmylin/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/cjimmylin/cei-statements-dashboard-b3",
+      "description": "Tapestry — CEI AI Statements Dashboard B3 (Coverage Analysis)",
+      "fork": false,
+      "url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3",
+      "forks_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/forks",
+      "keys_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/teams",
+      "hooks_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/hooks",
+      "issue_events_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/events",
+      "assignees_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/tags",
+      "blobs_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/languages",
+      "stargazers_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/stargazers",
+      "contributors_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/contributors",
+      "subscribers_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/subscribers",
+      "subscription_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/subscription",
+      "commits_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/merges",
+      "archive_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/downloads",
+      "issues_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/labels{/name}",
+      "releases_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/deployments",
+      "created_at": "2026-03-16T04:38:36Z",
+      "updated_at": "2026-03-16T04:39:14Z",
+      "pushed_at": "2026-03-16T04:39:11Z",
+      "git_url": "git://github.com/cjimmylin/cei-statements-dashboard-b3.git",
+      "ssh_url": "git@github.com:cjimmylin/cei-statements-dashboard-b3.git",
+      "clone_url": "https://github.com/cjimmylin/cei-statements-dashboard-b3.git",
+      "svn_url": "https://github.com/cjimmylin/cei-statements-dashboard-b3",
+      "homepage": null,
+      "size": 575,
+      "stargazers_count": 0,
+      "watchers_count": 0,
+      "language": "JavaScript",
+      "has_issues": true,
+      "has_projects": true,
+      "has_downloads": true,
+      "has_wiki": true,
+      "has_pages": true,
+      "has_discussions": false,
+      "forks_count": 0,
+      "mirror_url": null,
+      "archived": false,
+      "disabled": false,
+      "open_issues_count": 0,
+      "license": null,
+      "allow_forking": true,
+      "is_template": false,
+      "web_commit_signoff_required": false,
+      "has_pull_requests": true,
+      "pull_request_creation_policy": "all",
+      "topics": [],
+      "visibility": "public",
+      "forks": 0,
+      "open_issues": 0,
+      "watchers": 0,
+      "default_branch": "main",
+      "temp_clone_token": null,
+      "network_count": 0,
+      "subscribers_count": 0
+    }
+  },
+  {
+    "source_id": "cei-statements-dashboard-b3",
+    "provider": "github",
+    "metric": "subscribers",
+    "value": 0,
+    "observed_at": "2026-06-16T01:59:34.462Z",
+    "url": "https://github.com/cjimmylin/cei-statements-dashboard-b3",
+    "raw_payload": {
+      "id": 1182910854,
+      "node_id": "R_kgDORoHJhg",
+      "name": "cei-statements-dashboard-b3",
+      "full_name": "cjimmylin/cei-statements-dashboard-b3",
+      "private": false,
+      "owner": {
+        "login": "cjimmylin",
+        "id": 50340220,
+        "node_id": "MDQ6VXNlcjUwMzQwMjIw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50340220?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cjimmylin",
+        "html_url": "https://github.com/cjimmylin",
+        "followers_url": "https://api.github.com/users/cjimmylin/followers",
+        "following_url": "https://api.github.com/users/cjimmylin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cjimmylin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cjimmylin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cjimmylin/subscriptions",
+        "organizations_url": "https://api.github.com/users/cjimmylin/orgs",
+        "repos_url": "https://api.github.com/users/cjimmylin/repos",
+        "events_url": "https://api.github.com/users/cjimmylin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cjimmylin/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/cjimmylin/cei-statements-dashboard-b3",
+      "description": "Tapestry — CEI AI Statements Dashboard B3 (Coverage Analysis)",
+      "fork": false,
+      "url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3",
+      "forks_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/forks",
+      "keys_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/teams",
+      "hooks_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/hooks",
+      "issue_events_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/events",
+      "assignees_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/tags",
+      "blobs_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/languages",
+      "stargazers_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/stargazers",
+      "contributors_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/contributors",
+      "subscribers_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/subscribers",
+      "subscription_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/subscription",
+      "commits_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/merges",
+      "archive_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/downloads",
+      "issues_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/labels{/name}",
+      "releases_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/cjimmylin/cei-statements-dashboard-b3/deployments",
+      "created_at": "2026-03-16T04:38:36Z",
+      "updated_at": "2026-03-16T04:39:14Z",
+      "pushed_at": "2026-03-16T04:39:11Z",
+      "git_url": "git://github.com/cjimmylin/cei-statements-dashboard-b3.git",
+      "ssh_url": "git@github.com:cjimmylin/cei-statements-dashboard-b3.git",
+      "clone_url": "https://github.com/cjimmylin/cei-statements-dashboard-b3.git",
+      "svn_url": "https://github.com/cjimmylin/cei-statements-dashboard-b3",
+      "homepage": null,
+      "size": 575,
+      "stargazers_count": 0,
+      "watchers_count": 0,
+      "language": "JavaScript",
+      "has_issues": true,
+      "has_projects": true,
+      "has_downloads": true,
+      "has_wiki": true,
+      "has_pages": true,
+      "has_discussions": false,
+      "forks_count": 0,
+      "mirror_url": null,
+      "archived": false,
+      "disabled": false,
+      "open_issues_count": 0,
+      "license": null,
+      "allow_forking": true,
+      "is_template": false,
+      "web_commit_signoff_required": false,
+      "has_pull_requests": true,
+      "pull_request_creation_policy": "all",
+      "topics": [],
+      "visibility": "public",
+      "forks": 0,
+      "open_issues": 0,
+      "watchers": 0,
+      "default_branch": "main",
+      "temp_clone_token": null,
+      "network_count": 0,
+      "subscribers_count": 0
+    }
+  },
+  {
+    "source_id": "cei-unified-taxonomy",
+    "provider": "github",
+    "metric": "forks",
+    "value": 0,
+    "observed_at": "2026-06-16T01:59:34.462Z",
+    "url": "https://github.com/cjimmylin/cei-unified-taxonomy",
+    "raw_payload": {
+      "id": 1190082989,
+      "node_id": "R_kgDORu85rQ",
+      "name": "cei-unified-taxonomy",
+      "full_name": "cjimmylin/cei-unified-taxonomy",
+      "private": false,
+      "owner": {
+        "login": "cjimmylin",
+        "id": 50340220,
+        "node_id": "MDQ6VXNlcjUwMzQwMjIw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50340220?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cjimmylin",
+        "html_url": "https://github.com/cjimmylin",
+        "followers_url": "https://api.github.com/users/cjimmylin/followers",
+        "following_url": "https://api.github.com/users/cjimmylin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cjimmylin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cjimmylin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cjimmylin/subscriptions",
+        "organizations_url": "https://api.github.com/users/cjimmylin/orgs",
+        "repos_url": "https://api.github.com/users/cjimmylin/repos",
+        "events_url": "https://api.github.com/users/cjimmylin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cjimmylin/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/cjimmylin/cei-unified-taxonomy",
+      "description": "Unified AI Governance Taxonomy Dashboard",
+      "fork": false,
+      "url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy",
+      "forks_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/forks",
+      "keys_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/teams",
+      "hooks_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/hooks",
+      "issue_events_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/events",
+      "assignees_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/tags",
+      "blobs_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/languages",
+      "stargazers_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/stargazers",
+      "contributors_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/contributors",
+      "subscribers_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/subscribers",
+      "subscription_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/subscription",
+      "commits_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/merges",
+      "archive_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/downloads",
+      "issues_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/labels{/name}",
+      "releases_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/deployments",
+      "created_at": "2026-03-24T00:28:33Z",
+      "updated_at": "2026-03-24T00:28:56Z",
+      "pushed_at": "2026-03-24T00:28:52Z",
+      "git_url": "git://github.com/cjimmylin/cei-unified-taxonomy.git",
+      "ssh_url": "git@github.com:cjimmylin/cei-unified-taxonomy.git",
+      "clone_url": "https://github.com/cjimmylin/cei-unified-taxonomy.git",
+      "svn_url": "https://github.com/cjimmylin/cei-unified-taxonomy",
+      "homepage": null,
+      "size": 3300,
+      "stargazers_count": 0,
+      "watchers_count": 0,
+      "language": "HTML",
+      "has_issues": true,
+      "has_projects": true,
+      "has_downloads": true,
+      "has_wiki": true,
+      "has_pages": true,
+      "has_discussions": false,
+      "forks_count": 0,
+      "mirror_url": null,
+      "archived": false,
+      "disabled": false,
+      "open_issues_count": 0,
+      "license": null,
+      "allow_forking": true,
+      "is_template": false,
+      "web_commit_signoff_required": false,
+      "has_pull_requests": true,
+      "pull_request_creation_policy": "all",
+      "topics": [],
+      "visibility": "public",
+      "forks": 0,
+      "open_issues": 0,
+      "watchers": 0,
+      "default_branch": "main",
+      "temp_clone_token": null,
+      "network_count": 0,
+      "subscribers_count": 0
+    }
+  },
+  {
+    "source_id": "cei-unified-taxonomy",
+    "provider": "github",
+    "metric": "stars",
+    "value": 0,
+    "observed_at": "2026-06-16T01:59:34.462Z",
+    "url": "https://github.com/cjimmylin/cei-unified-taxonomy",
+    "raw_payload": {
+      "id": 1190082989,
+      "node_id": "R_kgDORu85rQ",
+      "name": "cei-unified-taxonomy",
+      "full_name": "cjimmylin/cei-unified-taxonomy",
+      "private": false,
+      "owner": {
+        "login": "cjimmylin",
+        "id": 50340220,
+        "node_id": "MDQ6VXNlcjUwMzQwMjIw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50340220?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cjimmylin",
+        "html_url": "https://github.com/cjimmylin",
+        "followers_url": "https://api.github.com/users/cjimmylin/followers",
+        "following_url": "https://api.github.com/users/cjimmylin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cjimmylin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cjimmylin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cjimmylin/subscriptions",
+        "organizations_url": "https://api.github.com/users/cjimmylin/orgs",
+        "repos_url": "https://api.github.com/users/cjimmylin/repos",
+        "events_url": "https://api.github.com/users/cjimmylin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cjimmylin/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/cjimmylin/cei-unified-taxonomy",
+      "description": "Unified AI Governance Taxonomy Dashboard",
+      "fork": false,
+      "url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy",
+      "forks_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/forks",
+      "keys_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/teams",
+      "hooks_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/hooks",
+      "issue_events_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/events",
+      "assignees_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/tags",
+      "blobs_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/languages",
+      "stargazers_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/stargazers",
+      "contributors_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/contributors",
+      "subscribers_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/subscribers",
+      "subscription_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/subscription",
+      "commits_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/merges",
+      "archive_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/downloads",
+      "issues_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/labels{/name}",
+      "releases_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/deployments",
+      "created_at": "2026-03-24T00:28:33Z",
+      "updated_at": "2026-03-24T00:28:56Z",
+      "pushed_at": "2026-03-24T00:28:52Z",
+      "git_url": "git://github.com/cjimmylin/cei-unified-taxonomy.git",
+      "ssh_url": "git@github.com:cjimmylin/cei-unified-taxonomy.git",
+      "clone_url": "https://github.com/cjimmylin/cei-unified-taxonomy.git",
+      "svn_url": "https://github.com/cjimmylin/cei-unified-taxonomy",
+      "homepage": null,
+      "size": 3300,
+      "stargazers_count": 0,
+      "watchers_count": 0,
+      "language": "HTML",
+      "has_issues": true,
+      "has_projects": true,
+      "has_downloads": true,
+      "has_wiki": true,
+      "has_pages": true,
+      "has_discussions": false,
+      "forks_count": 0,
+      "mirror_url": null,
+      "archived": false,
+      "disabled": false,
+      "open_issues_count": 0,
+      "license": null,
+      "allow_forking": true,
+      "is_template": false,
+      "web_commit_signoff_required": false,
+      "has_pull_requests": true,
+      "pull_request_creation_policy": "all",
+      "topics": [],
+      "visibility": "public",
+      "forks": 0,
+      "open_issues": 0,
+      "watchers": 0,
+      "default_branch": "main",
+      "temp_clone_token": null,
+      "network_count": 0,
+      "subscribers_count": 0
+    }
+  },
+  {
+    "source_id": "cei-unified-taxonomy",
+    "provider": "github",
+    "metric": "subscribers",
+    "value": 0,
+    "observed_at": "2026-06-16T01:59:34.462Z",
+    "url": "https://github.com/cjimmylin/cei-unified-taxonomy",
+    "raw_payload": {
+      "id": 1190082989,
+      "node_id": "R_kgDORu85rQ",
+      "name": "cei-unified-taxonomy",
+      "full_name": "cjimmylin/cei-unified-taxonomy",
+      "private": false,
+      "owner": {
+        "login": "cjimmylin",
+        "id": 50340220,
+        "node_id": "MDQ6VXNlcjUwMzQwMjIw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50340220?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cjimmylin",
+        "html_url": "https://github.com/cjimmylin",
+        "followers_url": "https://api.github.com/users/cjimmylin/followers",
+        "following_url": "https://api.github.com/users/cjimmylin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cjimmylin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cjimmylin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cjimmylin/subscriptions",
+        "organizations_url": "https://api.github.com/users/cjimmylin/orgs",
+        "repos_url": "https://api.github.com/users/cjimmylin/repos",
+        "events_url": "https://api.github.com/users/cjimmylin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cjimmylin/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "html_url": "https://github.com/cjimmylin/cei-unified-taxonomy",
+      "description": "Unified AI Governance Taxonomy Dashboard",
+      "fork": false,
+      "url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy",
+      "forks_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/forks",
+      "keys_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/keys{/key_id}",
+      "collaborators_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/collaborators{/collaborator}",
+      "teams_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/teams",
+      "hooks_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/hooks",
+      "issue_events_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/issues/events{/number}",
+      "events_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/events",
+      "assignees_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/assignees{/user}",
+      "branches_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/branches{/branch}",
+      "tags_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/tags",
+      "blobs_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/git/blobs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/git/tags{/sha}",
+      "git_refs_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/git/refs{/sha}",
+      "trees_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/git/trees{/sha}",
+      "statuses_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/statuses/{sha}",
+      "languages_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/languages",
+      "stargazers_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/stargazers",
+      "contributors_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/contributors",
+      "subscribers_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/subscribers",
+      "subscription_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/subscription",
+      "commits_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/commits{/sha}",
+      "git_commits_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/git/commits{/sha}",
+      "comments_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/comments{/number}",
+      "issue_comment_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/issues/comments{/number}",
+      "contents_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/contents/{+path}",
+      "compare_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/compare/{base}...{head}",
+      "merges_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/merges",
+      "archive_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/{archive_format}{/ref}",
+      "downloads_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/downloads",
+      "issues_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/issues{/number}",
+      "pulls_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/pulls{/number}",
+      "milestones_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/milestones{/number}",
+      "notifications_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/notifications{?since,all,participating}",
+      "labels_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/labels{/name}",
+      "releases_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/releases{/id}",
+      "deployments_url": "https://api.github.com/repos/cjimmylin/cei-unified-taxonomy/deployments",
+      "created_at": "2026-03-24T00:28:33Z",
+      "updated_at": "2026-03-24T00:28:56Z",
+      "pushed_at": "2026-03-24T00:28:52Z",
+      "git_url": "git://github.com/cjimmylin/cei-unified-taxonomy.git",
+      "ssh_url": "git@github.com:cjimmylin/cei-unified-taxonomy.git",
+      "clone_url": "https://github.com/cjimmylin/cei-unified-taxonomy.git",
+      "svn_url": "https://github.com/cjimmylin/cei-unified-taxonomy",
+      "homepage": null,
+      "size": 3300,
+      "stargazers_count": 0,
+      "watchers_count": 0,
+      "language": "HTML",
+      "has_issues": true,
+      "has_projects": true,
+      "has_downloads": true,
+      "has_wiki": true,
+      "has_pages": true,
+      "has_discussions": false,
+      "forks_count": 0,
+      "mirror_url": null,
+      "archived": false,
+      "disabled": false,
+      "open_issues_count": 0,
+      "license": null,
+      "allow_forking": true,
+      "is_template": false,
+      "web_commit_signoff_required": false,
+      "has_pull_requests": true,
+      "pull_request_creation_policy": "all",
+      "topics": [],
+      "visibility": "public",
+      "forks": 0,
+      "open_issues": 0,
+      "watchers": 0,
+      "default_branch": "main",
+      "temp_clone_token": null,
+      "network_count": 0,
+      "subscribers_count": 0
+    }
+  }
+]

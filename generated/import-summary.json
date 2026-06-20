@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-06-15T21:54:36.505Z",
+  "statements": 1666,
+  "fingerprints": 1405,
+  "concepts": 469,
+  "fingerprint_only_statements": 0,
+  "fingerprint_dimension_scores": 28188,
+  "unified_taxonomy_scores": 34957,
+  "ontology_relationships": 66,
+  "dataset_artifacts": [
+    {
+      "release_slug": "statements-b3-2026-03-15",
+      "artifact_key": "data.js",
+      "media_type": "application/json",
+      "sha256": "7ba5a742336aec2a9a623c4725115a38aba44b09ec5663a400101eb408fb3da8",
+      "byte_size": 2081040
+    },
+    {
+      "release_slug": "fingerprints-2026-03-15",
+      "artifact_key": "data.js",
+      "media_type": "application/json",
+      "sha256": "9efd025e6d2c93f30b7f307a49f75d25edd841fa357b31e210841bd408f51101",
+      "byte_size": 1467031
+    },
+    {
+      "release_slug": "ontology-ont3",
+      "artifact_key": "embedded-ontology-data.json",
+      "media_type": "application/json",
+      "sha256": "8e96e92ab5576e2b1f64344dcb66b85e02881758cd19d724fa31ddffb002c408",
+      "byte_size": 589673
+    },
+    {
+      "release_slug": "unified-taxonomy-2026-03-15",
+      "artifact_key": "data.js",
+      "media_type": "application/json",
+      "sha256": "4e8676926a345f5d4c3ae0376fa1e4644ff7b319c0787577ebf015b44c05c0c6",
+      "byte_size": 1720303
+    }
+  ]
+}

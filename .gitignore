@@ -14,7 +14,14 @@ dist-ssr
 .tools
 .tunnel
 generated
+!generated/
+generated/*
+!generated/*.json
 exports
+!exports/
+exports/*
+!exports/huggingface/
+!exports/huggingface/**
 *.local
 
 # Python

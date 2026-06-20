@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-06-16T01:59:33.858Z",
+  "sources": 15,
+  "live_ok": 14,
+  "statuses": {
+    "included": 4,
+    "approved": 3,
+    "under_review": 3,
+    "proposed": 5,
+    "rejected": 0
+  },
+  "sha256": "63598e353115fbe0039e4db7158a35bf20a3e5d2f5d3fa93266d5768572768c6",
+  "outputs": {
+    "source_candidates": "public\\data\\source-candidates.json"
+  }
+}

@@ -1,0 +1,219 @@
+[
+  {
+    "source_id": "cei-fingerprint-explorer",
+    "indexing_status": "indexed_as_source_release",
+    "evidence": [
+      "This source is one of the pinned CEI upstream releases imported by scripts/import-cei.mjs."
+    ],
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "checked_at": "2026-06-16T01:59:35.085Z"
+  },
+  {
+    "source_id": "cei-ontology-explorer",
+    "indexing_status": "indexed_as_source_release",
+    "evidence": [
+      "This source is one of the pinned CEI upstream releases imported by scripts/import-cei.mjs."
+    ],
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "checked_at": "2026-06-16T01:59:35.085Z"
+  },
+  {
+    "source_id": "cei-statements-dashboard-b3",
+    "indexing_status": "indexed_as_source_release",
+    "evidence": [
+      "This source is one of the pinned CEI upstream releases imported by scripts/import-cei.mjs."
+    ],
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "checked_at": "2026-06-16T01:59:35.085Z"
+  },
+  {
+    "source_id": "cei-unified-taxonomy",
+    "indexing_status": "indexed_as_source_release",
+    "evidence": [
+      "This source is one of the pinned CEI upstream releases imported by scripts/import-cei.mjs."
+    ],
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "checked_at": "2026-06-16T01:59:35.085Z"
+  },
+  {
+    "source_id": "eu-ai-act",
+    "indexing_status": "indexed_as_records",
+    "matched_statement_ids": [
+      "STMT-0067",
+      "STMT-0068",
+      "STMT-0143",
+      "STMT-0144",
+      "STMT-0207",
+      "STMT-0263",
+      "STMT-0264",
+      "STMT-0265",
+      "STMT-0311",
+      "STMT-0419",
+      "STMT-0482",
+      "STMT-1382"
+    ],
+    "matched_statement_count": 12,
+    "partial_statement_ids": [
+      "STMT-0142",
+      "STMT-0141"
+    ],
+    "partial_statement_count": 2,
+    "evidence": [
+      "Found 12 direct URL/title matches in the statement registry."
+    ],
+    "checked_at": "2026-06-16T01:59:35.119Z"
+  },
+  {
+    "source_id": "nist-ai-rmf",
+    "indexing_status": "not_found",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "No direct URL, title, alias, publisher, or same-domain statement match was found in the prepared catalog."
+    ],
+    "checked_at": "2026-06-16T01:59:35.153Z"
+  },
+  {
+    "source_id": "unesco-ai-ethics",
+    "indexing_status": "indexed_as_records",
+    "matched_statement_ids": [
+      "STMT-0298",
+      "STMT-0299",
+      "STMT-0324"
+    ],
+    "matched_statement_count": 3,
+    "partial_statement_ids": [
+      "STMT-0189"
+    ],
+    "partial_statement_count": 1,
+    "evidence": [
+      "Found 3 direct URL/title matches in the statement registry."
+    ],
+    "checked_at": "2026-06-16T01:59:35.175Z"
+  },
+  {
+    "source_id": "oecd-ai-policy-observatory",
+    "indexing_status": "partially_indexed",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [
+      "STMT-0173",
+      "STMT-0257",
+      "STMT-0261",
+      "STMT-0270",
+      "STMT-0445"
+    ],
+    "partial_statement_count": 5,
+    "evidence": [
+      "Found 5 same-domain statement records, but no direct source match."
+    ],
+    "checked_at": "2026-06-16T01:59:35.199Z"
+  },
+  {
+    "source_id": "agora-ai-governance-regulatory-archive",
+    "indexing_status": "not_found",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "No direct URL, title, alias, publisher, or same-domain statement match was found in the prepared catalog."
+    ],
+    "checked_at": "2026-06-16T01:59:35.228Z"
+  },
+  {
+    "source_id": "coe-framework-convention-ai",
+    "indexing_status": "indexed_as_records",
+    "matched_statement_ids": [
+      "STMT-0412",
+      "STMT-0061",
+      "STMT-0205",
+      "STMT-0410",
+      "STMT-0411",
+      "STMT-1408"
+    ],
+    "matched_statement_count": 6,
+    "partial_statement_ids": [
+      "STMT-0861"
+    ],
+    "partial_statement_count": 1,
+    "evidence": [
+      "Found 6 direct URL/title matches in the statement registry."
+    ],
+    "checked_at": "2026-06-16T01:59:35.247Z"
+  },
+  {
+    "source_id": "ai-incident-database",
+    "indexing_status": "not_found",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "No direct URL, title, alias, publisher, or same-domain statement match was found in the prepared catalog."
+    ],
+    "checked_at": "2026-06-16T01:59:35.266Z"
+  },
+  {
+    "source_id": "global-index-responsible-ai",
+    "indexing_status": "not_found",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "No direct URL, title, alias, publisher, or same-domain statement match was found in the prepared catalog."
+    ],
+    "checked_at": "2026-06-16T01:59:35.289Z"
+  },
+  {
+    "source_id": "oecd-ai-index",
+    "indexing_status": "partially_indexed",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [
+      "STMT-0173",
+      "STMT-0257",
+      "STMT-0261",
+      "STMT-0270",
+      "STMT-0445"
+    ],
+    "partial_statement_count": 5,
+    "evidence": [
+      "Found 5 same-domain statement records, but no direct source match."
+    ],
+    "checked_at": "2026-06-16T01:59:35.306Z"
+  },
+  {
+    "source_id": "caidp-ai-democratic-values",
+    "indexing_status": "indexed_as_records",
+    "matched_statement_ids": [
+      "STMT-1668"
+    ],
+    "matched_statement_count": 1,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Found 1 direct URL/title match in the statement registry."
+    ],
+    "checked_at": "2026-06-16T01:59:35.326Z"
+  },
+  {
+    "source_id": "stanford-ai-index",
+    "indexing_status": "not_found",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "No direct URL, title, alias, publisher, or same-domain statement match was found in the prepared catalog."
+    ],
+    "checked_at": "2026-06-16T01:59:35.346Z"
+  }
+]
