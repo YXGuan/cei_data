@@ -1,0 +1,62 @@
+[
+  {
+    "id": "q-ocap",
+    "query": "OCAP principles First Nations data governance ownership control access possession",
+    "answerable": true,
+    "expected_statement_ids": ["STMT-0001"]
+  },
+  {
+    "id": "q-unesco-ethics",
+    "query": "UNESCO Recommendation on the Ethics of Artificial Intelligence",
+    "answerable": true,
+    "expected_statement_ids": ["STMT-0298"]
+  },
+  {
+    "id": "q-ai-bill-of-rights",
+    "query": "Blueprint for an AI Bill of Rights United States",
+    "answerable": true,
+    "expected_statement_ids": ["STMT-0325"]
+  },
+  {
+    "id": "q-eu-ai-act-civil-society",
+    "query": "EU AI Act civil society statement human rights",
+    "answerable": true,
+    "expected_statement_ids": ["STMT-0258"]
+  },
+  {
+    "id": "q-nist-risk-management",
+    "query": "NIST AI Risk Management Framework ABA joint letter",
+    "answerable": true,
+    "expected_statement_ids": ["STMT-1094"]
+  },
+  {
+    "id": "q-fairwork",
+    "query": "Fairwork AI principles platform workers",
+    "answerable": true,
+    "expected_statement_ids": ["STMT-1137"]
+  },
+  {
+    "id": "q-g20",
+    "query": "G20 AI Principles",
+    "answerable": true,
+    "expected_statement_ids": ["STMT-0146"]
+  },
+  {
+    "id": "q-etuc-algorithmic-work",
+    "query": "ETUC resolution algorithmic systems at work",
+    "answerable": true,
+    "expected_statement_ids": ["STMT-0914"]
+  },
+  {
+    "id": "q-unanswerable-fictional",
+    "query": "which CEI statement endorses autonomous weapon grading in preschool classrooms",
+    "answerable": false,
+    "expected_statement_ids": []
+  },
+  {
+    "id": "q-unanswerable-private-company",
+    "query": "internal OpenAI cafeteria scheduling policy for responsible AI lunches",
+    "answerable": false,
+    "expected_statement_ids": []
+  }
+]

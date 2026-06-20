@@ -106,7 +106,10 @@ running. They are appropriate for demos and testing, not production hosting.
 ## Search And Governance Workflow
 
 - `GET /api/search` is the Next.js backend endpoint for catalog search and facets.
+- `GET /api/retrieve` returns fine-grained evidence units plus expanded context for RAG experiments.
 - Supabase `search_statements` provides ranked full-text search when configured.
+- Supabase `retrieve_evidence_units` provides evidence-unit search after the evidence migration and
+  `npm run data:evidence -- --push` have been run.
 - `source_requests` stores candidate sources and their review state.
 - `source_request_votes` stores one vote per invited user and candidate source.
 - `profiles.role = 'admin'` is checked by RLS before review statuses can change.
@@ -147,7 +150,9 @@ normalizes the sparse fingerprint heatmap, and writes:
 - `public/data/source-signals.json`: provider-attributed popularity signals without bulky raw payloads
 - `public/data/source-indexing-status.json`: local matcher output showing whether sources are already indexed
 - `public/data/source-registry.json`: joined source registry used by `/sources`
+- `public/data/evidence-units.json`: sentence/paragraph-level retrieval units for RAG experiments
 - `generated/import-summary.json`: import quality report
+- `generated/evidence-units-summary.json`: evidence-unit build summary
 - `generated/source-candidates-summary.json`: third-party source check summary
 - `generated/source-signals.json`: raw provider signal payloads for audit
 - `generated/source-registry-summary.json`: joined source registry summary
@@ -156,6 +161,18 @@ Validate referential integrity and expected reconciliation counts:
 
 ```bash
 npm run data:validate
+```
+
+Build or refresh the evidence-unit retrieval artifact:
+
+```bash
+npm run data:evidence
+```
+
+Run the initial retrieval benchmark:
+
+```bash
+npm run eval:retrieval
 ```
 
 The unified taxonomy expands the reconciled registry to 1,666 statements. Of those, 1,405 have fingerprint records. Dashboard B3 metadata is retained as the preferred source for overlapping records, while all source payloads remain available for provenance.

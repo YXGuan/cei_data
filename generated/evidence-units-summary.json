@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-06-20T14:16:01.988Z",
+  "evidence_version": "metadata-abstract-v1",
+  "statements": 1666,
+  "evidence_units": 5881,
+  "by_kind": {
+    "abstract": 3127,
+    "concept_scores": 1088,
+    "metadata": 1666
+  },
+  "by_granularity": {
+    "paragraph": 2754,
+    "sentence": 3127
+  },
+  "average_tokens": 23,
+  "sha256": "8d35621dd7dc3864fc617ee7ee6627423d04dffab20890d48827f6e4cf8a9c39",
+  "outputs": {
+    "evidence_units": "public\\data\\evidence-units.json"
+  },
+  "pushed": false
+}

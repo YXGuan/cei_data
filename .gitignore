@@ -17,6 +17,8 @@ generated
 !generated/
 generated/*
 !generated/*.json
+!generated/retrieval-evals/
+!generated/retrieval-evals/*.json
 exports
 !exports/
 exports/*

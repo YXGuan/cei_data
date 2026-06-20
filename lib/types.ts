@@ -39,6 +39,44 @@ export type CatalogSearch = {
   source: 'Supabase' | 'Prepared snapshot'
 }
 
+export type EvidenceGranularity = 'sentence' | 'bullet' | 'clause' | 'paragraph' | 'table_row'
+
+export type EvidenceKind = 'metadata' | 'abstract' | 'source_text' | 'concept_scores'
+
+export type EvidenceUnit = {
+  id: string
+  statement_id: string
+  title: string
+  organization: string
+  year: number | null
+  region: string
+  type: string
+  binding: string
+  source_url?: string | null
+  section_path: string[]
+  parent_id?: string | null
+  evidence_kind: EvidenceKind
+  granularity: EvidenceGranularity
+  chunk_text: string
+  expanded_context: string
+  char_start?: number | null
+  char_end?: number | null
+  token_count: number
+  content_hash: string
+  metadata: Record<string, unknown>
+}
+
+export type RetrievedEvidenceUnit = EvidenceUnit & {
+  score: number
+  score_breakdown: Record<string, number>
+}
+
+export type RetrievalSearch = {
+  items: RetrievedEvidenceUnit[]
+  total: number
+  source: 'Supabase' | 'Prepared evidence snapshot'
+}
+
 export type SourceStatus = 'proposed' | 'under_review' | 'approved' | 'included' | 'rejected'
 
 export type PopularitySignalProvider =

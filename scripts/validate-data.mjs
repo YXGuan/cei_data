@@ -1,7 +1,7 @@
 import { readFile } from 'node:fs/promises'
 
 const load = (file) => readFile(new URL(`../public/data/${file}`, import.meta.url), 'utf8').then(JSON.parse)
-const [dashboard, statements, fingerprints, sourceCandidates, sourceRegistry, sourceSignals, sourceIndexing] = await Promise.all([
+const [dashboard, statements, fingerprints, sourceCandidates, sourceRegistry, sourceSignals, sourceIndexing, evidenceUnits] = await Promise.all([
   load('dashboard.json'),
   load('statements.json'),
   load('fingerprints.json'),
@@ -9,6 +9,7 @@ const [dashboard, statements, fingerprints, sourceCandidates, sourceRegistry, so
   load('source-registry.json'),
   load('source-signals.json'),
   load('source-indexing-status.json'),
+  load('evidence-units.json'),
 ])
 
 const failures = []
@@ -20,6 +21,8 @@ const validProviders = new Set(['github', 'huggingface', 'openalex', 'semanticsc
 const validMetrics = new Set(['stars', 'forks', 'subscribers', 'downloads', 'views', 'citations', 'influential_citations', 'likes', 'unique_views', 'unique_downloads'])
 const validIndexing = new Set(['not_found', 'source_candidate_only', 'partially_indexed', 'indexed_as_records', 'indexed_as_source_release'])
 const validActions = new Set(['monitor_only', 'source_registry_only', 'index_metadata', 'index_records', 'index_full_text'])
+const validEvidenceKinds = new Set(['metadata', 'abstract', 'source_text', 'concept_scores'])
+const validGranularity = new Set(['sentence', 'bullet', 'clause', 'paragraph', 'table_row'])
 
 assert(statements.length === dashboard.totals.statements, `statement count ${statements.length} does not match dashboard ${dashboard.totals.statements}`)
 assert(fingerprints.length === dashboard.totals.fingerprinted, `fingerprint count ${fingerprints.length} does not match dashboard ${dashboard.totals.fingerprinted}`)
@@ -57,6 +60,14 @@ assert(sourceIndexing.every((item) => item.indexing_status !== 'indexed_as_recor
 assert(sourceIndexing.every((item) => item.indexing_status !== 'indexed_as_records' || item.matched_statement_ids.length > 0), 'one or more indexed_as_records statuses have no matched statements')
 assert(sourceIndexing.find((item) => item.source_id === 'agora-ai-governance-regulatory-archive')?.indexing_status === 'not_found', 'AGORA should remain not_found until canonical records are matched')
 assert(sourceIndexing.find((item) => item.source_id === 'ai-incident-database')?.indexing_status === 'not_found', 'AI Incident Database should remain not_found until canonical records are matched')
+assert(evidenceUnits.length >= statements.length, 'evidence units should include at least one unit per statement')
+assert(unique(evidenceUnits.map((item) => item.id)), 'evidence unit IDs are not unique')
+assert(evidenceUnits.every((item) => statementKeys.has(item.statement_id)), 'one or more evidence units reference unknown statements')
+assert(evidenceUnits.every((item) => validEvidenceKinds.has(item.evidence_kind)), 'one or more evidence units use an invalid evidence kind')
+assert(evidenceUnits.every((item) => validGranularity.has(item.granularity)), 'one or more evidence units use an invalid granularity')
+assert(evidenceUnits.every((item) => item.chunk_text && item.expanded_context && Number.isInteger(item.token_count) && item.token_count > 0), 'one or more evidence units lack text or token counts')
+assert(evidenceUnits.every((item) => Array.isArray(item.section_path) && item.section_path.length > 0), 'one or more evidence units lack section paths')
+assert(evidenceUnits.filter((item) => item.evidence_kind === 'abstract').every((item) => item.granularity === 'sentence'), 'abstract evidence units should be sentence-level')
 
 if (failures.length) {
   console.error(failures.map((failure) => `- ${failure}`).join('\n'))
@@ -71,5 +82,6 @@ console.log(JSON.stringify({
   third_party_source_candidates: sourceCandidates.length,
   source_registry_entries: sourceRegistry.length,
   popularity_signals: sourceSignals.length,
+  evidence_units: evidenceUnits.length,
   status: 'valid',
 }, null, 2))

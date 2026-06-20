@@ -1,0 +1,811 @@
+{
+  "generated_at": "2026-06-20T14:16:11.831Z",
+  "query_count": 10,
+  "answerable_query_count": 8,
+  "unanswerable_query_count": 2,
+  "metrics": {
+    "statement_recall_at_5": 1,
+    "statement_recall_at_10": 1,
+    "mrr": 0.9375,
+    "unanswerable_false_positive_rate": 0
+  },
+  "config": {
+    "evidence": "public\\data\\evidence-units.json",
+    "queries": "data\\retrieval-eval.seed.json",
+    "limit": 10,
+    "false_positive_threshold": 14
+  },
+  "results": [
+    {
+      "id": "q-ocap",
+      "query": "OCAP principles First Nations data governance ownership control access possession",
+      "answerable": true,
+      "expected_statement_ids": [
+        "STMT-0001"
+      ],
+      "recall_at_5": 1,
+      "recall_at_10": 1,
+      "reciprocal_rank": 1,
+      "false_positive": false,
+      "top_results": [
+        {
+          "evidence_id": "EV-STMT-0001-ABS-001",
+          "statement_id": "STMT-0001",
+          "title": "OCAP Principles (First Nations Data Governance)",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 567.61,
+          "chunk_text": "The OCAP principles (Ownership, Control, Access, and Possession) establish that First Nations communities own, control, access, and possess information about their peoples and territories."
+        },
+        {
+          "evidence_id": "EV-STMT-0001-ABS-002",
+          "statement_id": "STMT-0001",
+          "title": "OCAP Principles (First Nations Data Governance)",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 405.32,
+          "chunk_text": "Originally articulated in 1998 and institutionalized by the First Nations Information Governance Centre, OCAP is the foundational data governance framework for First Nations communities in Canada."
+        },
+        {
+          "evidence_id": "EV-STMT-0001-META",
+          "statement_id": "STMT-0001",
+          "title": "OCAP Principles (First Nations Data Governance)",
+          "evidence_kind": "metadata",
+          "granularity": "paragraph",
+          "score": 390.57,
+          "chunk_text": "OCAP Principles (First Nations Data Governance). Organization: FNIGC. Publication year: 1998. Region: North America. Instrument type: Framework. Binding nature: Voluntary. Policy family: International & Intergovernmental."
+        }
+      ]
+    },
+    {
+      "id": "q-unesco-ethics",
+      "query": "UNESCO Recommendation on the Ethics of Artificial Intelligence",
+      "answerable": true,
+      "expected_statement_ids": [
+        "STMT-0298"
+      ],
+      "recall_at_5": 1,
+      "recall_at_10": 1,
+      "reciprocal_rank": 1,
+      "false_positive": false,
+      "top_results": [
+        {
+          "evidence_id": "EV-STMT-0298-META",
+          "statement_id": "STMT-0298",
+          "title": "UNESCO Recommendation on AI Ethics",
+          "evidence_kind": "metadata",
+          "granularity": "paragraph",
+          "score": 295.46,
+          "chunk_text": "UNESCO Recommendation on AI Ethics. Organization: UNESCO. Publication year: 2021. Region: Global. Instrument type: Recommendation. Binding nature: Advisory. Policy family: Mainstream AI Governance."
+        },
+        {
+          "evidence_id": "EV-STMT-0298-ABS-001",
+          "statement_id": "STMT-0298",
+          "title": "UNESCO Recommendation on AI Ethics",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 246.45,
+          "chunk_text": "First global normative framework on AI ethics adopted by all 193 UNESCO member states, addressing values, principles, and policy actions across education, science, culture, and communication."
+        },
+        {
+          "evidence_id": "EV-STMT-0324-ABS-002",
+          "statement_id": "STMT-0324",
+          "title": "UNESCO Caribbean AI Policy Roadmap 2022",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 233.22,
+          "chunk_text": "Based on the global UNESCO Recommendation on the Ethics of Artificial Intelligence (adopted by 193 member states), the roadmap offers frameworks for policy development and regional collaboration to enable ethical, inclusive AI governance across Caribbean states."
+        },
+        {
+          "evidence_id": "EV-STMT-0726-ABS-002",
+          "statement_id": "STMT-0726",
+          "title": "COMEST Preliminary Study on Ethics of AI",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 211.14,
+          "chunk_text": "Formed the foundational groundwork for the 2021 UNESCO Recommendation on the Ethics of Artificial Intelligence."
+        },
+        {
+          "evidence_id": "EV-STMT-1104-ABS-006",
+          "statement_id": "STMT-1104",
+          "title": "Sant'Egidio Paris AI Ethics Forum 2024",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 155.37,
+          "chunk_text": "UNESCO's 2021 Recommendation on Ethics of AI was cited as a framework."
+        },
+        {
+          "evidence_id": "EV-STMT-0526-ABS-001",
+          "statement_id": "STMT-0526",
+          "title": "COMEST/UNESCO Suggested AI Principles",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 150.45,
+          "chunk_text": "Preliminary study by UNESCO's ethics commission proposing generic principles for ethical AI including respect for human dignity and autonomy, prohibition of harm, fairness, non-discrimination, responsibility, transparency, and privacy."
+        },
+        {
+          "evidence_id": "EV-STMT-0324-ABS-001",
+          "statement_id": "STMT-0324",
+          "title": "UNESCO Caribbean AI Policy Roadmap 2022",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 142.22,
+          "chunk_text": "A four-pillar AI policy roadmap tailored to the Caribbean's unique opportunities and risks, developed by UNESCO and the Caribbean Telecommunications Union."
+        },
+        {
+          "evidence_id": "EV-STMT-0038-ABS-001",
+          "statement_id": "STMT-0038",
+          "title": "COMEST Report on Robot Ethics",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 128.37,
+          "chunk_text": "UNESCO ethics commission report on the ethical challenges of robotics, addressing safety, privacy, autonomy, and the human-robot relationship."
+        },
+        {
+          "evidence_id": "EV-STMT-0726-META",
+          "statement_id": "STMT-0726",
+          "title": "COMEST Preliminary Study on Ethics of AI",
+          "evidence_kind": "metadata",
+          "granularity": "paragraph",
+          "score": 127.62,
+          "chunk_text": "COMEST Preliminary Study on Ethics of AI. Organization: COMEST/UNESCO. Publication year: 2019. Region: Global. Instrument type: Report. Binding nature: Advisory. Policy family: Mainstream AI Governance."
+        },
+        {
+          "evidence_id": "EV-STMT-0038-META",
+          "statement_id": "STMT-0038",
+          "title": "COMEST Report on Robot Ethics",
+          "evidence_kind": "metadata",
+          "granularity": "paragraph",
+          "score": 127.62,
+          "chunk_text": "COMEST Report on Robot Ethics. Organization: UNESCO COMEST. Publication year: 2017. Region: Global. Instrument type: Report. Binding nature: Advisory. Policy family: Mainstream AI Governance."
+        }
+      ]
+    },
+    {
+      "id": "q-ai-bill-of-rights",
+      "query": "Blueprint for an AI Bill of Rights United States",
+      "answerable": true,
+      "expected_statement_ids": [
+        "STMT-0325"
+      ],
+      "recall_at_5": 1,
+      "recall_at_10": 1,
+      "reciprocal_rank": 1,
+      "false_positive": false,
+      "top_results": [
+        {
+          "evidence_id": "EV-STMT-0325-META",
+          "statement_id": "STMT-0325",
+          "title": "Blueprint for an AI Bill of Rights",
+          "evidence_kind": "metadata",
+          "granularity": "paragraph",
+          "score": 395.99,
+          "chunk_text": "Blueprint for an AI Bill of Rights. Organization: United States Government. Publication year: 2022. Region: North America. Instrument type: Framework. Binding nature: Advisory. Policy family: Mainstream AI Governance."
+        },
+        {
+          "evidence_id": "EV-STMT-0325-CONCEPTS",
+          "statement_id": "STMT-0325",
+          "title": "Blueprint for an AI Bill of Rights",
+          "evidence_kind": "concept_scores",
+          "granularity": "paragraph",
+          "score": 307.2,
+          "chunk_text": "Top governance concepts for Blueprint for an AI Bill of Rights: Fairness 20, Privacy 10, Safety 5."
+        },
+        {
+          "evidence_id": "EV-STMT-1008-META",
+          "statement_id": "STMT-1008",
+          "title": "NNU Nurses and Patients Bill of Rights on AI",
+          "evidence_kind": "metadata",
+          "granularity": "paragraph",
+          "score": 203.88,
+          "chunk_text": "NNU Nurses and Patients Bill of Rights on AI. Organization: National Nurses United. Publication year: 2024. Region: North America. Instrument type: Declaration. Binding nature: Voluntary. Policy family: Healthcare & Domain-Specific."
+        },
+        {
+          "evidence_id": "EV-STMT-0325-ABS-001",
+          "statement_id": "STMT-0325",
+          "title": "Blueprint for an AI Bill of Rights",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 182.23,
+          "chunk_text": "A non-binding framework articulating five principles and protections — safe and effective systems, algorithmic discrimination protections, data privacy, notice and explanation, and human alternatives — to guide the design, development, and deployment of automated systems."
+        },
+        {
+          "evidence_id": "EV-STMT-1008-CONCEPTS",
+          "statement_id": "STMT-1008",
+          "title": "NNU Nurses and Patients Bill of Rights on AI",
+          "evidence_kind": "concept_scores",
+          "granularity": "paragraph",
+          "score": 155.01,
+          "chunk_text": "Top governance concepts for NNU Nurses and Patients Bill of Rights on AI: Transparency 25, Privacy 25, Safety 10, Autonomy 10, Fairness 5."
+        },
+        {
+          "evidence_id": "EV-STMT-1008-ABS-001",
+          "statement_id": "STMT-1008",
+          "title": "NNU Nurses and Patients Bill of Rights on AI",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 154.08,
+          "chunk_text": "National Nurses United's formal guiding principles document establishes patients' and nurses' rights in relation to AI deployment in healthcare, asserting that no AI system will ever replace human clinical expertise and judgment."
+        },
+        {
+          "evidence_id": "EV-STMT-0935-ABS-003",
+          "statement_id": "STMT-0935",
+          "title": "EPIC Comments to OMB: AI Guidance (December 2023)",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 127.97,
+          "chunk_text": "Urges OMB to require that federal AI systems meet the principles in the White House's Blueprint for an AI Bill of Rights."
+        },
+        {
+          "evidence_id": "EV-STMT-1008-ABS-002",
+          "statement_id": "STMT-1008",
+          "title": "NNU Nurses and Patients Bill of Rights on AI",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 123.26,
+          "chunk_text": "Key rights include the right to high-quality person-to-person care, access to explainable AI rationale, and the right of nurses to exercise professional judgment and override AI decisions without disciplinary threat."
+        },
+        {
+          "evidence_id": "EV-STMT-1008-ABS-003",
+          "statement_id": "STMT-1008",
+          "title": "NNU Nurses and Patients Bill of Rights on AI",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 103.97,
+          "chunk_text": "The document calls for an immediate pause on implementing unproven AI in health care settings."
+        },
+        {
+          "evidence_id": "EV-STMT-0243-ABS-001",
+          "statement_id": "STMT-0243",
+          "title": "US National AI Initiative Act 2020",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 81.73,
+          "chunk_text": "3 billion across NSF, DOE, and NIST over five years."
+        }
+      ]
+    },
+    {
+      "id": "q-eu-ai-act-civil-society",
+      "query": "EU AI Act civil society statement human rights",
+      "answerable": true,
+      "expected_statement_ids": [
+        "STMT-0258"
+      ],
+      "recall_at_5": 1,
+      "recall_at_10": 1,
+      "reciprocal_rank": 0.5,
+      "false_positive": false,
+      "top_results": [
+        {
+          "evidence_id": "EV-STMT-0698-ABS-001",
+          "statement_id": "STMT-0698",
+          "title": "EDRi Civil Society AI Act Fundamental Rights Statement",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 332.79,
+          "chunk_text": "EDRi and 119 civil society organizations urge EU institutions to prioritize fundamental rights in the proposed Artificial Intelligence Act, calling for prohibitions on high-risk AI systems threatening human rights, mandatory impact assessments, public transparency and accountability, and meaningful redress for those affected by AI."
+        },
+        {
+          "evidence_id": "EV-STMT-0258-ABS-001",
+          "statement_id": "STMT-0258",
+          "title": "EU AI Act Civil Society Statement",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 316.63,
+          "chunk_text": "A collective statement signed by 120 civil society organizations calling for the EU AI Act to prioritize fundamental rights, with eight key recommendations including comprehensive prohibitions on social scoring, remote biometric identification, emotion recognition, and physiognomy systems; mandatory fundamental rights impact assessments; enforceable rights; and environmental transparency."
+        },
+        {
+          "evidence_id": "EV-STMT-0711-ABS-001",
+          "statement_id": "STMT-0711",
+          "title": "AlgorithmWatch Civil Society AI Act Fundamental Rights",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 309.3,
+          "chunk_text": "AlgorithmWatch co-authored this joint civil society statement with EDRi and 119 organizations calling on EU institutions to prioritize fundamental rights in the proposed AI Act."
+        },
+        {
+          "evidence_id": "EV-STMT-0698-META",
+          "statement_id": "STMT-0698",
+          "title": "EDRi Civil Society AI Act Fundamental Rights Statement",
+          "evidence_kind": "metadata",
+          "granularity": "paragraph",
+          "score": 308.55,
+          "chunk_text": "EDRi Civil Society AI Act Fundamental Rights Statement. Organization: EDRi. Publication year: 2021. Region: Europe. Instrument type: Statement. Binding nature: Aspirational. Policy family: Mainstream AI Governance."
+        },
+        {
+          "evidence_id": "EV-STMT-0711-META",
+          "statement_id": "STMT-0711",
+          "title": "AlgorithmWatch Civil Society AI Act Fundamental Rights",
+          "evidence_kind": "metadata",
+          "granularity": "paragraph",
+          "score": 308.55,
+          "chunk_text": "AlgorithmWatch Civil Society AI Act Fundamental Rights. Organization: AlgorithmWatch. Publication year: 2021. Region: Europe. Instrument type: Statement. Binding nature: Aspirational. Policy family: Mainstream AI Governance."
+        },
+        {
+          "evidence_id": "EV-STMT-1676-META",
+          "statement_id": "STMT-1676",
+          "title": "Joint Civil Society Statement on EU AI Act Guidelines",
+          "evidence_kind": "metadata",
+          "granularity": "paragraph",
+          "score": 304.29,
+          "chunk_text": "Joint Civil Society Statement on EU AI Act Guidelines. Organization: European Disability Forum (and 21 co-signatories including Access Now, EDRi, Amnesty International, AlgorithmWatch, EPIC, Privacy International). Publication year: 2025. Region: Europe. Instrument type: Declaration. Binding nature: Advisory. Policy family: Not fingerprinted."
+        },
+        {
+          "evidence_id": "EV-STMT-0258-META",
+          "statement_id": "STMT-0258",
+          "title": "EU AI Act Civil Society Statement",
+          "evidence_kind": "metadata",
+          "granularity": "paragraph",
+          "score": 287.76,
+          "chunk_text": "EU AI Act Civil Society Statement. Organization: EDRi / Access Now / AlgorithmWatch. Publication year: 2021. Region: Europe. Instrument type: Statement. Binding nature: Aspirational. Policy family: Mainstream AI Governance."
+        },
+        {
+          "evidence_id": "EV-STMT-0258-CONCEPTS",
+          "statement_id": "STMT-0258",
+          "title": "EU AI Act Civil Society Statement",
+          "evidence_kind": "concept_scores",
+          "granularity": "paragraph",
+          "score": 287.01,
+          "chunk_text": "Top governance concepts for EU AI Act Civil Society Statement: Privacy 50, Solidarity 40, Accountability 25, Fairness 25, Safety 10."
+        },
+        {
+          "evidence_id": "EV-STMT-0708-ABS-001",
+          "statement_id": "STMT-0708",
+          "title": "Panoptykon AI Act Civil Society Statement 2024",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 284.15,
+          "chunk_text": "A civil society statement co-published by Panoptykon Foundation addressing the EU Artificial Intelligence Act from a fundamental rights perspective."
+        },
+        {
+          "evidence_id": "EV-STMT-1679-META",
+          "statement_id": "STMT-1679",
+          "title": "Within Bounds: Civil Society AI Action Summit Statement",
+          "evidence_kind": "metadata",
+          "granularity": "paragraph",
+          "score": 282.89,
+          "chunk_text": "Within Bounds: Civil Society AI Action Summit Statement. Organization: Green Web Foundation (lead, with Green Screen Coalition, Beyond Fossil Fuels, Aspiration, critical infrastructure lab; 100+ signatories including APC, Amnesty International, Climate Action Network Europe, EDRi, AI Now). Publication year: 2025. Region: Global. Instrument type: Declaration. Binding nature: Aspirational. Policy family: Not fingerprinted."
+        }
+      ]
+    },
+    {
+      "id": "q-nist-risk-management",
+      "query": "NIST AI Risk Management Framework ABA joint letter",
+      "answerable": true,
+      "expected_statement_ids": [
+        "STMT-1094"
+      ],
+      "recall_at_5": 1,
+      "recall_at_10": 1,
+      "reciprocal_rank": 1,
+      "false_positive": false,
+      "top_results": [
+        {
+          "evidence_id": "EV-STMT-1094-META",
+          "statement_id": "STMT-1094",
+          "title": "ABA Joint Letter on NIST AI Risk Management Framework",
+          "evidence_kind": "metadata",
+          "granularity": "paragraph",
+          "score": 598.81,
+          "chunk_text": "ABA Joint Letter on NIST AI Risk Management Framework. Organization: ABA. Publication year: 2026. Region: North America. Instrument type: Statement. Binding nature: Advisory. Policy family: Mainstream AI Governance."
+        },
+        {
+          "evidence_id": "EV-STMT-1094-CONCEPTS",
+          "statement_id": "STMT-1094",
+          "title": "ABA Joint Letter on NIST AI Risk Management Framework",
+          "evidence_kind": "concept_scores",
+          "granularity": "paragraph",
+          "score": 598.06,
+          "chunk_text": "Top governance concepts for ABA Joint Letter on NIST AI Risk Management Framework: Solidarity 35, Accountability 5, Safety 5."
+        },
+        {
+          "evidence_id": "EV-STMT-1094-ABS-001",
+          "statement_id": "STMT-1094",
+          "title": "ABA Joint Letter on NIST AI Risk Management Framework",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 563.88,
+          "chunk_text": "Coalition letter from 10 financial industry associations including ABA urging preservation of the NIST AI Risk Management Framework."
+        },
+        {
+          "evidence_id": "EV-STMT-1094-ABS-002",
+          "statement_id": "STMT-1094",
+          "title": "ABA Joint Letter on NIST AI Risk Management Framework",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 375.02,
+          "chunk_text": "Argues the RMF provides a common language, flexible governance foundation, global interoperability, and serves as a cross-sector standard for trustworthy AI development."
+        },
+        {
+          "evidence_id": "EV-STMT-0369-ABS-001",
+          "statement_id": "STMT-0369",
+          "title": "NIST AI RMF 1.0 (2023)",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 159.68,
+          "chunk_text": "Voluntary, sector-agnostic AI risk management framework developed through consensus process, structured around four core functions (GOVERN, MAP, MEASURE, MANAGE), helping organizations identify, assess, and manage risks across the AI lifecycle in all domains."
+        },
+        {
+          "evidence_id": "EV-STMT-0488-ABS-001",
+          "statement_id": "STMT-0488",
+          "title": "Nepal National AI Policy 2025",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 140.86,
+          "chunk_text": "Nepal's National AI Policy 2025 (2082 in the Bikram Sambat calendar), approved by Cabinet and drafted by the Ministry of Communication and Information Technology, establishes a comprehensive framework for developing a human-centric AI ecosystem across six pillars: ecosystem building, education and research, sectoral applications, entrepreneurship, public services, and ethics and risk management."
+        },
+        {
+          "evidence_id": "EV-STMT-1024-ABS-004",
+          "statement_id": "STMT-1024",
+          "title": "ADL Report: Generating Hate — AI Bias in LLMs",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 140.86,
+          "chunk_text": "Formal policy recommendations for AI developers include pre-deployment testing with civil society partners, NIST Risk Management Framework adoption, and bias benchmarking."
+        },
+        {
+          "evidence_id": "EV-STMT-1048-ABS-002",
+          "statement_id": "STMT-1048",
+          "title": "WCO Report on Adoption of AI and ML in Customs",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 140.86,
+          "chunk_text": "The report provides in-depth insights into AI/ML adoption in customs administrations globally, covering: technical frameworks, governance, risk management, business processes, capacity building, ethical considerations, cybersecurity, and the Human-in-the-Loop (HITL) approach for transparent and ethical AI decisions."
+        },
+        {
+          "evidence_id": "EV-STMT-0965-ABS-002",
+          "statement_id": "STMT-0965",
+          "title": "ASA Statement on Ethical AI Principles for Statistical Practitioners",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 140.86,
+          "chunk_text": "Organized around three main themes — Accountability, Transparency, and Fairness — the statement draws on the ASA Ethical Guidelines for Statistical Practice (2022) and references NIST's AI Risk Management Framework, the US DOJ's Guidance on AI and Civil Rights, and the EEOC's Algorithmic Fairness Initiative."
+        },
+        {
+          "evidence_id": "EV-STMT-0815-ABS-003",
+          "statement_id": "STMT-0815",
+          "title": "J-AISI Guide to Evaluation Perspectives on AI Safety 2024",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 117.01,
+          "chunk_text": "The guide was developed in coordination with similar institutes in the US (NIST) and UK (DSIT) and references the J-AISI/NIST crosswalk on AI risk management interoperability."
+        }
+      ]
+    },
+    {
+      "id": "q-fairwork",
+      "query": "Fairwork AI principles platform workers",
+      "answerable": true,
+      "expected_statement_ids": [
+        "STMT-1137"
+      ],
+      "recall_at_5": 1,
+      "recall_at_10": 1,
+      "reciprocal_rank": 1,
+      "false_positive": false,
+      "top_results": [
+        {
+          "evidence_id": "EV-STMT-1137-ABS-001",
+          "statement_id": "STMT-1137",
+          "title": "Fairwork AI Principles",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 217.09,
+          "chunk_text": "Developed through tripartite global stakeholder consultation with GPAI, the Fairwork AI Principles re-assess OECD AI principles with a focus on worker welfare."
+        },
+        {
+          "evidence_id": "EV-STMT-1137-META",
+          "statement_id": "STMT-1137",
+          "title": "Fairwork AI Principles",
+          "evidence_kind": "metadata",
+          "granularity": "paragraph",
+          "score": 216.34,
+          "chunk_text": "Fairwork AI Principles. Organization: Fairwork. Publication year: 2022. Region: Europe. Instrument type: Declaration. Binding nature: Voluntary. Policy family: Professional & Technical Standards."
+        },
+        {
+          "evidence_id": "EV-STMT-1137-CONCEPTS",
+          "statement_id": "STMT-1137",
+          "title": "Fairwork AI Principles",
+          "evidence_kind": "concept_scores",
+          "granularity": "paragraph",
+          "score": 215.59,
+          "chunk_text": "Top governance concepts for Fairwork AI Principles: Privacy 25, Safety 25, Autonomy 25, Transparency 20, Accountability 20."
+        },
+        {
+          "evidence_id": "EV-STMT-1137-ABS-004",
+          "statement_id": "STMT-1137",
+          "title": "Fairwork AI Principles",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 192.53,
+          "chunk_text": "They were applied to rate companies like Sama and Amazon in the 2023 and 2024/25 Fairwork AI Ratings reports."
+        },
+        {
+          "evidence_id": "EV-STMT-1137-ABS-003",
+          "statement_id": "STMT-1137",
+          "title": "Fairwork AI Principles",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 162.69,
+          "chunk_text": "The principles specifically address algorithmic explainability, worker appeal mechanisms, freedom of association, and democratic governance through union recognition."
+        },
+        {
+          "evidence_id": "EV-STMT-1154-META",
+          "statement_id": "STMT-1154",
+          "title": "NWU Platform and Principles for Generative AI Policy",
+          "evidence_kind": "metadata",
+          "granularity": "paragraph",
+          "score": 146.89,
+          "chunk_text": "NWU Platform and Principles for Generative AI Policy. Organization: NWU. Publication year: 2023. Region: North America. Instrument type: Framework. Binding nature: Voluntary. Policy family: Professional & Technical Standards."
+        },
+        {
+          "evidence_id": "EV-STMT-1154-CONCEPTS",
+          "statement_id": "STMT-1154",
+          "title": "NWU Platform and Principles for Generative AI Policy",
+          "evidence_kind": "concept_scores",
+          "granularity": "paragraph",
+          "score": 146.14,
+          "chunk_text": "Top governance concepts for NWU Platform and Principles for Generative AI Policy: Fairness 25, Transparency 20, Accountability 15, Privacy 15, Solidarity 15."
+        },
+        {
+          "evidence_id": "EV-STMT-1137-ABS-002",
+          "statement_id": "STMT-1137",
+          "title": "Fairwork AI Principles",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 146.13,
+          "chunk_text": "Organized around five core areas — Fair Pay, Fair Conditions, Fair Contracts, Fair Management, and Fair Representation — they establish minimum fairness standards for AI in the workplace."
+        },
+        {
+          "evidence_id": "EV-STMT-1025-ABS-001",
+          "statement_id": "STMT-1025",
+          "title": "AFL-CIO Workers First AI Principles",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 133.73,
+          "chunk_text": "The AFL-CIO's Workers First Initiative on AI establishes eight guiding principles for the responsible development and deployment of artificial intelligence in workplaces, covering strengthening labor rights, advancing guardrails against harmful workplace AI, supporting copyright protections, developing worker-centered workforce training, institutionalizing worker voice in AI research and development, requiring transparency and accountability, modeling best practices in government procurement, and protecting civil rights and democratic integrity."
+        },
+        {
+          "evidence_id": "EV-STMT-0900-ABS-001",
+          "statement_id": "STMT-0900",
+          "title": "UNI 10 Principles for Workers' Data Rights",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 133.73,
+          "chunk_text": "UNI Global Union's formal document establishing 10 operational principles for workers' data rights and protection, intended to be incorporated into collective bargaining, global agreements, and multinational alliances."
+        }
+      ]
+    },
+    {
+      "id": "q-g20",
+      "query": "G20 AI Principles",
+      "answerable": true,
+      "expected_statement_ids": [
+        "STMT-0146"
+      ],
+      "recall_at_5": 1,
+      "recall_at_10": 1,
+      "reciprocal_rank": 1,
+      "false_positive": false,
+      "top_results": [
+        {
+          "evidence_id": "EV-STMT-0146-META",
+          "statement_id": "STMT-0146",
+          "title": "G20 AI Principles",
+          "evidence_kind": "metadata",
+          "granularity": "paragraph",
+          "score": 264.35,
+          "chunk_text": "G20 AI Principles. Organization: G20. Publication year: 2019. Region: Global. Instrument type: Declaration. Binding nature: Advisory. Policy family: International & Intergovernmental."
+        },
+        {
+          "evidence_id": "EV-STMT-0146-CONCEPTS",
+          "statement_id": "STMT-0146",
+          "title": "G20 AI Principles",
+          "evidence_kind": "concept_scores",
+          "granularity": "paragraph",
+          "score": 263.6,
+          "chunk_text": "Top governance concepts for G20 AI Principles: Human Oversight 20, Safety 15, Beneficence 15, Accountability 5."
+        },
+        {
+          "evidence_id": "EV-STMT-0146-ABS-001",
+          "statement_id": "STMT-0146",
+          "title": "G20 AI Principles",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 232.1,
+          "chunk_text": "G20 human-centred AI principles adopted in Osaka 2019, building on OECD AI Principles, covering inclusive growth, human rights, transparency, robustness, and accountability."
+        },
+        {
+          "evidence_id": "EV-STMT-0269-ABS-001",
+          "statement_id": "STMT-0269",
+          "title": "G20 Rome Declaration AI Reaffirmation (2021)",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 211.02,
+          "chunk_text": "The 2021 Rome G20 Leaders' Declaration reaffirmed willingness to implement trustworthy AI and committed to further advancing the implementation of the G20 AI Principles adopted at Osaka 2019, while welcoming the transformation of the Digital Economy Task Force into a Working Group."
+        },
+        {
+          "evidence_id": "EV-STMT-0530-ABS-001",
+          "statement_id": "STMT-0530",
+          "title": "CIGI G20 Framework for AI in Workplace",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 153.85,
+          "chunk_text": "Policy framework from CIGI proposing principles for G20 nations to govern AI in workplace contexts, covering worker rights, transparency, fairness, accountability, and the social implications of automation."
+        },
+        {
+          "evidence_id": "EV-STMT-0421-ABS-001",
+          "statement_id": "STMT-0421",
+          "title": "G20 Rio de Janeiro Declaration 2024",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 141.32,
+          "chunk_text": "G20 Leaders' Declaration from Brazil's presidency acknowledging AI threats in the information domain, calling for AI regulation, and promoting transparency, accountability, human oversight, and copyright protection, with emphasis on inclusive and sustainable development."
+        },
+        {
+          "evidence_id": "EV-STMT-0353-ABS-001",
+          "statement_id": "STMT-0353",
+          "title": "G20 New Delhi Declaration 2023",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 141.32,
+          "chunk_text": "G20 Leaders' Declaration from India's presidency committing to unlock AI's potential, share its benefits, and mitigate risks through international cooperation and further discussions on global governance for AI, with emphasis on responsible, fair, transparent, and accountable AI."
+        },
+        {
+          "evidence_id": "EV-STMT-0623-ABS-001",
+          "statement_id": "STMT-0623",
+          "title": "G20 Interfaith Forum AI Policy Brief",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 141.32,
+          "chunk_text": "Policy brief submitted to the G20 Summit in Italy, produced by the Technology and Innovation Working Group chaired by Marco Ventura."
+        },
+        {
+          "evidence_id": "EV-STMT-0421-META",
+          "statement_id": "STMT-0421",
+          "title": "G20 Rio de Janeiro Declaration 2024",
+          "evidence_kind": "metadata",
+          "granularity": "paragraph",
+          "score": 140.57,
+          "chunk_text": "G20 Rio de Janeiro Declaration 2024. Organization: G20. Publication year: 2024. Region: Global. Instrument type: Declaration. Binding nature: Aspirational. Policy family: International & Intergovernmental."
+        },
+        {
+          "evidence_id": "EV-STMT-0353-META",
+          "statement_id": "STMT-0353",
+          "title": "G20 New Delhi Declaration 2023",
+          "evidence_kind": "metadata",
+          "granularity": "paragraph",
+          "score": 140.57,
+          "chunk_text": "G20 New Delhi Declaration 2023. Organization: G20. Publication year: 2023. Region: Global. Instrument type: Declaration. Binding nature: Aspirational. Policy family: International & Intergovernmental."
+        }
+      ]
+    },
+    {
+      "id": "q-etuc-algorithmic-work",
+      "query": "ETUC resolution algorithmic systems at work",
+      "answerable": true,
+      "expected_statement_ids": [
+        "STMT-0914"
+      ],
+      "recall_at_5": 1,
+      "recall_at_10": 1,
+      "reciprocal_rank": 1,
+      "false_positive": false,
+      "top_results": [
+        {
+          "evidence_id": "EV-STMT-0914-ABS-001",
+          "statement_id": "STMT-0914",
+          "title": "ETUC Resolution on Algorithmic Systems at Work",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 429.59,
+          "chunk_text": "Adopted by the ETUC Executive Committee on 6 December 2022, this resolution calls for dedicated EU legislation on algorithmic systems in the workplace."
+        },
+        {
+          "evidence_id": "EV-STMT-0914-META",
+          "statement_id": "STMT-0914",
+          "title": "ETUC Resolution on Algorithmic Systems at Work",
+          "evidence_kind": "metadata",
+          "granularity": "paragraph",
+          "score": 428.84,
+          "chunk_text": "ETUC Resolution on Algorithmic Systems at Work. Organization: ETUC. Publication year: 2022. Region: Europe. Instrument type: Resolution. Binding nature: Voluntary. Policy family: Mainstream AI Governance."
+        },
+        {
+          "evidence_id": "EV-STMT-0914-ABS-002",
+          "statement_id": "STMT-0914",
+          "title": "ETUC Resolution on Algorithmic Systems at Work",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 377.31,
+          "chunk_text": "The ETUC argues that the EU AI Act is insufficient for protecting workers from the realities of algorithmic management and that a dedicated Directive is needed."
+        },
+        {
+          "evidence_id": "EV-STMT-0914-ABS-003",
+          "statement_id": "STMT-0914",
+          "title": "ETUC Resolution on Algorithmic Systems at Work",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 356.51,
+          "chunk_text": "Key demands include: upholding the 'human in control' principle; empowering trade unions and workers' representatives to influence AI implementation decisions; mandatory information and consultation rights before deployment of algorithmic systems; prohibition of automated dismissals; and transparency requirements for algorithmic decision-making affecting employment."
+        },
+        {
+          "evidence_id": "EV-STMT-0914-ABS-004",
+          "statement_id": "STMT-0914",
+          "title": "ETUC Resolution on Algorithmic Systems at Work",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 345.19,
+          "chunk_text": "The resolution was a direct precursor to ETUC's campaign for a Quality Jobs Directive."
+        },
+        {
+          "evidence_id": "EV-STMT-0902-ABS-001",
+          "statement_id": "STMT-0902",
+          "title": "ETUC Resolution on AI and Data Strategies",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 218.52,
+          "chunk_text": "Adopted by the ETUC Executive Committee on 2 July 2020, this resolution responds to the European Commission's White Paper on AI and Data Strategy."
+        },
+        {
+          "evidence_id": "EV-STMT-0902-ABS-002",
+          "statement_id": "STMT-0902",
+          "title": "ETUC Resolution on AI and Data Strategies",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 217.53,
+          "chunk_text": "The ETUC demands a legal and empowering European framework based on human rights for AI governance."
+        },
+        {
+          "evidence_id": "EV-STMT-1035-ABS-001",
+          "statement_id": "STMT-1035",
+          "title": "ETUC AI for Workers Not Just Profit 2025",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 204.22,
+          "chunk_text": "Adopted at the ETUC Executive Committee meeting of 4-5 March 2025, this position paper represents ETUC's comprehensive updated stance on AI in the workplace."
+        },
+        {
+          "evidence_id": "EV-STMT-0902-ABS-003",
+          "statement_id": "STMT-0902",
+          "title": "ETUC Resolution on AI and Data Strategies",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 196.74,
+          "chunk_text": "Key provisions include: worker protections against workplace surveillance; classification of AI applications affecting workers' rights as high-risk systems subject to stringent regulation; trade union involvement in AI deployment decisions; and data governance frameworks that protect workers' collective interests."
+        },
+        {
+          "evidence_id": "EV-STMT-1035-ABS-004",
+          "statement_id": "STMT-1035",
+          "title": "ETUC AI for Workers Not Just Profit 2025",
+          "evidence_kind": "abstract",
+          "granularity": "sentence",
+          "score": 186.99,
+          "chunk_text": "The paper calls on the European Commission to bring forward binding legislation responding to the widespread unregulated rollout of AI in European workplaces, citing impacts including unfair automated dismissals, invasive surveillance, opaque algorithmic decision-making, and AI-driven work intensification."
+        }
+      ]
+    },
+    {
+      "id": "q-unanswerable-fictional",
+      "query": "which CEI statement endorses autonomous weapon grading in preschool classrooms",
+      "answerable": false,
+      "expected_statement_ids": [],
+      "recall_at_5": 0,
+      "recall_at_10": 0,
+      "reciprocal_rank": 0,
+      "false_positive": false,
+      "top_results": []
+    },
+    {
+      "id": "q-unanswerable-private-company",
+      "query": "internal OpenAI cafeteria scheduling policy for responsible AI lunches",
+      "answerable": false,
+      "expected_statement_ids": [],
+      "recall_at_5": 0,
+      "recall_at_10": 0,
+      "reciprocal_rank": 0,
+      "false_positive": false,
+      "top_results": []
+    }
+  ]
+}
