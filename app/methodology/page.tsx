@@ -1,30 +1,30 @@
-import { BarChart3, Database, FileSearch, GitMerge, ShieldCheck } from 'lucide-react'
+import { BarChart3, BookMarked, FileSearch, GitMerge, ShieldCheck } from 'lucide-react'
 
 const steps = [
   {
-    icon: GitMerge,
-    title: 'Reconcile',
-    copy: 'Stable statement keys merge overlapping records while preserving every source payload and release.',
+    icon: BookMarked,
+    title: 'Seed',
+    copy: 'Dr. K’s PRD source URL matrix is the canonical active MVP dataset for source review.',
   },
   {
     icon: FileSearch,
-    title: 'Describe',
-    copy: 'Metadata covers organizations, geography, instrument type, binding nature, language, and provenance.',
-  },
-  {
-    icon: Database,
-    title: 'Index',
-    copy: 'Postgres full-text search combines titles, abstracts, full text, organizations, and scored concepts.',
+    title: 'Check',
+    copy: 'Each source is normalized, live-checked when public, and tagged with URL status, format, category, and review fields.',
   },
   {
     icon: ShieldCheck,
-    title: 'Govern',
-    copy: 'Source proposals and votes are public; inclusion decisions and metadata changes remain admin-controlled.',
+    title: 'Tag',
+    copy: 'Human/rule-seeded Wisdom Layer tags and persona relevance guide triage before LLM enrichment is introduced.',
+  },
+  {
+    icon: GitMerge,
+    title: 'Crosswalk',
+    copy: 'Source-level previews connect a governance source to a core constraint, required control, and evidence standard.',
   },
   {
     icon: BarChart3,
-    title: 'Signal',
-    copy: 'Popularity signals are imported from external providers with timestamps instead of collapsed into a homemade score.',
+    title: 'Prioritize',
+    copy: 'Signals and review metadata support source prioritization without treating archived legacy records as active data.',
   },
 ]
 
@@ -32,11 +32,12 @@ export default function MethodologyPage() {
   return (
     <main className="content-page">
       <section className="page-intro">
-        <span className="overline">How the index works</span>
-        <h1>Built for retrieval, traceability, and careful expansion.</h1>
+        <span className="overline">How the MVP works</span>
+        <h1>Built around source triage before record-level ingestion.</h1>
         <p>
-          Supabase Postgres is the system of record. Prepared snapshots keep the public catalog
-          useful during development and provide a portable fallback when the database is unavailable.
+          The current MVP intentionally starts with Dr. K’s source matrix rather than the older
+          CEI statement snapshots. That keeps the team focused on source quality, persona fit,
+          Wisdom Layer review, and the minimum crosswalk needed for useful governance decisions.
         </p>
       </section>
       <section className="method-grid">
@@ -52,16 +53,16 @@ export default function MethodologyPage() {
       <section className="architecture-card">
         <div><span>Public product</span><strong>Next.js on Vercel</strong></div>
         <i />
-        <div><span>System of record</span><strong>Supabase Postgres + Auth + RLS</strong></div>
+        <div><span>Active data</span><strong>Dr. K source matrix snapshots</strong></div>
         <i />
-        <div><span>Processing</span><strong>Local Python + versioned imports</strong></div>
+        <div><span>Review workflow</span><strong>Supabase-ready registry + admin fields</strong></div>
       </section>
       <section className="method-note">
-        <h2>External popularity signals</h2>
+        <h2>Archived CEI corpus</h2>
         <p>
-          Citation, download, star, fork, and repository-use counts are stored as provider-specific
-          evidence. They are useful for prioritization, but they are not directly comparable across
-          providers and should not be treated as a single popularity score.
+          The prior statement, fingerprint, dashboard, and source-candidate files are retained under
+          `archive/legacy-cei-corpus/` for reference. They are not used by search, source pages,
+          validation, or visible navigation in this MVP.
         </p>
       </section>
     </main>

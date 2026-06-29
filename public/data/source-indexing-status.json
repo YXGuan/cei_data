@@ -1,219 +1,3250 @@
 [
   {
-    "source_id": "cei-fingerprint-explorer",
-    "indexing_status": "indexed_as_source_release",
-    "evidence": [
-      "This source is one of the pinned CEI upstream releases imported by scripts/import-cei.mjs."
-    ],
-    "matched_statement_ids": [],
-    "matched_statement_count": 0,
-    "checked_at": "2026-06-16T01:59:35.085Z"
-  },
-  {
-    "source_id": "cei-ontology-explorer",
-    "indexing_status": "indexed_as_source_release",
-    "evidence": [
-      "This source is one of the pinned CEI upstream releases imported by scripts/import-cei.mjs."
-    ],
-    "matched_statement_ids": [],
-    "matched_statement_count": 0,
-    "checked_at": "2026-06-16T01:59:35.085Z"
-  },
-  {
-    "source_id": "cei-statements-dashboard-b3",
-    "indexing_status": "indexed_as_source_release",
-    "evidence": [
-      "This source is one of the pinned CEI upstream releases imported by scripts/import-cei.mjs."
-    ],
-    "matched_statement_ids": [],
-    "matched_statement_count": 0,
-    "checked_at": "2026-06-16T01:59:35.085Z"
-  },
-  {
-    "source_id": "cei-unified-taxonomy",
-    "indexing_status": "indexed_as_source_release",
-    "evidence": [
-      "This source is one of the pinned CEI upstream releases imported by scripts/import-cei.mjs."
-    ],
-    "matched_statement_ids": [],
-    "matched_statement_count": 0,
-    "checked_at": "2026-06-16T01:59:35.085Z"
-  },
-  {
-    "source_id": "eu-ai-act",
-    "indexing_status": "indexed_as_records",
-    "matched_statement_ids": [
-      "STMT-0067",
-      "STMT-0068",
-      "STMT-0143",
-      "STMT-0144",
-      "STMT-0207",
-      "STMT-0263",
-      "STMT-0264",
-      "STMT-0265",
-      "STMT-0311",
-      "STMT-0419",
-      "STMT-0482",
-      "STMT-1382"
-    ],
-    "matched_statement_count": 12,
-    "partial_statement_ids": [
-      "STMT-0142",
-      "STMT-0141"
-    ],
-    "partial_statement_count": 2,
-    "evidence": [
-      "Found 12 direct URL/title matches in the statement registry."
-    ],
-    "checked_at": "2026-06-16T01:59:35.119Z"
-  },
-  {
-    "source_id": "nist-ai-rmf",
-    "indexing_status": "not_found",
+    "source_id": "a2k4d-american-university-in-cairo",
+    "indexing_status": "source_candidate_only",
     "matched_statement_ids": [],
     "matched_statement_count": 0,
     "partial_statement_ids": [],
     "partial_statement_count": 0,
     "evidence": [
-      "No direct URL, title, alias, publisher, or same-domain statement match was found in the prepared catalog."
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
     ],
-    "checked_at": "2026-06-16T01:59:35.153Z"
+    "checked_at": "2026-06-29T01:52:02.776Z"
   },
   {
-    "source_id": "unesco-ai-ethics",
-    "indexing_status": "indexed_as_records",
-    "matched_statement_ids": [
-      "STMT-0298",
-      "STMT-0299",
-      "STMT-0324"
-    ],
-    "matched_statement_count": 3,
-    "partial_statement_ids": [
-      "STMT-0189"
-    ],
-    "partial_statement_count": 1,
-    "evidence": [
-      "Found 3 direct URL/title matches in the statement registry."
-    ],
-    "checked_at": "2026-06-16T01:59:35.175Z"
-  },
-  {
-    "source_id": "oecd-ai-policy-observatory",
-    "indexing_status": "partially_indexed",
-    "matched_statement_ids": [],
-    "matched_statement_count": 0,
-    "partial_statement_ids": [
-      "STMT-0173",
-      "STMT-0257",
-      "STMT-0261",
-      "STMT-0270",
-      "STMT-0445"
-    ],
-    "partial_statement_count": 5,
-    "evidence": [
-      "Found 5 same-domain statement records, but no direct source match."
-    ],
-    "checked_at": "2026-06-16T01:59:35.199Z"
-  },
-  {
-    "source_id": "agora-ai-governance-regulatory-archive",
-    "indexing_status": "not_found",
+    "source_id": "ada-lovelace-institute",
+    "indexing_status": "source_candidate_only",
     "matched_statement_ids": [],
     "matched_statement_count": 0,
     "partial_statement_ids": [],
     "partial_statement_count": 0,
     "evidence": [
-      "No direct URL, title, alias, publisher, or same-domain statement match was found in the prepared catalog."
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
     ],
-    "checked_at": "2026-06-16T01:59:35.228Z"
+    "checked_at": "2026-06-29T01:52:02.776Z"
   },
   {
-    "source_id": "coe-framework-convention-ai",
-    "indexing_status": "indexed_as_records",
-    "matched_statement_ids": [
-      "STMT-0412",
-      "STMT-0061",
-      "STMT-0205",
-      "STMT-0410",
-      "STMT-0411",
-      "STMT-1408"
-    ],
-    "matched_statement_count": 6,
-    "partial_statement_ids": [
-      "STMT-0861"
-    ],
-    "partial_statement_count": 1,
+    "source_id": "ada-lovelace-institute-2",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
     "evidence": [
-      "Found 6 direct URL/title matches in the statement registry."
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
     ],
-    "checked_at": "2026-06-16T01:59:35.247Z"
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "african-union-continental-ai-strategy",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "ai-act-prohibited-practices-guidelines",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "ai-and-data-protection-materials",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "ai-assurance-frameworks",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "ai-basic-act-digital-ministry-materials",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "ai-basic-act-responsible-ai-materials",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "ai-bill-influenced-by-unesco",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "ai-ethical-framework-and-conpes-digital-strategy",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "ai-ethics-and-public-sector-guidance",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "ai-ethics-principles-and-mandatory-guardrails-proposals",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "ai-guidelines-for-business",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
   },
   {
     "source_id": "ai-incident-database",
-    "indexing_status": "not_found",
+    "indexing_status": "source_candidate_only",
     "matched_statement_ids": [],
     "matched_statement_count": 0,
     "partial_statement_ids": [],
     "partial_statement_count": 0,
     "evidence": [
-      "No direct URL, title, alias, publisher, or same-domain statement match was found in the prepared catalog."
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
     ],
-    "checked_at": "2026-06-16T01:59:35.266Z"
+    "checked_at": "2026-06-29T01:52:02.776Z"
   },
   {
-    "source_id": "global-index-responsible-ai",
-    "indexing_status": "not_found",
+    "source_id": "ai-strategy-for-digital-government",
+    "indexing_status": "source_candidate_only",
     "matched_statement_ids": [],
     "matched_statement_count": 0,
     "partial_statement_ids": [],
     "partial_statement_count": 0,
     "evidence": [
-      "No direct URL, title, alias, publisher, or same-domain statement match was found in the prepared catalog."
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
     ],
-    "checked_at": "2026-06-16T01:59:35.289Z"
+    "checked_at": "2026-06-29T01:52:02.776Z"
   },
   {
-    "source_id": "oecd-ai-index",
-    "indexing_status": "partially_indexed",
-    "matched_statement_ids": [],
-    "matched_statement_count": 0,
-    "partial_statement_ids": [
-      "STMT-0173",
-      "STMT-0257",
-      "STMT-0261",
-      "STMT-0270",
-      "STMT-0445"
-    ],
-    "partial_statement_count": 5,
-    "evidence": [
-      "Found 5 same-domain statement records, but no direct source match."
-    ],
-    "checked_at": "2026-06-16T01:59:35.306Z"
-  },
-  {
-    "source_id": "caidp-ai-democratic-values",
-    "indexing_status": "indexed_as_records",
-    "matched_statement_ids": [
-      "STMT-1668"
-    ],
-    "matched_statement_count": 1,
-    "partial_statement_ids": [],
-    "partial_statement_count": 0,
-    "evidence": [
-      "Found 1 direct URL/title match in the statement registry."
-    ],
-    "checked_at": "2026-06-16T01:59:35.326Z"
-  },
-  {
-    "source_id": "stanford-ai-index",
-    "indexing_status": "not_found",
+    "source_id": "ai-supervisory-agency-sandbox",
+    "indexing_status": "source_candidate_only",
     "matched_statement_ids": [],
     "matched_statement_count": 0,
     "partial_statement_ids": [],
     "partial_statement_count": 0,
     "evidence": [
-      "No direct URL, title, alias, publisher, or same-domain statement match was found in the prepared catalog."
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
     ],
-    "checked_at": "2026-06-16T01:59:35.346Z"
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "ai-verify-foundation",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "aiaaic-repository",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "alan-turing-institute",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "alan-turing-institute-2",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "algorithm-charter-for-aotearoa-new-zealand",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "algorithm-register",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "algorithmic-justice-league",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "algorithmwatch",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "amnesty-tech",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "amsterdam-algorithm-register",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "anthropic-responsible-scaling-policy",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "anthropic-responsible-scaling-policy-2",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "apollo-research",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "arc-evals",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "artificial-intelligence-and-data-act-aida-materials",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "asean-guide-on-ai-governance-and-ethics",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "au-data-policy-framework",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "blueprint-for-an-ai-bill-of-rights",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "boston-generative-ai-policy",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "brazilian-ai-plan-2024-2028",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "brazilian-ai-strategy-ebia",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "brookings-ai-governance-work",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "california-state-ai-guidance",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "cambridge-leverhulme-centre-for-the-future-of-intelligence",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "caricom-digital-transformation-strategy",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "carnegie-council-ai-and-equality-initiative",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "catholic-social-teaching",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "center-for-ai-safety",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "center-for-democracy-technology",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "cifar-pan-canadian-ai-strategy",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "cisa-nsa-five-eyes-secure-ai-guidance",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "cisa-nsa-five-eyes-secure-ai-guidance-2",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "cloud-security-alliance-ai-guidance",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "cnil-ai-guidance",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "cnrs-inria-ai-ethics-research",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "council-of-europe-framework-convention-on-ai",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "data-society",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "data-act",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "data-governance-act",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "data-protection-commissioner-ai-policy-efforts",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "datasheets-for-datasets",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "department-of-defense-responsible-ai-strategy",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "derechos-digitales",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "digital-and-ai-strategies",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "digital-and-ai-strategies-2",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "digital-and-ai-strategies-3",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "digital-and-ai-strategies-4",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "digital-services-act",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "directive-on-automated-decision-making",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "dubai-ai-responsible-ai-principles",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "eeoc-ai-guidance",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "electronic-frontier-foundation",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "eu-ai-act-regulation-2024-1689",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "eu-platform-work-directive",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "european-ai-office",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "european-university-institute",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "federal-data-protection-and-ai-guidance",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "framework-convention-on-ai",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "frontier-model-forum",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "fundacion-karisma",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "future-of-humanity-institute-archive-successor-networks",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "g7-hiroshima-ai-process",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "garante-ai-and-data-protection-rulings",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "gdpr",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "georgetown-cset",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "google-deepmind-frontier-safety-framework",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "google-deepmind-frontier-safety-framework-2",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "govai",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "gpai-oecd-integrated-partnership",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "gpai-model-obligations-guidance",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "harvard-berkman-klein-center",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "harvard-kennedy-school-ash-center",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "helsinki-algorithm-register",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "hhs-fda-ai-and-health-guidance",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "hiig-berlin",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "hugging-face-model-cards-and-dataset-cards",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "ibm-ai-ethics-governance-toolkit",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "icesco-riyadh-charter",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "ieee-7000-series",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "ieee-ethically-aligned-design",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "ilo-labor-automation-reports",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "indiaai-meity-governance-materials",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "indian-institute-of-technology-centre-for-responsible-ai",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "indigenous-data-sovereignty-frameworks",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "indonesia-ai-roadmap-data-protection-regulator",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "intelligence-community-ai-ethics-framework",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "inter-american-development-bank-fair-lac-ai-governance-resources",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "international-telecommunication-union-ai-for-good",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "iso-iec-22989",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "iso-iec-23053",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "iso-iec-23894",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "iso-iec-42001-2023",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "its-rio",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "malabo-convention",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "malaysia-national-ai-roadmap-data-protection-regulator",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "meta-responsible-ai-open-model-policies",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "metr-evaluations",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "mexico-national-ai-strategy-materials-and-data-protection-authority-guid",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "microsoft-responsible-ai-standard",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "mit-csail-mit-schwarzman-college-of-computing",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "mitre-atlas",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "mitre-atlas-2",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "mlcommons-ai-safety-benchmarks",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "model-ai-governance-framework-for-agentic-ai",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "model-cards",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "mozilla-foundation-ai-governance-work",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "national-ai-policy",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "national-ai-policy-innovation-authority-materials",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "national-ai-policy-2021-2030",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "national-ai-strategy-3",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "national-ai-strategy",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "national-ai-strategy-2",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "national-ai-strategy-digital-transformation-law",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "national-ai-strategy-2031",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "national-digital-ai-strategies",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "national-strategy-for-artificial-intelligence",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "national-university-of-singapore-ai-governance-work",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "new-york-city-automated-employment-decision-tool-law",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "nist-adversarial-ml-guidance",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "nist-ai-risk-management-framework-1-0",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "nist-ai-rmf-and-playbook",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "nist-generative-ai-profile",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "niti-aayog-responsible-ai-for-all",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "nyu-ai-now-institute",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "oas-ai-democracy-and-human-rights-resources",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "oecd-ai-incidents-monitor",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "oecd-ai-policy-observatory-policy-navigator",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "oecd-ai-principles",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "oecd-labor-automation-reports",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "openai-preparedness-frontier-governance-framework",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "openai-preparedness-framework",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "owasp-top-10-for-llm-applications",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "owasp-top-10-for-llm-apps",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "oxford-internet-institute",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "partnership-on-ai",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "partnership-on-ai-2",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "philippines-national-ai-roadmap",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "presidential-commission-on-fourth-industrial-revolution",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "princeton-citp",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "qatar-computing-research-institute",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "rand-ai-security-reports",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "research-ict-africa",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "research-ict-africa-2",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "responsible-ai-institute",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "riyadh-charter-on-ai-ethics-in-the-islamic-world",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "rome-call-for-ai-ethics",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "rome-call-hiroshima-interfaith-expansion",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "salesforce-trusted-ai-principles",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "san-jose-ai-inventory",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "sdaia-ai-ethics-principles",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "singapore-model-ai-governance-framework",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "singapore-model-ai-governance-framework-for-generative-ai",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "stanford-foundation-model-transparency-index",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "stanford-hai",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "strathmore-cipit",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "thailand-ai-roadmap-data-protection-regulator",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "u-s-ai-safety-institute",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "u-s-department-of-education-ai-reports",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "uk-ai-regulation-white-paper",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "uk-ai-safety-institute",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "uk-ai-safety-institute-2",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "uk-department-for-education-ai-guidance",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "un-high-level-advisory-body-on-ai",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "undp-digital-transformation-and-ai-governance",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "unesco-au-ai-readiness-assessment-work",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "unesco-ai-competency-frameworks",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "unesco-guidance-for-generative-ai-in-education",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "unesco-recommendation-on-the-ethics-of-ai",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "unicef-ai-for-children",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "united-nations-global-digital-compact",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "universidad-adolfo-ibanez-goblab",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "university-of-edinburgh-ai-ethics-and-society-centers",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "university-of-pretoria-centre-for-human-rights",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "vatican-antica-et-nova",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "vidhi-centre-for-legal-policy",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "vietnam-national-ai-strategy-data-protection-regulator",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "white-house-ai-executive-orders-and-omb-ai-guidance",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "who-ai-ethics-and-governance-for-health",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "world-council-of-churches-ai-statements",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "world-economic-forum-ai-governance-alliance",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "agent-security-frameworks",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "algorithm-registers",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "algorithmic-recommendation-provisions",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "biblical-theology-and-ai-governance",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "buddhist-ai-ethics",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "california-ai-laws-and-frontier-ai-transparency-legislation",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "confucian-ai-ethics",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "cset-compute-governance",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "daoist-perspectives-on-technology",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "data-poisoning-research",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "deep-synthesis-provisions",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "evangelical-statements-on-ai-and-human-dignity",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "ftc-ai-enforcement-guidance",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "government-procurement-rules",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "hindu-ai-ethics",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "human-rights-watch-ai-reports",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "impact-assessment-templates",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "interim-measures-for-generative-ai-services",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "international-labour-organization-ai-and-work",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "islamic-ai-ethics-maqasid-al-shariah",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "jailbreak-benchmarks",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "jewish-ai-ethics",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "model-extraction-research",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "nordic-ai-and-welfare-state-governance-materials",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "orthodox-christian-tech-ethics",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "prompt-injection-research",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "secular-moral-philosophy",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "seoul-national-university-ai-policy-initiative",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "shinto-buddhist-japanese-technology-ethics",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "sikh-ethics-and-ai",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "third-party-audit-standards",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "tsinghua-peking-ai-governance-centers",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "ubuntu-ai-ethics",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "waseda-university-of-tokyo-ai-governance-centers",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
+  },
+  {
+    "source_id": "world-bank-ai-and-digital-development-reports",
+    "indexing_status": "source_candidate_only",
+    "matched_statement_ids": [],
+    "matched_statement_count": 0,
+    "partial_statement_ids": [],
+    "partial_statement_count": 0,
+    "evidence": [
+      "Dr. K source matrix is the active MVP dataset.",
+      "Legacy STMT record matching is archived and not used for this MVP view.",
+      "Record-level extraction can be added after source licensing, dedupe, and crosswalk review."
+    ],
+    "checked_at": "2026-06-29T01:52:02.776Z"
   }
 ]

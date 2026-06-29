@@ -1,34 +1,31 @@
-import { CatalogExplorer } from '@/components/catalog-explorer'
-import { getCatalogFacets, searchCatalog } from '@/lib/catalog'
-import dashboard from '@/public/data/dashboard.json'
-import sourceRegistry from '@/public/data/source-registry.json'
+import { SourceMatrixExplorer } from '@/components/source-matrix-explorer'
+import { getSourceFacets, searchSources } from '@/lib/source-catalog'
 
 export default async function Home() {
   const [initial, facets] = await Promise.all([
-    searchCatalog({ sort: 'year', limit: 20 }),
-    getCatalogFacets(),
+    searchSources({ persona: 'builder', sort: 'relevance', limit: 24 }),
+    getSourceFacets(),
   ])
-  const totals = dashboard.totals
 
   return (
     <main>
       <section className="catalog-hero">
         <div className="hero-inner">
-          <span className="overline">AI governance evidence infrastructure</span>
-          <h1>Find the policy, standard, or principle you need.</h1>
+          <span className="overline">Dr. K source matrix MVP</span>
+          <h1>Find the AI governance source worth reviewing next.</h1>
           <p>
-            Search a reconciled global corpus, inspect source-level metadata, and trace each record
-            back to its provenance.
+            Explore the latest PRD source matrix through persona pathways, Wisdom Layer tags,
+            and source-level control/evidence previews before deeper ingestion begins.
           </p>
-          <div className="hero-stats" aria-label="Catalog summary">
-            <div><strong>{totals.statements.toLocaleString()}</strong><span>reconciled records</span></div>
-            <div><strong>{totals.countries.toLocaleString()}</strong><span>countries</span></div>
-            <div><strong>{totals.languages.toLocaleString()}</strong><span>languages</span></div>
-            <div><strong>{sourceRegistry.length.toLocaleString()}</strong><span>source registry entries</span></div>
+          <div className="hero-stats" aria-label="Source matrix summary">
+            <div><strong>{initial.total.toLocaleString()}</strong><span>matrix sources</span></div>
+            <div><strong>{facets.categories.length.toLocaleString()}</strong><span>source categories</span></div>
+            <div><strong>{facets.wisdomTags.length.toLocaleString()}</strong><span>wisdom tags</span></div>
+            <div><strong>3</strong><span>persona pathways</span></div>
           </div>
         </div>
       </section>
-      <CatalogExplorer initial={initial} facets={facets} />
+      <SourceMatrixExplorer initial={initial} facets={facets} />
     </main>
   )
 }

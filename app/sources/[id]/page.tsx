@@ -2,12 +2,11 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import {
   ArrowLeft, ArrowUpRight, BarChart3, CheckCircle2, Database, FileCheck2,
-  Fingerprint, Gauge, Link2, SearchCheck, ShieldCheck,
+  Gauge, Layers3, Link2, Route, ShieldCheck, Sparkles, UsersRound,
 } from 'lucide-react'
-import type { ExternalSource, PopularitySignal } from '@/lib/types'
-import sourceRegistry from '@/public/data/source-registry.json'
+import { getSource } from '@/lib/source-catalog'
+import type { PopularitySignal } from '@/lib/types'
 
-const sources = sourceRegistry as ExternalSource[]
 const actionLabels = {
   monitor_only: 'Monitor only',
   source_registry_only: 'Source registry only',
@@ -15,42 +14,70 @@ const actionLabels = {
   index_records: 'Index records',
   index_full_text: 'Index full text',
 }
-const indexingLabels = {
-  not_found: 'Not found in canonical records',
-  source_candidate_only: 'Source candidate only',
-  partially_indexed: 'Partially indexed',
-  indexed_as_records: 'Indexed as records',
-  indexed_as_source_release: 'Indexed as source release',
+
+const personaLabels = {
+  builder: 'Builder / Product',
+  legal_compliance: 'Legal & Compliance',
+  ministry_civil_society: 'Ministry & Civil Society',
 }
 
 export default async function SourceDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
-  const source = sources.find((item) => item.id === id)
+  const source = await getSource(id)
   if (!source) notFound()
   const check = source.checks[0]
 
   return (
     <main className="detail-page">
-      <Link className="back-link" href="/sources"><ArrowLeft size={15} /> Back to source registry</Link>
+      <Link className="back-link" href="/sources"><ArrowLeft size={15} /> Back to source matrix</Link>
       <article className="source-detail">
         <div className="source-detail-main">
-          <div className="record-id"><span>{source.id}</span><span>{source.status.replace('_', ' ')}</span></div>
+          <div className="record-id"><span>{source.id}</span><span>{source.confidence_rating} crosswalk</span></div>
           <h1>{source.title}</h1>
           <p className="record-publisher">{source.publisher}</p>
           <div className="record-tags">
+            <span>{source.category}</span>
             <span>{source.source_type}</span>
-            <span>{source.coverage}</span>
-            <span>{actionLabels[source.recommended_action]}</span>
+            <span>{source.url_status}</span>
           </div>
 
           <section>
             <div className="section-heading"><FileCheck2 size={17} /><h2>Review Summary</h2></div>
             <p className="empty-copy">{source.description}</p>
             <div className="decision-grid">
-              <Decision label="Indexed status" value={indexingLabels[source.indexing_status.indexing_status]} />
               <Decision label="Recommended action" value={actionLabels[source.recommended_action]} />
-              <Decision label="License review" value={source.license_review_status.replace('_', ' ')} />
-              <Decision label="Dedupe review" value={source.dedupe_review_status.replace('_', ' ')} />
+              <Decision label="Import complexity" value={source.metadata?.import_complexity || 'Not recorded'} />
+              <Decision label="License review" value={source.license_review_status.replaceAll('_', ' ')} />
+              <Decision label="Dedupe review" value={source.dedupe_review_status.replaceAll('_', ' ')} />
+            </div>
+          </section>
+
+          <section>
+            <div className="section-heading"><Sparkles size={17} /><h2>Wisdom Layer Tags</h2></div>
+            <div className="wisdom-tags detail-tags">
+              {source.wisdom_tags.map((tag) => <span key={tag}>{tag}</span>)}
+            </div>
+          </section>
+
+          <section>
+            <div className="section-heading"><Route size={17} /><h2>Crosswalk Preview</h2></div>
+            <div className="crosswalk-detail">
+              <Decision label="Core constraint" value={source.core_constraint} />
+              <Decision label="Required control" value={source.required_control} />
+              <Decision label="Evidence standard" value={source.evidence_standard} />
+              <Decision label="Confidence" value={source.confidence_rating} />
+            </div>
+          </section>
+
+          <section>
+            <div className="section-heading"><UsersRound size={17} /><h2>Persona Relevance</h2></div>
+            <div className="persona-fit-grid">
+              {Object.entries(source.persona_relevance).map(([key, value]) => (
+                <div className={`persona-fit ${value}`} key={key}>
+                  <span>{personaLabels[key as keyof typeof personaLabels]}</span>
+                  <strong>{value}</strong>
+                </div>
+              ))}
             </div>
           </section>
 
@@ -70,39 +97,30 @@ export default async function SourceDetailPage({ params }: { params: Promise<{ i
           </section>
 
           <section>
-            <div className="section-heading"><SearchCheck size={17} /><h2>Indexing Evidence</h2></div>
-            <ul className="evidence-list">
-              {source.indexing_status.evidence.map((item) => <li key={item}>{item}</li>)}
-            </ul>
-            {source.indexing_status.matched_statement_ids.length ? (
-              <div className="matched-records">
-                {source.indexing_status.matched_statement_ids.slice(0, 12).map((statementId) => (
-                  <Link href={`/records/${statementId}`} key={statementId}>{statementId}</Link>
-                ))}
-              </div>
-            ) : null}
-          </section>
-
-          <section>
-            <div className="section-heading"><ShieldCheck size={17} /><h2>Known Gaps</h2></div>
+            <div className="section-heading"><ShieldCheck size={17} /><h2>Notes And Gaps</h2></div>
+            <p className="empty-copy">{source.notes}</p>
             {source.metadata?.known_gaps?.length ? (
               <ul className="evidence-list">
                 {source.metadata.known_gaps.map((gap) => <li key={gap}>{gap}</li>)}
               </ul>
-            ) : <p className="empty-copy">No source-specific gaps have been recorded.</p>}
+            ) : null}
           </section>
         </div>
 
         <aside className="metadata-panel">
           <h2>Source Metadata</h2>
           <Metadata icon={Database} label="Formats" value={source.formats.join(', ')} />
+          <Metadata icon={Layers3} label="Category" value={source.category} />
           <Metadata icon={Gauge} label="Import complexity" value={source.metadata?.import_complexity} />
           <Metadata icon={CheckCircle2} label="Latest check" value={source.latest_observed_at?.slice(0, 10)} />
-          <Metadata icon={Fingerprint} label="Identifiers" value={source.identifiers.length.toString()} />
-          {check ? <Metadata icon={Link2} label="HTTP check" value={`${check.http_status || 'NA'} ${check.ok ? 'OK' : 'Needs review'}`} /> : null}
-          <a className="primary-button full-button" href={source.source_url} rel="noreferrer" target="_blank">
-            Open canonical source <ArrowUpRight size={15} />
-          </a>
+          {check ? <Metadata icon={Link2} label="Live check" value={check.ok ? `HTTP ${check.http_status} OK` : check.content_type || 'Not fetched'} /> : null}
+          {isExternalUrl(source.source_url) ? (
+            <a className="primary-button full-button" href={source.source_url} rel="noreferrer" target="_blank">
+              Open source <ArrowUpRight size={15} />
+            </a>
+          ) : (
+            <div className="internal-source-note">{source.source_url}</div>
+          )}
           <div className="identifier-list">
             {source.identifiers.map((identifier) => (
               <a href={identifier.url || source.source_url} key={`${identifier.identifier_type}-${identifier.identifier_value}`} rel="noreferrer" target="_blank">
@@ -137,4 +155,8 @@ function Metadata({ icon: Icon, label, value }: { icon: typeof Database; label: 
       <Icon size={15} /><div><span>{label}</span><strong>{value || 'Not recorded'}</strong></div>
     </div>
   )
+}
+
+function isExternalUrl(value: string) {
+  return /^https?:\/\//i.test(value)
 }

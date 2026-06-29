@@ -7,7 +7,7 @@ const args = new Map(process.argv.slice(2).map((arg, index, all) =>
   arg.startsWith('--') ? [arg, all[index + 1]?.startsWith('--') ? true : all[index + 1] ?? true] : [arg, true]
 ))
 
-const seedPath = path.resolve(String(args.get('--seed') || 'data/source-candidates.seed.json'))
+const seedPath = path.resolve(String(args.get('--seed') || 'data/drk-source-matrix.seed.json'))
 const outPath = path.resolve(String(args.get('--out') || 'public/data/source-candidates.json'))
 const summaryPath = path.resolve(String(args.get('--summary') || 'generated/source-candidates-summary.json'))
 const timeoutMs = Number(args.get('--timeout-ms') || 8000)
@@ -67,7 +67,9 @@ function findDescription(html) {
 }
 
 function normalizeUrl(value) {
-  const url = new URL(String(value).trim())
+  const raw = String(value || '').trim()
+  if (!/^https?:\/\//i.test(raw)) return raw
+  const url = new URL(raw)
   url.hash = ''
   if (url.pathname !== '/' && url.pathname.endsWith('/')) {
     url.pathname = url.pathname.replace(/\/+$/, '')
@@ -121,6 +123,19 @@ function qualityFlags(source, live) {
 }
 
 async function fetchLiveMetadata(url) {
+  if (!/^https?:\/\//i.test(url)) {
+    return {
+      checked_at: new Date().toISOString(),
+      ok: false,
+      http_status: null,
+      resolved_url: url,
+      content_type: 'internal/source-reference',
+      last_modified: null,
+      page_title: null,
+      meta_description: null,
+      error: 'Internal or non-HTTP source reference; no live fetch attempted.',
+    }
+  }
   const controller = new AbortController()
   const timeout = setTimeout(() => controller.abort(), timeoutMs)
   const checkedAt = new Date().toISOString()
@@ -175,6 +190,15 @@ function normalizeSource(raw) {
     coverage: raw.coverage ? normalizeText(raw.coverage) : null,
     formats: normalizeFormats(raw.formats),
     source_type: normalizeText(raw.source_type || raw.metadata?.source_kind || 'External source'),
+    category: normalizeText(raw.category || raw.coverage || 'Uncategorized'),
+    url_status: normalizeText(raw.url_status || 'Unreviewed'),
+    notes: normalizeText(raw.notes || raw.description || ''),
+    wisdom_tags: (raw.wisdom_tags || []).map((tag) => normalizeText(tag)).filter(Boolean),
+    persona_relevance: raw.persona_relevance || {},
+    core_constraint: normalizeText(raw.core_constraint || ''),
+    required_control: normalizeText(raw.required_control || ''),
+    evidence_standard: normalizeText(raw.evidence_standard || ''),
+    confidence_rating: normalizeText(raw.confidence_rating || 'Inferred'),
     aliases: (raw.aliases || []).map((alias) => normalizeText(alias)).filter(Boolean),
     status,
     created_at: raw.created_at || new Date().toISOString(),
@@ -185,7 +209,20 @@ function normalizeSource(raw) {
     recommended_action: raw.recommended_action || null,
     admin_notes: raw.admin_notes || null,
     reviewed_at: raw.reviewed_at || null,
-    metadata: raw.metadata || {},
+    metadata: {
+      ...(raw.metadata || {}),
+      source_kind: raw.metadata?.source_kind || raw.source_type,
+      import_complexity: raw.metadata?.import_complexity || raw.import_complexity,
+      category: raw.category || raw.coverage,
+      url_status: raw.url_status,
+      notes: raw.notes || raw.description,
+      wisdom_tags: raw.wisdom_tags || [],
+      persona_relevance: raw.persona_relevance || {},
+      core_constraint: raw.core_constraint,
+      required_control: raw.required_control,
+      evidence_standard: raw.evidence_standard,
+      confidence_rating: raw.confidence_rating || 'Inferred',
+    },
   }
   return { ...normalized, identifiers: extractIdentifiers({ ...normalized, identifiers: raw.identifiers || [] }) }
 }

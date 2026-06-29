@@ -6,11 +6,11 @@ export function SiteHeader() {
     <header className="site-header">
       <Link className="wordmark" href="/">
         <span className="wordmark-icon"><Database size={17} /></span>
-        <span><strong>CEI</strong> AI Governance Database</span>
+        <span><strong>CEI</strong> AI Governance Source Matrix</span>
       </Link>
       <nav aria-label="Primary navigation">
-        <Link href="/">Catalog</Link>
-        <Link href="/sources">Source priorities</Link>
+        <Link href="/">Source matrix</Link>
+        <Link href="/sources">Review sources</Link>
         <Link href="/methodology">Methodology</Link>
       </nav>
       <div className="header-actions">

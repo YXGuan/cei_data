@@ -1,44 +1,3 @@
-export type Score = {
-  label: string
-  value: number
-  color?: string
-}
-
-export type CatalogRecord = {
-  id: string
-  title: string
-  organization: string
-  year: number | null
-  region: string
-  type: string
-  binding: string
-  cluster: string
-  scores: Score[]
-  metadata_status?: string
-  organization_type?: string
-  organization_subtype?: string
-  geographic_scope?: string
-  country_code?: string | null
-  language_code?: string | null
-  source_url?: string | null
-  abstract?: string | null
-  word_count?: number | null
-}
-
-export type CatalogFacets = {
-  regions: string[]
-  types: string[]
-  bindings: string[]
-  organizationTypes: string[]
-  clusters: string[]
-}
-
-export type CatalogSearch = {
-  items: CatalogRecord[]
-  total: number
-  source: 'Supabase' | 'Prepared snapshot'
-}
-
 export type SourceStatus = 'proposed' | 'under_review' | 'approved' | 'included' | 'rejected'
 
 export type PopularitySignalProvider =
@@ -77,6 +36,17 @@ export type RecommendedAction =
   | 'index_full_text'
 
 export type ReviewStatus = 'needs_review' | 'in_progress' | 'approved' | 'blocked' | 'not_applicable'
+export type WisdomTag =
+  | 'Human Dignity'
+  | 'Power Constraints'
+  | 'Deception'
+  | 'Stewardship'
+  | 'Justice'
+  | 'Wisdom'
+
+export type PersonaKey = 'builder' | 'legal_compliance' | 'ministry_civil_society'
+export type PersonaRelevance = Record<PersonaKey, 'low' | 'medium' | 'high'>
+export type ConfidenceRating = 'High Direct' | 'Inferred' | 'Contested'
 
 export type ExternalSourceIdentifier = {
   identifier_type: string
@@ -125,6 +95,15 @@ export type SourceRequestMetadata = {
   priority?: 'low' | 'medium' | 'high' | string
   review_checks?: string[]
   known_gaps?: string[]
+  category?: string
+  url_status?: string
+  notes?: string
+  wisdom_tags?: WisdomTag[]
+  persona_relevance?: Partial<PersonaRelevance>
+  core_constraint?: string
+  required_control?: string
+  evidence_standard?: string
+  confidence_rating?: ConfidenceRating
   metadata_quality_score?: number
   quality_flags?: string[]
   live?: {
@@ -148,6 +127,15 @@ export type SourceRequest = {
   source_url: string
   canonical_url?: string
   source_type?: string
+  category?: string
+  url_status?: string
+  notes?: string
+  wisdom_tags?: WisdomTag[]
+  persona_relevance?: PersonaRelevance
+  core_constraint?: string
+  required_control?: string
+  evidence_standard?: string
+  confidence_rating?: ConfidenceRating
   coverage: string | null
   formats: string[]
   status: SourceStatus
@@ -172,6 +160,15 @@ export type SourceRequest = {
 export type ExternalSource = SourceRequest & {
   canonical_url: string
   source_type: string
+  category: string
+  url_status: string
+  notes: string
+  wisdom_tags: WisdomTag[]
+  persona_relevance: PersonaRelevance
+  core_constraint: string
+  required_control: string
+  evidence_standard: string
+  confidence_rating: ConfidenceRating
   aliases: string[]
   identifiers: ExternalSourceIdentifier[]
   checks: ExternalSourceCheck[]
